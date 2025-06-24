@@ -49,4 +49,27 @@ return {
         dependencies = { "nvim-lua/plenary.nvim" },
         opts = { signs = false },
     },
+    {
+        -- High-performance color highlighter
+        "norcalli/nvim-colorizer.lua",
+        config = function()
+            local enabled = true
+
+            require("colorizer").setup()
+
+            function toggleColorizer()
+                enabled = not enabled
+                if enabled then
+                    vim.cmd("ColorizerToggle")
+                    vim.notify("Colorizer enabled", vim.log.levels.INFO)
+                else
+                    vim.cmd("ColorizerToggle")
+                    require("colorizer").detach_from_buffer(0)
+                    vim.notify("Colorizer disabled", vim.log.levels.INFO)
+                end
+            end
+
+            vim.keymap.set("n", "<leader>tc", toggleColorizer, { desc = "Toggle Colorizer", noremap = true })
+        end,
+    },
 }
