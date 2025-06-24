@@ -21,6 +21,18 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
     spec = {
+        {
+            "rcarriga/nvim-notify",
+            lazy = false,
+            config = function()
+                local colors = require("dracula").colors()
+                require("notify").setup({
+                    background_colour = colors.bg,
+                })
+
+                vim.notify = require("notify")
+            end,
+        },
         require("plugins.colorscheme"),
         require("plugins.appearances"),
         require("plugins.lualine"),
