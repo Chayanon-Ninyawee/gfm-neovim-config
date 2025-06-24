@@ -22,6 +22,7 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
     spec = {
         require("plugins.colorscheme"),
+        require("plugins.lualine"),
         require("plugins.alpha"),
         require("plugins.neotree"),
         require("plugins.image"),
