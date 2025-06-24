@@ -22,7 +22,7 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
     spec = {
         require("plugins.colorscheme"),
-        require("plugins.line-number"),
+        require("plugins.appearances"),
         require("plugins.lualine"),
         require("plugins.bufferline"),
         require("plugins.alpha"),
