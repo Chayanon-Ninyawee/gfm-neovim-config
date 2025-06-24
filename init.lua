@@ -24,6 +24,7 @@ require("lazy").setup({
         require("plugins.colorscheme"),
         require("plugins.alpha"),
         require("plugins.neotree"),
+        require("plugins.image"),
     },
     checker = { enabled = true },
 })
