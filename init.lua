@@ -25,6 +25,7 @@ require("lazy").setup({
         require("plugins.alpha"),
         require("plugins.neotree"),
         require("plugins.image"),
+        require("plugins.telescope"),
     },
     checker = { enabled = true },
 })
