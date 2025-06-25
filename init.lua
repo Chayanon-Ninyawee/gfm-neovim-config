@@ -42,6 +42,7 @@ require("lazy").setup({
         require("plugins.image"),
         require("plugins.telescope"),
         require("plugins.editor"),
+        require("plugins.gitsigns"),
     },
     checker = { enabled = true },
 })
