@@ -64,10 +64,12 @@ return {
                         function()
                             local byte_start = vim.fn.col(".")
                             local char_index = vim.fn.charidx(vim.fn.getline("."), byte_start - 1)
+                            local char_num = vim.fn.strgetchar(vim.fn.getline("."), char_index)
 
                             local byte_end = byte_start
-                                + vim.fn.strlen(vim.fn.nr2char(vim.fn.strgetchar(vim.fn.getline("."), char_index)))
-                                - 1
+                            if not char_num == -1 then
+                                byte_end = byte_start + vim.fn.strlen(vim.fn.nr2char(char_num)) - 1
+                            end
 
                             local total = vim.fn.line2byte(vim.fn.line(".")) + byte_start - 1
 
