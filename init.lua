@@ -41,6 +41,7 @@ require("lazy").setup({
         require("plugins.neotree"),
         require("plugins.image"),
         require("plugins.telescope"),
+        require("plugins.editor"),
     },
     checker = { enabled = true },
 })
