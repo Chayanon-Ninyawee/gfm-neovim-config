@@ -72,4 +72,10 @@ return {
             vim.keymap.set("n", "<leader>tc", toggleColorizer, { desc = "Toggle Colorizer", noremap = true })
         end,
     },
+    {
+        "karb94/neoscroll.nvim",
+        opts = {
+            duration_multiplier = 0.65,
+        },
+    },
 }
