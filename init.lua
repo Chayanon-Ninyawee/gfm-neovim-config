@@ -43,6 +43,7 @@ require("lazy").setup({
         require("plugins.telescope"),
         require("plugins.editor-misc"),
         require("plugins.git-misc"),
+        require("plugins.treesitter"),
     },
     checker = { enabled = true },
 })
