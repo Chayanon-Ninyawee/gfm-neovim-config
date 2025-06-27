@@ -45,6 +45,8 @@ require("lazy").setup({
         require("plugins.git-misc"),
         require("plugins.treesitter"),
         require("plugins.lsp"),
+        require("plugins.autocomplete"),
+        require("plugins.lazydev"),
     },
     checker = { enabled = true },
 })
