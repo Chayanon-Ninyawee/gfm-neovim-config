@@ -46,6 +46,7 @@ require("lazy").setup({
         require("plugins.treesitter"),
         require("plugins.lsp"),
         require("plugins.autocomplete"),
+        require("plugins.autoformatter"),
         require("plugins.lazydev"),
     },
     checker = { enabled = true },
