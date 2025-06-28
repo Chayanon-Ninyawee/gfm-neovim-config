@@ -48,6 +48,8 @@ require("lazy").setup({
         require("plugins.autocomplete"),
         require("plugins.autoformatter"),
         require("plugins.lazydev"),
+        require("plugins.debugger"),
+        -- TODO: ADD whichkey
     },
     checker = { enabled = true },
 })
