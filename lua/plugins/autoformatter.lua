@@ -6,9 +6,11 @@ return {
             formatters_by_ft = {
                 lua = { "stylua" },
                 python = { "isort", "black" },
+                c = { "clang-format" },
+                cpp = { "clang-format" },
                 rust = { "rustfmt", lsp_format = "fallback" },
                 javascript = { "prettier" },
-                yaml = { "prettier" }
+                yaml = { "prettier" },
             },
             format_on_save = {
                 -- These options will be passed to conform.format()
@@ -34,9 +36,11 @@ return {
 
         if isPrintingHelp then
             vim.schedule(function()
-                vim.notify("Some Formatter executables are not found! Try running :checkhealth conform",
-                    vim.log.levels.WARN)
+                vim.notify(
+                    "Some Formatter executables are not found! Try running :checkhealth conform",
+                    vim.log.levels.WARN
+                )
             end)
         end
-    end
+    end,
 }
