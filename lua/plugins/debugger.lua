@@ -6,9 +6,17 @@ return {
         -- Required dependency for nvim-dap-ui
         "nvim-neotest/nvim-nio",
 
+        {
+            "stevearc/overseer.nvim",
+            config = function()
+                require("overseer").setup()
+
+                vim.keymap.set("n", "<leader>to", "<cmd>OverseerToggle<CR>", { desc = "Toggle Overseer UI" })
+            end,
+        },
+
         -- Add your own debuggers here
         "mfussenegger/nvim-dap-python",
-        -- TODO: Add more debuggers
     },
     keys = {
         {
@@ -96,8 +104,36 @@ return {
         -- end
 
         dap.listeners.after.event_initialized["dapui_config"] = dapui.open
-        dap.listeners.before.event_terminated["dapui_config"] = dapui.close
-        dap.listeners.before.event_exited["dapui_config"] = dapui.close
+        -- dap.listeners.before.event_terminated["dapui_config"] = dapui.close
+        -- dap.listeners.before.event_exited["dapui_config"] = dapui.close
+
+        require("dap.ext.vscode").load_launchjs(nil, {
+            codelldb = { "c", "cpp" },
+            cppdbg = { "c", "cpp" },
+        })
+
+        dap.adapters.codelldb = {
+            type = "server",
+            port = "${port}",
+            executable = {
+                command = vim.fn.stdpath("data") .. "/codelldb/adapter/codelldb",
+                args = { "--port", "${port}" },
+            },
+        }
+
+        dap.configurations.cpp = {
+            {
+                name = "Launch file",
+                type = "codelldb",
+                request = "launch",
+                program = function()
+                    return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
+                end,
+                cwd = "${workspaceFolder}",
+                stopOnEntry = false,
+            },
+        }
+        dap.configurations.c = dap.configurations.cpp
 
         require("dap-python").setup("~/.local/share/pipx/venvs/debugpy/bin/python3")
     end,
