@@ -81,6 +81,13 @@ return { -- Highlight, edit, and navigate code
             -- set up query links
             ensure_queries(custom_parsers)
 
+            vim.filetype.add({
+                extension = {
+                    ms = "miniscript",
+                    src = "miniscript",
+                },
+            })
+
             -- [[ configure treesitter ]] see `:help nvim-treesitter`
             require("nvim-treesitter.configs").setup({
                 ensure_installed = {
