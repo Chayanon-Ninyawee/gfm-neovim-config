@@ -123,7 +123,7 @@ end, {
     noremap = true,
     silent = true,
 })
-vim.keymap.set("n", "<leader>b", "<cmd> enew <CR>", {
+vim.keymap.set("n", "<leader>nb", "<cmd> enew <CR>", {
     desc = "New buffer",
     noremap = true,
     silent = true,
