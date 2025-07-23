@@ -11,6 +11,7 @@ return {
                 rust = { "rustfmt", lsp_format = "fallback" },
                 javascript = { "prettier" },
                 yaml = { "prettier" },
+                tex = { "latexindent" },
             },
             format_on_save = {
                 -- These options will be passed to conform.format()
