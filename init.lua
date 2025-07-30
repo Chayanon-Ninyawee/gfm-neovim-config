@@ -50,6 +50,7 @@ require("lazy").setup({
         require("plugins.lazydev"),
         require("plugins.debugger"),
         require("plugins.vimtex"),
+        require("plugins.remote-sshfs"),
         -- TODO: ADD whichkey
     },
     checker = { enabled = true },
