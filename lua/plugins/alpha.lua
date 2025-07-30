@@ -1786,5 +1786,14 @@ return {
                 pcall(vim.cmd.AlphaRedraw)
             end,
         })
+
+        vim.api.nvim_create_autocmd("DirChanged", {
+            callback = function()
+                if vim.bo.filetype == "alpha" then
+                    pcall(vim.cmd.AlphaRedraw)
+                    pcall(vim.cmd.AlphaRemap)
+                end
+            end,
+        })
     end,
 }
