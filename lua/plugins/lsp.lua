@@ -31,7 +31,10 @@ return {
             },
         })
 
-        require("plugins.remote-lsp").setup()
+        local has_remote_lsp, remote_lsp = pcall(require, "plugins.remote-lsp")
+        if has_remote_lsp then
+            remote_lsp.setup()
+        end
 
         vim.api.nvim_create_autocmd("LspAttach", {
             group = vim.api.nvim_create_augroup("lsp-attach", { clear = true }),
