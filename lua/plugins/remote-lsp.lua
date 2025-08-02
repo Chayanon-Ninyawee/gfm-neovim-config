@@ -1,39 +1,43 @@
 local M = {}
 
 function M.setup()
-    local ok, remote_sshfs_module = pcall(require, "plugins.remote-sshfs")
-    local remote_sshfs_root = nil
-    if ok then
-        remote_sshfs_root = remote_sshfs_module.opts.mounts.base_dir
+    local function setup_lsp_with_remote(lsp, root_dir)
+        local ok, remote_sshfs_module = pcall(require, "plugins.remote-sshfs")
+        local remote_sshfs_root = nil
+        if ok then
+            remote_sshfs_root = remote_sshfs_module.opts.mounts.base_dir
+        end
+
+        vim.lsp.config(lsp, {
+            root_dir = function(bufnr, on_dir)
+                local fullpath = vim.fn.fnamemodify(vim.fn.bufname(bufnr), ":p")
+                if not (remote_sshfs_root and fullpath:sub(1, #remote_sshfs_root) == remote_sshfs_root) then
+                    on_dir(root_dir(bufnr))
+                end
+            end,
+        })
+
+        local remote_lsp = "remote-" .. lsp
+        vim.lsp.config[remote_lsp] = vim.fn.deepcopy(vim.lsp.config[lsp])
+        vim.lsp.config(remote_lsp, {
+            root_dir = function(bufnr, on_dir)
+                local fullpath = vim.fn.fnamemodify(vim.fn.bufname(bufnr), ":p")
+                if remote_sshfs_root and fullpath:sub(1, #remote_sshfs_root) == remote_sshfs_root then
+                    on_dir(root_dir(bufnr))
+                end
+            end,
+        })
+
+        vim.lsp.enable(remote_lsp)
     end
 
-    vim.lsp.config("clangd", {
-        root_dir = function(bufnr, on_dir)
-            if
-                not (
-                    remote_sshfs_root
-                    and vim.fn.fnamemodify(vim.fn.bufname(bufnr), ":p"):sub(1, #remote_sshfs_root)
-                        == remote_sshfs_root
-                )
-            then
-                on_dir(require("lspconfig.configs.clangd").default_config.root_dir(vim.fn.bufname(bufnr)))
-            end
-        end,
-    })
+    setup_lsp_with_remote("clangd", function(bufnr)
+        return require("lspconfig.configs.clangd").default_config.root_dir(vim.fn.bufname(bufnr))
+    end)
 
-    vim.lsp.config["remote-clangd"] = vim.fn.deepcopy(vim.lsp.config["clangd"])
-    vim.lsp.config("remote-clangd", {
-        root_dir = function(bufnr, on_dir)
-            if
-                remote_sshfs_root
-                and vim.fn.fnamemodify(vim.fn.bufname(bufnr), ":p"):sub(1, #remote_sshfs_root) == remote_sshfs_root
-            then
-                on_dir(require("lspconfig.configs.clangd").default_config.root_dir(vim.fn.bufname(bufnr)))
-            end
-        end,
-    })
-
-    vim.lsp.enable("remote-clangd")
+    setup_lsp_with_remote("cmake", function(bufnr)
+        return require("lspconfig.configs.cmake").default_config.root_dir(vim.fn.bufname(bufnr))
+    end)
 end
 
 function M.remote_sshfs_on_connect_success(host, mount_dir)
@@ -42,16 +46,35 @@ function M.remote_sshfs_on_connect_success(host, mount_dir)
     local sshfs_prefix = mount_dir
     local remote_prefix = host["Path"] or ("/home/" .. host["User"])
 
-    vim.lsp.config("remote-clangd", {
-        cmd = {
+    local function get_remote_cmd(cmd)
+        local remote_cmd = {
             "python3",
             "-u",
             lsp_proxy_path,
             host["User"] .. "@" .. (host["HostName"] or host["Name"]),
             sshfs_prefix,
             remote_prefix,
-            "clangd",
-        },
+        }
+
+        if type(cmd) == "table" then
+            for _, part in ipairs(cmd) do
+                table.insert(remote_cmd, part)
+            end
+        elseif type(cmd) == "string" then
+            table.insert(remote_cmd, cmd)
+        else
+            error("Unsupported cmd type for LSP: expected table or string, got " .. type(cmd))
+        end
+
+        return remote_cmd
+    end
+
+    vim.lsp.config("remote-clangd", {
+        cmd = get_remote_cmd("clangd"),
+    })
+
+    vim.lsp.config("remote-cmake", {
+        cmd = get_remote_cmd("cmake-language-server"),
     })
 end
 

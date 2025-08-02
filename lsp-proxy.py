@@ -261,6 +261,7 @@ def main():
                 "pylsp",
                 "jedi-language-server",  # Python tools that might be in ~/.local/bin
                 "clangd",
+                "cmake",
                 "ccls",  # C/C++ tools
                 "gopls",  # Go tools
                 "java",
