@@ -28,7 +28,7 @@ local opts = {
     ui = {
         select_prompts = false, -- not yet implemented
         confirm = {
-            connect = true, -- prompt y/n when host is selected to connect to
+            connect = false, -- prompt y/n when host is selected to connect to
             change_dir = false, -- prompt y/n to change working directory on connection (only applicable if handlers.on_connect.change_dir is enabled)
         },
     },
