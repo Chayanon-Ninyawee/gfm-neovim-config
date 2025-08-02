@@ -9,7 +9,13 @@ function M.setup()
 
     vim.lsp.config("clangd", {
         root_dir = function(bufnr, on_dir)
-            if not (remote_sshfs_root and vim.fn.bufname(bufnr):sub(1, #remote_sshfs_root) == remote_sshfs_root) then
+            if
+                not (
+                    remote_sshfs_root
+                    and vim.fn.fnamemodify(vim.fn.bufname(bufnr), ":p"):sub(1, #remote_sshfs_root)
+                        == remote_sshfs_root
+                )
+            then
                 on_dir(require("lspconfig.configs.clangd").default_config.root_dir(vim.fn.bufname(bufnr)))
             end
         end,
@@ -18,7 +24,10 @@ function M.setup()
     vim.lsp.config["remote-clangd"] = vim.fn.deepcopy(vim.lsp.config["clangd"])
     vim.lsp.config("remote-clangd", {
         root_dir = function(bufnr, on_dir)
-            if remote_sshfs_root and vim.fn.bufname(bufnr):sub(1, #remote_sshfs_root) == remote_sshfs_root then
+            if
+                remote_sshfs_root
+                and vim.fn.fnamemodify(vim.fn.bufname(bufnr), ":p"):sub(1, #remote_sshfs_root) == remote_sshfs_root
+            then
                 on_dir(require("lspconfig.configs.clangd").default_config.root_dir(vim.fn.bufname(bufnr)))
             end
         end,
