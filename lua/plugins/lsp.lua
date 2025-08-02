@@ -9,6 +9,8 @@ return {
             "pylsp",
             "jsonls",
             "yamlls",
+            "texlab",
+            "ltex",
         }
 
         vim.lsp.enable(servers)
@@ -29,6 +31,42 @@ return {
                     },
                 },
             },
+        })
+
+        vim.lsp.config("texlab", {
+            settings = {
+                texlab = {
+                    build = {
+                        executable = "latexmk",
+                        args = {
+                            "-xelatex", -- change to -pdflatex or -lualatex if you want
+                            "-interaction=nonstopmode",
+                            "-bibtex", -- This enables bibtex by default; to switch to biber, use -use-biber
+                            "%f",
+                        },
+                        onSave = true,
+                        forwardSearchAfter = true,
+                    },
+                    forwardSearch = {
+                        executable = "zathura", -- or "evince", "okular", etc.
+                        args = {
+                            "--synctex-forward",
+                            "%l:1:%f",
+                            "%p",
+                        },
+                    },
+                    latexFormatter = nil,
+                },
+            },
+        })
+
+        vim.lsp.config("ltex", {
+            settings = {
+                ltex = {
+                    language = "en-US",
+                },
+            },
+            filetypes = { "tex", "bib", "markdown" },
         })
 
         local has_remote_lsp, remote_lsp = pcall(require, "plugins.remote-lsp")
