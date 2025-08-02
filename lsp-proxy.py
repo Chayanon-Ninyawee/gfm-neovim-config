@@ -66,7 +66,9 @@ def replace_paths(obj, user_remote, sshfs_prefix, remote_prefix):
         return result
     elif isinstance(obj, dict):
         return {
-            k: replace_paths(v, user_remote, sshfs_prefix, remote_prefix)
+            replace_paths(k, user_remote, sshfs_prefix, remote_prefix): replace_paths(
+                v, user_remote, sshfs_prefix, remote_prefix
+            )
             for k, v in obj.items()
         }
     elif isinstance(obj, list):
