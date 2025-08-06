@@ -1,5 +1,8 @@
 return {
     "neovim/nvim-lspconfig",
+    dependencies = {
+        "Chayanon-Ninyawee/remote-sshfs.nvim",
+    },
     config = function()
         local servers = {
             "lua_ls",

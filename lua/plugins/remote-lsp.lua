@@ -2,11 +2,7 @@ local M = {}
 
 function M.setup()
     local function setup_lsp_with_remote(lsp, root_dir)
-        local ok, remote_sshfs_module = pcall(require, "plugins.remote-sshfs")
-        local remote_sshfs_root = nil
-        if ok then
-            remote_sshfs_root = remote_sshfs_module.opts.mounts.base_dir
-        end
+        local remote_sshfs_root = require("remote-sshfs").config.mounts.base_dir
 
         vim.lsp.config(lsp, {
             root_dir = function(bufnr, on_dir)
@@ -38,44 +34,44 @@ function M.setup()
     setup_lsp_with_remote("cmake", function(bufnr)
         return require("lspconfig.configs.cmake").default_config.root_dir(vim.fn.bufname(bufnr))
     end)
-end
 
-function M.remote_sshfs_on_connect_success(host, mount_dir)
-    local lsp_proxy_path = vim.fn.stdpath("config") .. "/lsp-proxy.py"
+    require("remote-sshfs").callback.on_connect_success:add(function(host, mount_dir)
+        local lsp_proxy_path = vim.fn.stdpath("config") .. "/lsp-proxy.py"
 
-    local sshfs_prefix = mount_dir
-    local remote_prefix = host["Path"] or ("/home/" .. host["User"])
+        local sshfs_prefix = mount_dir
+        local remote_prefix = host["Path"] or ("/home/" .. host["User"])
 
-    local function get_remote_cmd(cmd)
-        local remote_cmd = {
-            "python3",
-            "-u",
-            lsp_proxy_path,
-            host["User"] .. "@" .. (host["HostName"] or host["Name"]),
-            sshfs_prefix,
-            remote_prefix,
-        }
+        local function get_remote_cmd(cmd)
+            local remote_cmd = {
+                "python3",
+                "-u",
+                lsp_proxy_path,
+                host["User"] .. "@" .. (host["HostName"] or host["Name"]),
+                sshfs_prefix,
+                remote_prefix,
+            }
 
-        if type(cmd) == "table" then
-            for _, part in ipairs(cmd) do
-                table.insert(remote_cmd, part)
+            if type(cmd) == "table" then
+                for _, part in ipairs(cmd) do
+                    table.insert(remote_cmd, part)
+                end
+            elseif type(cmd) == "string" then
+                table.insert(remote_cmd, cmd)
+            else
+                error("Unsupported cmd type for LSP: expected table or string, got " .. type(cmd))
             end
-        elseif type(cmd) == "string" then
-            table.insert(remote_cmd, cmd)
-        else
-            error("Unsupported cmd type for LSP: expected table or string, got " .. type(cmd))
+
+            return remote_cmd
         end
 
-        return remote_cmd
-    end
+        vim.lsp.config("remote-clangd", {
+            cmd = get_remote_cmd("clangd"),
+        })
 
-    vim.lsp.config("remote-clangd", {
-        cmd = get_remote_cmd("clangd"),
-    })
-
-    vim.lsp.config("remote-cmake", {
-        cmd = get_remote_cmd("cmake-language-server"),
-    })
+        vim.lsp.config("remote-cmake", {
+            cmd = get_remote_cmd("cmake-language-server"),
+        })
+    end)
 end
 
 return M
