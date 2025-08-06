@@ -50,6 +50,7 @@ require("lazy").setup({
         require("plugins.lazydev"),
         require("plugins.debugger"),
         require("plugins.remote-sshfs"),
+        require("plugins.live-preview"),
         -- TODO: ADD whichkey
     },
     checker = { enabled = true },
