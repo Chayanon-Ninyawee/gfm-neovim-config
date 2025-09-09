@@ -1,8 +1,5 @@
 return {
     "neovim/nvim-lspconfig",
-    dependencies = {
-        "Chayanon-Ninyawee/remote-sshfs.nvim",
-    },
     config = function()
         local servers = {
             "lua_ls",
@@ -11,6 +8,7 @@ return {
             "rust_analyzer",
             "ruff",
             "pylsp",
+            "bashls",
             "jsonls",
             "yamlls",
             "texlab",
@@ -18,6 +16,13 @@ return {
         }
 
         vim.lsp.enable(servers)
+
+        vim.lsp.config("clangd", {
+            cmd = {
+                "clangd",
+                "--query-driver=/usr/bin/x86_64-linux-gnu-gcc,/usr/bin/x86_64-linux-gnu-g++,/usr/bin/arm-none-eabi-g*,/usr/bin/arm-none-eabi-g++*",
+            },
+        })
 
         vim.lsp.config("pylsp", {
             settings = {
@@ -72,11 +77,6 @@ return {
             },
             filetypes = { "tex", "bib", "markdown" },
         })
-
-        local has_remote_lsp, remote_lsp = pcall(require, "plugins.remote-lsp")
-        if has_remote_lsp then
-            remote_lsp.setup()
-        end
 
         vim.api.nvim_create_autocmd("LspAttach", {
             group = vim.api.nvim_create_augroup("lsp-attach", { clear = true }),

@@ -6,1679 +6,2787 @@ return {
     },
 
     config = function()
-        -- sprite
         local sprite = {
-            [====[                  ~((flljc\<];                      ]====],
-            [====[                :])\qbbpdmzt)]i.                    ]====],
-            [====[               |yz/rl0kqzzmn(zxl.                   ]====],
-            [====[             ^{czx]-cm8wklrf{nq0>                   ]====],
-            [====[            ^lv0f<"">xbhy1?+i[fon>                  ]====],
-            [====[           .!\y)<"}lmlzmqz0tl-{vj]\                 ]====],
-            [====[          .l1x?~^-x8$zk%%%%l\:(1xf~`                ]====],
-            [====[          i|t?~;.i{woj$$&omcf;~(\y|{~               ]====],
-            [====[         /xj_<i.^!-o0z$$kj][|(?<}jnr|];`            ]====],
-            [====[      .:tyx]+l."~?[kr0bwc~\i<11]1(xjczt_;.          ]====],
-            [====[     .;rxj\]l`,(1}v%jc$$*v],\>?]{\/\\ucc/{i`        ]====],
-            [====[    ;}ryoc?:">t-~)%@)v$$$$8q|\i!>>_1{]jjozf|?       ]====],
-            [====[   i{rcmjtl;_}<ilo$%>>ob%%bj_-i\;+{xujxfupojt\"     ]====],
-            [====[   ?uroqv)nzxvf+i[ju+++yr[-]{\/".^<rltu\)0dqrj/;    ]====],
-            [====[  +frzwwu(\xnji+})-??]}]11jjr/,.   ^!i{cffdpw//l.   ]====],
-            [====[  )c/ypqy(:     ;|y0q0uokowqr         ~1ljcdwjf}i   ]====],
-            [====[  (c)zdcm/:      l|owzx0##h\^^^^^^^^^^^_nxvwwoc1;   ]====],
-            [====[  /yfroqyy<^      :>]??1\(}i           <|u|qowyl    ]====],
-            [====[  tqf(nqucx~`     .:+)])|(?!           !)yuqwc<"    ]====],
-            [====[  <jxf/fwovr)<i    `i[))\}l            l)xxlm\"     ]====],
-            [====[    i{\}tzqjcjrff?, ^i?[(}i\          i}ffnmj       ]====],
-            [====[     .^^"tcrqq{""^. ^i+_1{?<       `i?{}?1jqx       ]====],
-            [====[         ij{)un     ^!<+[[+i       .:]]{?-}cf!.     ]====],
-            [====[         <x?]uj     `:!<--!^       ^<i".  ;tr)"     ]====],
-            [====[         `,!-xf      .i>+!\                `_}-[>^  ]====],
-            [====[           :--"      .:>i".                  ```.   ]====],
-            [====[                     .ii:`                          ]====],
-            [====[                    .^li;,^                         ]====],
-            [====[                    `:iii~i                         ]====],
-            [====[                    ^>~<+:.                         ]====],
+            [[            ▄▀▀▄         ▄▀▀▄            ]],
+            [[           ▀▀▀▀▀▀▀▀▄    ▀▀▀▀▀▀           ]],
+            [[         ▄▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▄         ]],
+            [[      ▄▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▄      ]],
+            [[      ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀      ]],
+            [[     ▄▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▄     ]],
+            [[▄▀▀▀▄▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀     ]],
+            [[▀ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀     ]],
+            [[ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▄▀      ]],
+            [[   ▄▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▄       ]],
+            [[     ▄▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀ ▀▀▀▀▀▀▀▀▄     ]],
+            [[  ▄▄ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▄▀▀▀▀▀▀▀▀▀ ▄▄  ]],
+            [[▄▀▀▀  ▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▄]],
+            [[▀▀▀▄▄▄▄▀▀▀▀▀▀▀▄▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▄▄▄▄▀▀▀]],
+            [[▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀]],
+            [[▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀]],
+            [[  ▀▀▀▀▀▀▀▀▀▀▀▀   ▀▀▀▀▀▀▀   ▀▀▀▀▀▀▀▀▀▀▀▀  ]],
         }
 
-        -- highlight ranges
+        local function set_colors()
+            vim.api.nvim_set_hl(0, "PokePixel_0_12", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_0_13", { fg = "#151323", bg = "#443f5f" })
+            vim.api.nvim_set_hl(0, "PokePixel_0_14", { fg = "#151323", bg = "#ff3593" })
+            vim.api.nvim_set_hl(0, "PokePixel_0_15", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_0_25", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_0_26", { fg = "#151323", bg = "#ff3593" })
+            vim.api.nvim_set_hl(0, "PokePixel_0_27", { fg = "#151323", bg = "#443f5f" })
+            vim.api.nvim_set_hl(0, "PokePixel_0_28", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_2_11", { fg = "#151323", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_2_12", { fg = "#443f5f", bg = "#443f5f" })
+            vim.api.nvim_set_hl(0, "PokePixel_2_13", { fg = "#443f5f", bg = "#443f5f" })
+            vim.api.nvim_set_hl(0, "PokePixel_2_14", { fg = "#ffffff", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_2_15", { fg = "#ff3593", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_2_16", { fg = "#151323", bg = "#ffffff" })
+            vim.api.nvim_set_hl(0, "PokePixel_2_17", { fg = "#151323", bg = "#ffffff" })
+            vim.api.nvim_set_hl(0, "PokePixel_2_18", { fg = "#151323", bg = "#d6def1" })
+            vim.api.nvim_set_hl(0, "PokePixel_2_19", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_2_24", { fg = "#151323", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_2_25", { fg = "#ff3593", bg = "#ff3593" })
+            vim.api.nvim_set_hl(0, "PokePixel_2_26", { fg = "#ffffff", bg = "#ffffff" })
+            vim.api.nvim_set_hl(0, "PokePixel_2_27", { fg = "#443f5f", bg = "#443f5f" })
+            vim.api.nvim_set_hl(0, "PokePixel_2_28", { fg = "#443f5f", bg = "#443f5f" })
+            vim.api.nvim_set_hl(0, "PokePixel_2_29", { fg = "#151323", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_4_9", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_4_10", { fg = "#151323", bg = "#443f5f" })
+            vim.api.nvim_set_hl(0, "PokePixel_4_11", { fg = "#443f5f", bg = "#ff3593" })
+            vim.api.nvim_set_hl(0, "PokePixel_4_12", { fg = "#443f5f", bg = "#ff3593" })
+            vim.api.nvim_set_hl(0, "PokePixel_4_13", { fg = "#151323", bg = "#443f5f" })
+            vim.api.nvim_set_hl(0, "PokePixel_4_14", { fg = "#151323", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_4_15", { fg = "#ffffff", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_4_16", { fg = "#d6def1", bg = "#ffffff" })
+            vim.api.nvim_set_hl(0, "PokePixel_4_17", { fg = "#d6def1", bg = "#e2bd97" })
+            vim.api.nvim_set_hl(0, "PokePixel_4_18", { fg = "#ffffff", bg = "#e2bd97" })
+            vim.api.nvim_set_hl(0, "PokePixel_4_19", { fg = "#e2bd97", bg = "#e2bd97" })
+            vim.api.nvim_set_hl(0, "PokePixel_4_20", { fg = "#151323", bg = "#ffffff" })
+            vim.api.nvim_set_hl(0, "PokePixel_4_21", { fg = "#151323", bg = "#4571a2" })
+            vim.api.nvim_set_hl(0, "PokePixel_4_22", { fg = "#151323", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_4_23", { fg = "#151323", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_4_24", { fg = "#ff3593", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_4_25", { fg = "#ff3593", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_4_26", { fg = "#151323", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_4_27", { fg = "#151323", bg = "#443f5f" })
+            vim.api.nvim_set_hl(0, "PokePixel_4_28", { fg = "#443f5f", bg = "#ff3593" })
+            vim.api.nvim_set_hl(0, "PokePixel_4_29", { fg = "#443f5f", bg = "#ff3593" })
+            vim.api.nvim_set_hl(0, "PokePixel_4_30", { fg = "#151323", bg = "#443f5f" })
+            vim.api.nvim_set_hl(0, "PokePixel_4_31", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_6_6", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_6_7", { fg = "#151323", bg = "#ff3593" })
+            vim.api.nvim_set_hl(0, "PokePixel_6_8", { fg = "#151323", bg = "#ff3593" })
+            vim.api.nvim_set_hl(0, "PokePixel_6_9", { fg = "#443f5f", bg = "#ff3593" })
+            vim.api.nvim_set_hl(0, "PokePixel_6_10", { fg = "#6ee1cb", bg = "#443f5f" })
+            vim.api.nvim_set_hl(0, "PokePixel_6_11", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_6_12", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_6_13", { fg = "#443f5f", bg = "#443f5f" })
+            vim.api.nvim_set_hl(0, "PokePixel_6_14", { fg = "#6ee1cb", bg = "#4571a2" })
+            vim.api.nvim_set_hl(0, "PokePixel_6_15", { fg = "#4571a2", bg = "#ffffff" })
+            vim.api.nvim_set_hl(0, "PokePixel_6_16", { fg = "#e2bd97", bg = "#ffffff" })
+            vim.api.nvim_set_hl(0, "PokePixel_6_17", { fg = "#e2bd97", bg = "#ffffff" })
+            vim.api.nvim_set_hl(0, "PokePixel_6_18", { fg = "#e2bd97", bg = "#ffffff" })
+            vim.api.nvim_set_hl(0, "PokePixel_6_19", { fg = "#ffffff", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_6_20", { fg = "#151323", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_6_21", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_6_22", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_6_23", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_6_24", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_6_25", { fg = "#4571a2", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_6_26", { fg = "#6ee1cb", bg = "#4571a2" })
+            vim.api.nvim_set_hl(0, "PokePixel_6_27", { fg = "#443f5f", bg = "#443f5f" })
+            vim.api.nvim_set_hl(0, "PokePixel_6_28", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_6_29", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_6_30", { fg = "#6ee1cb", bg = "#443f5f" })
+            vim.api.nvim_set_hl(0, "PokePixel_6_31", { fg = "#443f5f", bg = "#ff3593" })
+            vim.api.nvim_set_hl(0, "PokePixel_6_32", { fg = "#151323", bg = "#ff3593" })
+            vim.api.nvim_set_hl(0, "PokePixel_6_33", { fg = "#151323", bg = "#ff3593" })
+            vim.api.nvim_set_hl(0, "PokePixel_6_34", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_8_6", { fg = "#151323", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_8_7", { fg = "#ff3593", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_8_8", { fg = "#151323", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_8_9", { fg = "#ff3593", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_8_10", { fg = "#443f5f", bg = "#443f5f" })
+            vim.api.nvim_set_hl(0, "PokePixel_8_11", { fg = "#443f5f", bg = "#443f5f" })
+            vim.api.nvim_set_hl(0, "PokePixel_8_12", { fg = "#443f5f", bg = "#443f5f" })
+            vim.api.nvim_set_hl(0, "PokePixel_8_13", { fg = "#4571a2", bg = "#443f5f" })
+            vim.api.nvim_set_hl(0, "PokePixel_8_14", { fg = "#8ef1e8", bg = "#443f5f" })
+            vim.api.nvim_set_hl(0, "PokePixel_8_15", { fg = "#151323", bg = "#8ef1e8" })
+            vim.api.nvim_set_hl(0, "PokePixel_8_16", { fg = "#151323", bg = "#8ef1e8" })
+            vim.api.nvim_set_hl(0, "PokePixel_8_17", { fg = "#151323", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_8_18", { fg = "#151323", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_8_19", { fg = "#6ee1cb", bg = "#8ef1e8" })
+            vim.api.nvim_set_hl(0, "PokePixel_8_20", { fg = "#6ee1cb", bg = "#8ef1e8" })
+            vim.api.nvim_set_hl(0, "PokePixel_8_21", { fg = "#6ee1cb", bg = "#8ef1e8" })
+            vim.api.nvim_set_hl(0, "PokePixel_8_22", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_8_23", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_8_24", { fg = "#6ee1cb", bg = "#8ef1e8" })
+            vim.api.nvim_set_hl(0, "PokePixel_8_25", { fg = "#6ee1cb", bg = "#8ef1e8" })
+            vim.api.nvim_set_hl(0, "PokePixel_8_26", { fg = "#8ef1e8", bg = "#443f5f" })
+            vim.api.nvim_set_hl(0, "PokePixel_8_27", { fg = "#4571a2", bg = "#443f5f" })
+            vim.api.nvim_set_hl(0, "PokePixel_8_28", { fg = "#443f5f", bg = "#443f5f" })
+            vim.api.nvim_set_hl(0, "PokePixel_8_29", { fg = "#443f5f", bg = "#443f5f" })
+            vim.api.nvim_set_hl(0, "PokePixel_8_30", { fg = "#443f5f", bg = "#443f5f" })
+            vim.api.nvim_set_hl(0, "PokePixel_8_31", { fg = "#ff3593", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_8_32", { fg = "#151323", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_8_33", { fg = "#ff3593", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_8_34", { fg = "#151323", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_10_5", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_10_6", { fg = "#151323", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_10_7", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_10_8", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_10_9", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_10_10", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_10_11", { fg = "#443f5f", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_10_12", { fg = "#443f5f", bg = "#4571a2" })
+            vim.api.nvim_set_hl(0, "PokePixel_10_13", { fg = "#443f5f", bg = "#8ef1e8" })
+            vim.api.nvim_set_hl(0, "PokePixel_10_14", { fg = "#443f5f", bg = "#8ef1e8" })
+            vim.api.nvim_set_hl(0, "PokePixel_10_15", { fg = "#8ef1e8", bg = "#8ef1e8" })
+            vim.api.nvim_set_hl(0, "PokePixel_10_16", { fg = "#8ef1e8", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_10_17", { fg = "#ffd4b3", bg = "#fcf4d7" })
+            vim.api.nvim_set_hl(0, "PokePixel_10_18", { fg = "#56b39e", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_10_19", { fg = "#8ef1e8", bg = "#8ef1e8" })
+            vim.api.nvim_set_hl(0, "PokePixel_10_20", { fg = "#8ef1e8", bg = "#8ef1e8" })
+            vim.api.nvim_set_hl(0, "PokePixel_10_21", { fg = "#8ef1e8", bg = "#8ef1e8" })
+            vim.api.nvim_set_hl(0, "PokePixel_10_22", { fg = "#ffd4b3", bg = "#fcf4d7" })
+            vim.api.nvim_set_hl(0, "PokePixel_10_23", { fg = "#56b39e", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_10_24", { fg = "#8ef1e8", bg = "#8ef1e8" })
+            vim.api.nvim_set_hl(0, "PokePixel_10_25", { fg = "#8ef1e8", bg = "#8ef1e8" })
+            vim.api.nvim_set_hl(0, "PokePixel_10_26", { fg = "#443f5f", bg = "#8ef1e8" })
+            vim.api.nvim_set_hl(0, "PokePixel_10_27", { fg = "#443f5f", bg = "#8ef1e8" })
+            vim.api.nvim_set_hl(0, "PokePixel_10_28", { fg = "#443f5f", bg = "#4571a2" })
+            vim.api.nvim_set_hl(0, "PokePixel_10_29", { fg = "#443f5f", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_10_30", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_10_31", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_10_32", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_10_33", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_10_34", { fg = "#151323", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_10_35", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_12_0", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_12_1", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_12_2", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_12_3", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_12_4", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_12_5", { fg = "#4571a2", bg = "#4571a2" })
+            vim.api.nvim_set_hl(0, "PokePixel_12_6", { fg = "#6ee1cb", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_12_7", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_12_8", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_12_9", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_12_10", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_12_11", { fg = "#6ee1cb", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_12_12", { fg = "#4571a2", bg = "#4571a2" })
+            vim.api.nvim_set_hl(0, "PokePixel_12_13", { fg = "#8ef1e8", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_12_14", { fg = "#8ef1e8", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_12_15", { fg = "#8ef1e8", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_12_16", { fg = "#56b39e", bg = "#ffd4b3" })
+            vim.api.nvim_set_hl(0, "PokePixel_12_17", { fg = "#6ee1cb", bg = "#ffd4b3" })
+            vim.api.nvim_set_hl(0, "PokePixel_12_18", { fg = "#fcf4d7", bg = "#fcf4d7" })
+            vim.api.nvim_set_hl(0, "PokePixel_12_19", { fg = "#6ee1cb", bg = "#fcf4d7" })
+            vim.api.nvim_set_hl(0, "PokePixel_12_20", { fg = "#8ef1e8", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_12_21", { fg = "#8ef1e8", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_12_22", { fg = "#6ee1cb", bg = "#ffd4b3" })
+            vim.api.nvim_set_hl(0, "PokePixel_12_23", { fg = "#6ee1cb", bg = "#ffd4b3" })
+            vim.api.nvim_set_hl(0, "PokePixel_12_24", { fg = "#56b39e", bg = "#fcf4d7" })
+            vim.api.nvim_set_hl(0, "PokePixel_12_25", { fg = "#8ef1e8", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_12_26", { fg = "#8ef1e8", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_12_27", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_12_28", { fg = "#4571a2", bg = "#4571a2" })
+            vim.api.nvim_set_hl(0, "PokePixel_12_29", { fg = "#6ee1cb", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_12_30", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_12_31", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_12_32", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_12_33", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_12_34", { fg = "#6ee1cb", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_12_35", { fg = "#4571a2", bg = "#4571a2" })
+            vim.api.nvim_set_hl(0, "PokePixel_14_0", { fg = "#151323", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_14_2", { fg = "#151323", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_14_3", { fg = "#151323", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_14_4", { fg = "#6ee1cb", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_14_5", { fg = "#4571a2", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_14_6", { fg = "#151323", bg = "#f1f1f1" })
+            vim.api.nvim_set_hl(0, "PokePixel_14_7", { fg = "#6ee1cb", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_14_8", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_14_9", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_14_10", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_14_11", { fg = "#56b39e", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_14_12", { fg = "#4571a2", bg = "#4571a2" })
+            vim.api.nvim_set_hl(0, "PokePixel_14_13", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_14_14", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_14_15", { fg = "#fcf4d7", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_14_16", { fg = "#151323", bg = "#ffffff" })
+            vim.api.nvim_set_hl(0, "PokePixel_14_17", { fg = "#151323", bg = "#4ea1b0" })
+            vim.api.nvim_set_hl(0, "PokePixel_14_18", { fg = "#fcf4d7", bg = "#fcf4d7" })
+            vim.api.nvim_set_hl(0, "PokePixel_14_19", { fg = "#fcf4d7", bg = "#fcf4d7" })
+            vim.api.nvim_set_hl(0, "PokePixel_14_20", { fg = "#fcf4d7", bg = "#fcf4d7" })
+            vim.api.nvim_set_hl(0, "PokePixel_14_21", { fg = "#fcf4d7", bg = "#fcf4d7" })
+            vim.api.nvim_set_hl(0, "PokePixel_14_22", { fg = "#151323", bg = "#4ea1b0" })
+            vim.api.nvim_set_hl(0, "PokePixel_14_23", { fg = "#151323", bg = "#ffffff" })
+            vim.api.nvim_set_hl(0, "PokePixel_14_24", { fg = "#fcf4d7", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_14_25", { fg = "#fcf4d7", bg = "#fcf4d7" })
+            vim.api.nvim_set_hl(0, "PokePixel_14_26", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_14_27", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_14_28", { fg = "#4571a2", bg = "#4571a2" })
+            vim.api.nvim_set_hl(0, "PokePixel_14_29", { fg = "#56b39e", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_14_30", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_14_31", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_14_32", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_14_33", { fg = "#6ee1cb", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_14_34", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_14_35", { fg = "#4571a2", bg = "#4571a2" })
+            vim.api.nvim_set_hl(0, "PokePixel_16_1", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_16_2", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_16_3", { fg = "#151323", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_16_4", { fg = "#6ee1cb", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_16_5", { fg = "#151323", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_16_6", { fg = "#151323", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_16_7", { fg = "#f1f1f1", bg = "#4571a2" })
+            vim.api.nvim_set_hl(0, "PokePixel_16_8", { fg = "#151323", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_16_9", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_16_10", { fg = "#56b39e", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_16_11", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_16_12", { fg = "#4571a2", bg = "#4571a2" })
+            vim.api.nvim_set_hl(0, "PokePixel_16_13", { fg = "#6ee1cb", bg = "#4571a2" })
+            vim.api.nvim_set_hl(0, "PokePixel_16_14", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_16_15", { fg = "#ffd4b3", bg = "#ffd4b3" })
+            vim.api.nvim_set_hl(0, "PokePixel_16_16", { fg = "#8ef1e8", bg = "#ffd4b3" })
+            vim.api.nvim_set_hl(0, "PokePixel_16_17", { fg = "#4ea1b0", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_16_18", { fg = "#fcf4d7", bg = "#fcf4d7" })
+            vim.api.nvim_set_hl(0, "PokePixel_16_19", { fg = "#fcf4d7", bg = "#fcf4d7" })
+            vim.api.nvim_set_hl(0, "PokePixel_16_20", { fg = "#fcf4d7", bg = "#ffd4b3" })
+            vim.api.nvim_set_hl(0, "PokePixel_16_21", { fg = "#fcf4d7", bg = "#fcf4d7" })
+            vim.api.nvim_set_hl(0, "PokePixel_16_22", { fg = "#4ea1b0", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_16_23", { fg = "#8ef1e8", bg = "#ff3593" })
+            vim.api.nvim_set_hl(0, "PokePixel_16_24", { fg = "#fcf4d7", bg = "#ffd4b3" })
+            vim.api.nvim_set_hl(0, "PokePixel_16_25", { fg = "#ffd4b3", bg = "#ffd4b3" })
+            vim.api.nvim_set_hl(0, "PokePixel_16_26", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_16_27", { fg = "#6ee1cb", bg = "#4571a2" })
+            vim.api.nvim_set_hl(0, "PokePixel_16_28", { fg = "#4571a2", bg = "#4571a2" })
+            vim.api.nvim_set_hl(0, "PokePixel_16_29", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_16_30", { fg = "#56b39e", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_16_31", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_16_32", { fg = "#151323", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_16_33", { fg = "#4571a2" })
+            vim.api.nvim_set_hl(0, "PokePixel_16_34", { fg = "#4571a2" })
+            vim.api.nvim_set_hl(0, "PokePixel_18_3", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_18_4", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_18_5", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_18_6", { fg = "#151323", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_18_7", { fg = "#151323", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_18_8", { fg = "#151323", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_18_9", { fg = "#56b39e", bg = "#ff3593" })
+            vim.api.nvim_set_hl(0, "PokePixel_18_10", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_18_11", { fg = "#6ee1cb", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_18_12", { fg = "#4571a2", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_18_13", { fg = "#151323", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_18_14", { fg = "#6ee1cb", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_18_15", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_18_16", { fg = "#ea9b83", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_18_17", { fg = "#ffd4b3", bg = "#ea9b83" })
+            vim.api.nvim_set_hl(0, "PokePixel_18_18", { fg = "#fcf4d7", bg = "#ea9b83" })
+            vim.api.nvim_set_hl(0, "PokePixel_18_19", { fg = "#fcf4d7", bg = "#ea9b83" })
+            vim.api.nvim_set_hl(0, "PokePixel_18_20", { fg = "#fcf4d7", bg = "#ea9b83" })
+            vim.api.nvim_set_hl(0, "PokePixel_18_21", { fg = "#fcf4d7", bg = "#ea9b83" })
+            vim.api.nvim_set_hl(0, "PokePixel_18_22", { fg = "#fcf4d7", bg = "#ea9b83" })
+            vim.api.nvim_set_hl(0, "PokePixel_18_23", { fg = "#ffd4b3", bg = "#ea9b83" })
+            vim.api.nvim_set_hl(0, "PokePixel_18_24", { fg = "#ea9b83", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_18_25", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_18_26", { fg = "#6ee1cb", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_18_27", { fg = "#151323", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_18_28", { fg = "#4571a2", bg = "#4571a2" })
+            vim.api.nvim_set_hl(0, "PokePixel_18_29", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_18_30", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_18_31", { fg = "#56b39e", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_18_32", { fg = "#151323", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_18_33", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_20_5", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_20_6", { fg = "#151323", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_20_7", { fg = "#151323", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_20_8", { fg = "#151323", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_20_9", { fg = "#ff3593", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_20_10", { fg = "#151323", bg = "#ffffff" })
+            vim.api.nvim_set_hl(0, "PokePixel_20_11", { fg = "#ffffff", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_20_12", { fg = "#443f5f", bg = "#443f5f" })
+            vim.api.nvim_set_hl(0, "PokePixel_20_13", { fg = "#56b39e", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_20_14", { fg = "#fcf4d7", bg = "#fcf4d7" })
+            vim.api.nvim_set_hl(0, "PokePixel_20_15", { fg = "#151323", bg = "#fcf4d7" })
+            vim.api.nvim_set_hl(0, "PokePixel_20_16", { fg = "#151323", bg = "#fcf4d7" })
+            vim.api.nvim_set_hl(0, "PokePixel_20_17", { fg = "#ffffff", bg = "#9893b2" })
+            vim.api.nvim_set_hl(0, "PokePixel_20_18", { fg = "#d6def1", bg = "#9893b2" })
+            vim.api.nvim_set_hl(0, "PokePixel_20_19", { fg = "#443f5f", bg = "#ff3593" })
+            vim.api.nvim_set_hl(0, "PokePixel_20_20", { fg = "#443f5f", bg = "#ff3593" })
+            vim.api.nvim_set_hl(0, "PokePixel_20_21", { fg = "#443f5f", bg = "#ff3593" })
+            vim.api.nvim_set_hl(0, "PokePixel_20_22", { fg = "#d6def1", bg = "#9893b2" })
+            vim.api.nvim_set_hl(0, "PokePixel_20_23", { fg = "#ffffff", bg = "#9893b2" })
+            vim.api.nvim_set_hl(0, "PokePixel_20_24", { fg = "#56b39e", bg = "#fcf4d7" })
+            vim.api.nvim_set_hl(0, "PokePixel_20_25", { fg = "#151323", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_20_27", { fg = "#151323", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_20_28", { fg = "#56b39e", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_20_29", { fg = "#4571a2", bg = "#4571a2" })
+            vim.api.nvim_set_hl(0, "PokePixel_20_30", { fg = "#6ee1cb", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_20_31", { fg = "#d8fbf7", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_20_32", { fg = "#6ee1cb", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_20_33", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_20_34", { fg = "#151323", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_20_35", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_22_2", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_22_3", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_22_5", { fg = "#151323", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_22_6", { fg = "#6ee1cb", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_22_7", { fg = "#d8fbf7", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_22_8", { fg = "#6ee1cb", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_22_9", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_22_10", { fg = "#151323", bg = "#4571a2" })
+            vim.api.nvim_set_hl(0, "PokePixel_22_11", { fg = "#ffffff", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_22_12", { fg = "#151323", bg = "#ffffff" })
+            vim.api.nvim_set_hl(0, "PokePixel_22_13", { fg = "#fcf4d7", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_22_14", { fg = "#fcf4d7", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_22_15", { fg = "#ffffff", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_22_16", { fg = "#ffffff", bg = "#ffffff" })
+            vim.api.nvim_set_hl(0, "PokePixel_22_17", { fg = "#ffffff", bg = "#443f5f" })
+            vim.api.nvim_set_hl(0, "PokePixel_22_18", { fg = "#443f5f", bg = "#443f5f" })
+            vim.api.nvim_set_hl(0, "PokePixel_22_19", { fg = "#fcf4d7", bg = "#d6def1" })
+            vim.api.nvim_set_hl(0, "PokePixel_22_20", { fg = "#fcf4d7", bg = "#d6def1" })
+            vim.api.nvim_set_hl(0, "PokePixel_22_21", { fg = "#fcf4d7", bg = "#d6def1" })
+            vim.api.nvim_set_hl(0, "PokePixel_22_22", { fg = "#443f5f", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_22_23", { fg = "#151323", bg = "#ffffff" })
+            vim.api.nvim_set_hl(0, "PokePixel_22_24", { fg = "#151323", bg = "#ffffff" })
+            vim.api.nvim_set_hl(0, "PokePixel_22_25", { fg = "#151323", bg = "#443f5f" })
+            vim.api.nvim_set_hl(0, "PokePixel_22_26", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_22_27", { fg = "#151323", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_22_28", { fg = "#56b39e", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_22_29", { fg = "#56b39e", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_22_30", { fg = "#4571a2", bg = "#4571a2" })
+            vim.api.nvim_set_hl(0, "PokePixel_22_31", { fg = "#d8fbf7", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_22_32", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_22_33", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_22_34", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_22_35", { fg = "#151323", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_22_37", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_22_38", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_24_0", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_24_1", { fg = "#151323", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_24_2", { fg = "#d8fbf7", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_24_3", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_24_6", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_24_7", { fg = "#d8fbf7", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_24_8", { fg = "#6ee1cb", bg = "#4571a2" })
+            vim.api.nvim_set_hl(0, "PokePixel_24_9", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_24_10", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_24_11", { fg = "#4571a2", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_24_12", { fg = "#4571a2", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_24_13", { fg = "#151323", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_24_16", { fg = "#151323", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_24_17", { fg = "#151323", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_24_18", { fg = "#443f5f", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_24_19", { fg = "#443f5f", bg = "#443f5f" })
+            vim.api.nvim_set_hl(0, "PokePixel_24_20", { fg = "#ffffff", bg = "#e2bd97" })
+            vim.api.nvim_set_hl(0, "PokePixel_24_21", { fg = "#443f5f", bg = "#443f5f" })
+            vim.api.nvim_set_hl(0, "PokePixel_24_22", { fg = "#151323", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_24_23", { fg = "#ffffff", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_24_24", { fg = "#ffffff", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_24_25", { fg = "#443f5f", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_24_26", { fg = "#443f5f", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_24_27", { fg = "#151323", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_24_28", { fg = "#4571a2", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_24_29", { fg = "#4571a2", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_24_30", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_24_31", { fg = "#6ee1cb", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_24_32", { fg = "#6ee1cb", bg = "#4571a2" })
+            vim.api.nvim_set_hl(0, "PokePixel_24_33", { fg = "#d8fbf7", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_24_34", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_24_37", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_24_38", { fg = "#d8fbf7", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_24_39", { fg = "#151323", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_24_40", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_0", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_1", { fg = "#d8fbf7", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_2", { fg = "#151323", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_3", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_4", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_5", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_6", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_7", { fg = "#151323", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_8", { fg = "#8ef1e8", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_9", { fg = "#4571a2", bg = "#8ef1e8" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_10", { fg = "#4571a2", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_11", { fg = "#4571a2", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_12", { fg = "#6ee1cb", bg = "#4571a2" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_13", { fg = "#151323", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_14", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_15", { fg = "#443f5f", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_16", { fg = "#443f5f", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_17", { fg = "#443f5f", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_18", { fg = "#6ee1cb", bg = "#443f5f" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_19", { fg = "#6ee1cb", bg = "#443f5f" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_20", { fg = "#6ee1cb", bg = "#e2bd97" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_21", { fg = "#6ee1cb", bg = "#443f5f" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_22", { fg = "#6ee1cb", bg = "#443f5f" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_23", { fg = "#443f5f", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_24", { fg = "#443f5f", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_25", { fg = "#443f5f", bg = "#f1f1f1" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_26", { fg = "#f1f1f1", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_27", { fg = "#151323", bg = "#6ee1cb" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_28", { fg = "#6ee1cb", bg = "#4571a2" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_29", { fg = "#4571a2", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_30", { fg = "#4571a2", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_31", { fg = "#4571a2", bg = "#8ef1e8" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_32", { fg = "#8ef1e8", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_33", { fg = "#151323", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_34", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_35", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_36", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_37", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_38", { fg = "#151323", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_39", { fg = "#d8fbf7", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_26_40", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_0", { fg = "#151323", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_1", { fg = "#d8fbf7", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_2", { fg = "#d8fbf7", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_3", { fg = "#6ee1cb", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_4", { fg = "#6ee1cb", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_5", { fg = "#6ee1cb", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_6", { fg = "#d8fbf7", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_7", { fg = "#d8fbf7", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_8", { fg = "#d8fbf7", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_9", { fg = "#8ef1e8", bg = "#8ef1e8" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_10", { fg = "#8ef1e8", bg = "#8ef1e8" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_11", { fg = "#56b39e", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_12", { fg = "#56b39e", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_13", { fg = "#4571a2", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_14", { fg = "#151323", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_15", { fg = "#151323", bg = "#ffffff" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_16", { fg = "#d6def1", bg = "#d6def1" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_17", { fg = "#d6def1", bg = "#ffffff" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_18", { fg = "#443f5f", bg = "#d6def1" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_19", { fg = "#d6def1", bg = "#ffffff" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_20", { fg = "#ffffff", bg = "#d6def1" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_21", { fg = "#d6def1", bg = "#ffffff" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_22", { fg = "#443f5f", bg = "#d6def1" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_23", { fg = "#d6def1", bg = "#ffffff" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_24", { fg = "#d6def1", bg = "#d6def1" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_25", { fg = "#d6def1", bg = "#ffffff" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_26", { fg = "#151323", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_27", { fg = "#4571a2", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_28", { fg = "#56b39e", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_29", { fg = "#56b39e", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_30", { fg = "#8ef1e8", bg = "#8ef1e8" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_31", { fg = "#8ef1e8", bg = "#8ef1e8" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_32", { fg = "#d8fbf7", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_33", { fg = "#d8fbf7", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_34", { fg = "#d8fbf7", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_35", { fg = "#6ee1cb", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_36", { fg = "#6ee1cb", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_37", { fg = "#6ee1cb", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_38", { fg = "#d8fbf7", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_39", { fg = "#d8fbf7", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_28_40", { fg = "#151323", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_0", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_1", { fg = "#d8fbf7", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_2", { fg = "#d8fbf7", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_3", { fg = "#d8fbf7", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_4", { fg = "#d8fbf7", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_5", { fg = "#d8fbf7", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_6", { fg = "#d8fbf7", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_7", { fg = "#d8fbf7", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_8", { fg = "#d8fbf7", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_9", { fg = "#8ef1e8", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_10", { fg = "#8ef1e8", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_11", { fg = "#56b39e", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_12", { fg = "#56b39e", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_13", { fg = "#56b39e", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_14", { fg = "#151323", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_15", { fg = "#f1f1f1" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_16", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_17", { fg = "#fcf4d7", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_18", { fg = "#fcf4d7", bg = "#443f5f" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_19", { fg = "#151323", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_21", { fg = "#151323", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_22", { fg = "#fcf4d7", bg = "#443f5f" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_23", { fg = "#fcf4d7", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_24", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_25", { fg = "#f1f1f1" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_26", { fg = "#151323", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_27", { fg = "#56b39e", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_28", { fg = "#56b39e", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_29", { fg = "#56b39e", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_30", { fg = "#8ef1e8", bg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_31", { fg = "#8ef1e8", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_32", { fg = "#d8fbf7", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_33", { fg = "#d8fbf7", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_34", { fg = "#d8fbf7", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_35", { fg = "#d8fbf7", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_36", { fg = "#d8fbf7", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_37", { fg = "#d8fbf7", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_38", { fg = "#d8fbf7", bg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_39", { fg = "#d8fbf7", bg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_30_40", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_32_2", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_32_3", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_32_4", { fg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_32_5", { fg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_32_6", { fg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_32_7", { fg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_32_8", { fg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_32_9", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_32_10", { fg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_32_11", { fg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_32_12", { fg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_32_13", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_32_17", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_32_18", { fg = "#ffffff" })
+            vim.api.nvim_set_hl(0, "PokePixel_32_19", { fg = "#ffffff" })
+            vim.api.nvim_set_hl(0, "PokePixel_32_20", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_32_21", { fg = "#443f5f" })
+            vim.api.nvim_set_hl(0, "PokePixel_32_22", { fg = "#443f5f" })
+            vim.api.nvim_set_hl(0, "PokePixel_32_23", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_32_27", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_32_28", { fg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_32_29", { fg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_32_30", { fg = "#56b39e" })
+            vim.api.nvim_set_hl(0, "PokePixel_32_31", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_32_32", { fg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_32_33", { fg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_32_34", { fg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_32_35", { fg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_32_36", { fg = "#d8fbf7" })
+            vim.api.nvim_set_hl(0, "PokePixel_32_37", { fg = "#151323" })
+            vim.api.nvim_set_hl(0, "PokePixel_32_38", { fg = "#151323" })
+        end
+
         local hl = {
             {
-                { "Pixel_0_18", 18, 19 },
-                { "Pixel_0_19", 19, 20 },
-                { "Pixel_0_20", 20, 21 },
-                { "Pixel_0_21", 21, 22 },
-                { "Pixel_0_22", 22, 23 },
-                { "Pixel_0_23", 23, 24 },
-                { "Pixel_0_24", 24, 25 },
-                { "Pixel_0_25", 25, 26 },
-                { "Pixel_0_26", 26, 27 },
-                { "Pixel_0_27", 27, 28 },
-                { "Pixel_0_28", 28, 29 },
-                { "Pixel_0_29", 29, 30 },
+                { "PokePixel_0_12", 12, 13 },
+                { "PokePixel_0_13", 13, 14 },
+                { "PokePixel_0_14", 14, 15 },
+                { "PokePixel_0_15", 15, 16 },
+                { "PokePixel_0_25", 25, 26 },
+                { "PokePixel_0_26", 26, 27 },
+                { "PokePixel_0_27", 27, 28 },
+                { "PokePixel_0_28", 28, 29 },
             },
             {
-                { "Pixel_1_16", 16, 17 },
-                { "Pixel_1_17", 17, 18 },
-                { "Pixel_1_18", 18, 19 },
-                { "Pixel_1_19", 19, 20 },
-                { "Pixel_1_20", 20, 21 },
-                { "Pixel_1_21", 21, 22 },
-                { "Pixel_1_22", 22, 23 },
-                { "Pixel_1_23", 23, 24 },
-                { "Pixel_1_24", 24, 25 },
-                { "Pixel_1_25", 25, 26 },
-                { "Pixel_1_26", 26, 27 },
-                { "Pixel_1_27", 27, 28 },
-                { "Pixel_1_28", 28, 29 },
-                { "Pixel_1_29", 29, 30 },
-                { "Pixel_1_30", 30, 31 },
-                { "Pixel_1_31", 31, 32 },
+                { "PokePixel_2_11", 11, 12 },
+                { "PokePixel_2_12", 12, 13 },
+                { "PokePixel_2_13", 13, 14 },
+                { "PokePixel_2_14", 14, 15 },
+                { "PokePixel_2_15", 15, 16 },
+                { "PokePixel_2_16", 16, 17 },
+                { "PokePixel_2_17", 17, 18 },
+                { "PokePixel_2_18", 18, 19 },
+                { "PokePixel_2_19", 19, 20 },
+                { "PokePixel_2_24", 24, 25 },
+                { "PokePixel_2_25", 25, 26 },
+                { "PokePixel_2_26", 26, 27 },
+                { "PokePixel_2_27", 27, 28 },
+                { "PokePixel_2_28", 28, 29 },
+                { "PokePixel_2_29", 29, 30 },
             },
             {
-                { "Pixel_2_15", 15, 16 },
-                { "Pixel_2_16", 16, 17 },
-                { "Pixel_2_17", 17, 18 },
-                { "Pixel_2_18", 18, 19 },
-                { "Pixel_2_19", 19, 20 },
-                { "Pixel_2_20", 20, 21 },
-                { "Pixel_2_21", 21, 22 },
-                { "Pixel_2_22", 22, 23 },
-                { "Pixel_2_23", 23, 24 },
-                { "Pixel_2_24", 24, 25 },
-                { "Pixel_2_25", 25, 26 },
-                { "Pixel_2_26", 26, 27 },
-                { "Pixel_2_27", 27, 28 },
-                { "Pixel_2_28", 28, 29 },
-                { "Pixel_2_29", 29, 30 },
-                { "Pixel_2_30", 30, 31 },
-                { "Pixel_2_31", 31, 32 },
-                { "Pixel_2_32", 32, 33 },
+                { "PokePixel_4_9", 9, 10 },
+                { "PokePixel_4_10", 10, 11 },
+                { "PokePixel_4_11", 11, 12 },
+                { "PokePixel_4_12", 12, 13 },
+                { "PokePixel_4_13", 13, 14 },
+                { "PokePixel_4_14", 14, 15 },
+                { "PokePixel_4_15", 15, 16 },
+                { "PokePixel_4_16", 16, 17 },
+                { "PokePixel_4_17", 17, 18 },
+                { "PokePixel_4_18", 18, 19 },
+                { "PokePixel_4_19", 19, 20 },
+                { "PokePixel_4_20", 20, 21 },
+                { "PokePixel_4_21", 21, 22 },
+                { "PokePixel_4_22", 22, 23 },
+                { "PokePixel_4_23", 23, 24 },
+                { "PokePixel_4_24", 24, 25 },
+                { "PokePixel_4_25", 25, 26 },
+                { "PokePixel_4_26", 26, 27 },
+                { "PokePixel_4_27", 27, 28 },
+                { "PokePixel_4_28", 28, 29 },
+                { "PokePixel_4_29", 29, 30 },
+                { "PokePixel_4_30", 30, 31 },
+                { "PokePixel_4_31", 31, 32 },
             },
             {
-                { "Pixel_3_13", 13, 14 },
-                { "Pixel_3_14", 14, 15 },
-                { "Pixel_3_15", 15, 16 },
-                { "Pixel_3_16", 16, 17 },
-                { "Pixel_3_17", 17, 18 },
-                { "Pixel_3_18", 18, 19 },
-                { "Pixel_3_19", 19, 20 },
-                { "Pixel_3_20", 20, 21 },
-                { "Pixel_3_21", 21, 22 },
-                { "Pixel_3_22", 22, 23 },
-                { "Pixel_3_23", 23, 24 },
-                { "Pixel_3_24", 24, 25 },
-                { "Pixel_3_25", 25, 26 },
-                { "Pixel_3_26", 26, 27 },
-                { "Pixel_3_27", 27, 28 },
-                { "Pixel_3_28", 28, 29 },
-                { "Pixel_3_29", 29, 30 },
-                { "Pixel_3_30", 30, 31 },
-                { "Pixel_3_31", 31, 32 },
-                { "Pixel_3_32", 32, 33 },
+                { "PokePixel_6_6", 6, 7 },
+                { "PokePixel_6_7", 7, 8 },
+                { "PokePixel_6_8", 8, 9 },
+                { "PokePixel_6_9", 9, 10 },
+                { "PokePixel_6_10", 10, 11 },
+                { "PokePixel_6_11", 11, 12 },
+                { "PokePixel_6_12", 12, 13 },
+                { "PokePixel_6_13", 13, 14 },
+                { "PokePixel_6_14", 14, 15 },
+                { "PokePixel_6_15", 15, 16 },
+                { "PokePixel_6_16", 16, 17 },
+                { "PokePixel_6_17", 17, 18 },
+                { "PokePixel_6_18", 18, 19 },
+                { "PokePixel_6_19", 19, 20 },
+                { "PokePixel_6_20", 20, 21 },
+                { "PokePixel_6_21", 21, 22 },
+                { "PokePixel_6_22", 22, 23 },
+                { "PokePixel_6_23", 23, 24 },
+                { "PokePixel_6_24", 24, 25 },
+                { "PokePixel_6_25", 25, 26 },
+                { "PokePixel_6_26", 26, 27 },
+                { "PokePixel_6_27", 27, 28 },
+                { "PokePixel_6_28", 28, 29 },
+                { "PokePixel_6_29", 29, 30 },
+                { "PokePixel_6_30", 30, 31 },
+                { "PokePixel_6_31", 31, 32 },
+                { "PokePixel_6_32", 32, 33 },
+                { "PokePixel_6_33", 33, 34 },
+                { "PokePixel_6_34", 34, 35 },
             },
             {
-                { "Pixel_4_12", 12, 13 },
-                { "Pixel_4_13", 13, 14 },
-                { "Pixel_4_14", 14, 15 },
-                { "Pixel_4_15", 15, 16 },
-                { "Pixel_4_16", 16, 17 },
-                { "Pixel_4_17", 17, 18 },
-                { "Pixel_4_18", 18, 19 },
-                { "Pixel_4_19", 19, 20 },
-                { "Pixel_4_20", 20, 21 },
-                { "Pixel_4_21", 21, 22 },
-                { "Pixel_4_22", 22, 23 },
-                { "Pixel_4_23", 23, 24 },
-                { "Pixel_4_24", 24, 25 },
-                { "Pixel_4_25", 25, 26 },
-                { "Pixel_4_26", 26, 27 },
-                { "Pixel_4_27", 27, 28 },
-                { "Pixel_4_28", 28, 29 },
-                { "Pixel_4_29", 29, 30 },
-                { "Pixel_4_30", 30, 31 },
-                { "Pixel_4_31", 31, 32 },
-                { "Pixel_4_32", 32, 33 },
-                { "Pixel_4_33", 33, 34 },
+                { "PokePixel_8_6", 6, 7 },
+                { "PokePixel_8_7", 7, 8 },
+                { "PokePixel_8_8", 8, 9 },
+                { "PokePixel_8_9", 9, 10 },
+                { "PokePixel_8_10", 10, 11 },
+                { "PokePixel_8_11", 11, 12 },
+                { "PokePixel_8_12", 12, 13 },
+                { "PokePixel_8_13", 13, 14 },
+                { "PokePixel_8_14", 14, 15 },
+                { "PokePixel_8_15", 15, 16 },
+                { "PokePixel_8_16", 16, 17 },
+                { "PokePixel_8_17", 17, 18 },
+                { "PokePixel_8_18", 18, 19 },
+                { "PokePixel_8_19", 19, 20 },
+                { "PokePixel_8_20", 20, 21 },
+                { "PokePixel_8_21", 21, 22 },
+                { "PokePixel_8_22", 22, 23 },
+                { "PokePixel_8_23", 23, 24 },
+                { "PokePixel_8_24", 24, 25 },
+                { "PokePixel_8_25", 25, 26 },
+                { "PokePixel_8_26", 26, 27 },
+                { "PokePixel_8_27", 27, 28 },
+                { "PokePixel_8_28", 28, 29 },
+                { "PokePixel_8_29", 29, 30 },
+                { "PokePixel_8_30", 30, 31 },
+                { "PokePixel_8_31", 31, 32 },
+                { "PokePixel_8_32", 32, 33 },
+                { "PokePixel_8_33", 33, 34 },
+                { "PokePixel_8_34", 34, 35 },
             },
             {
-                { "Pixel_5_11", 11, 12 },
-                { "Pixel_5_12", 12, 13 },
-                { "Pixel_5_13", 13, 14 },
-                { "Pixel_5_14", 14, 15 },
-                { "Pixel_5_15", 15, 16 },
-                { "Pixel_5_16", 16, 17 },
-                { "Pixel_5_17", 17, 18 },
-                { "Pixel_5_18", 18, 19 },
-                { "Pixel_5_19", 19, 20 },
-                { "Pixel_5_20", 20, 21 },
-                { "Pixel_5_21", 21, 22 },
-                { "Pixel_5_22", 22, 23 },
-                { "Pixel_5_23", 23, 24 },
-                { "Pixel_5_24", 24, 25 },
-                { "Pixel_5_25", 25, 26 },
-                { "Pixel_5_26", 26, 27 },
-                { "Pixel_5_27", 27, 28 },
-                { "Pixel_5_28", 28, 29 },
-                { "Pixel_5_29", 29, 30 },
-                { "Pixel_5_30", 30, 31 },
-                { "Pixel_5_31", 31, 32 },
-                { "Pixel_5_32", 32, 33 },
-                { "Pixel_5_33", 33, 34 },
-                { "Pixel_5_34", 34, 35 },
+                { "PokePixel_10_5", 5, 6 },
+                { "PokePixel_10_6", 6, 7 },
+                { "PokePixel_10_7", 7, 8 },
+                { "PokePixel_10_8", 8, 9 },
+                { "PokePixel_10_9", 9, 10 },
+                { "PokePixel_10_10", 10, 11 },
+                { "PokePixel_10_11", 11, 12 },
+                { "PokePixel_10_12", 12, 13 },
+                { "PokePixel_10_13", 13, 14 },
+                { "PokePixel_10_14", 14, 15 },
+                { "PokePixel_10_15", 15, 16 },
+                { "PokePixel_10_16", 16, 17 },
+                { "PokePixel_10_17", 17, 18 },
+                { "PokePixel_10_18", 18, 19 },
+                { "PokePixel_10_19", 19, 20 },
+                { "PokePixel_10_20", 20, 21 },
+                { "PokePixel_10_21", 21, 22 },
+                { "PokePixel_10_22", 22, 23 },
+                { "PokePixel_10_23", 23, 24 },
+                { "PokePixel_10_24", 24, 25 },
+                { "PokePixel_10_25", 25, 26 },
+                { "PokePixel_10_26", 26, 27 },
+                { "PokePixel_10_27", 27, 28 },
+                { "PokePixel_10_28", 28, 29 },
+                { "PokePixel_10_29", 29, 30 },
+                { "PokePixel_10_30", 30, 31 },
+                { "PokePixel_10_31", 31, 32 },
+                { "PokePixel_10_32", 32, 33 },
+                { "PokePixel_10_33", 33, 34 },
+                { "PokePixel_10_34", 34, 35 },
+                { "PokePixel_10_35", 35, 36 },
             },
             {
-                { "Pixel_6_10", 10, 11 },
-                { "Pixel_6_11", 11, 12 },
-                { "Pixel_6_12", 12, 13 },
-                { "Pixel_6_13", 13, 14 },
-                { "Pixel_6_14", 14, 15 },
-                { "Pixel_6_15", 15, 16 },
-                { "Pixel_6_16", 16, 17 },
-                { "Pixel_6_17", 17, 18 },
-                { "Pixel_6_18", 18, 19 },
-                { "Pixel_6_19", 19, 20 },
-                { "Pixel_6_20", 20, 21 },
-                { "Pixel_6_21", 21, 22 },
-                { "Pixel_6_22", 22, 23 },
-                { "Pixel_6_23", 23, 24 },
-                { "Pixel_6_24", 24, 25 },
-                { "Pixel_6_25", 25, 26 },
-                { "Pixel_6_26", 26, 27 },
-                { "Pixel_6_27", 27, 28 },
-                { "Pixel_6_28", 28, 29 },
-                { "Pixel_6_29", 29, 30 },
-                { "Pixel_6_30", 30, 31 },
-                { "Pixel_6_31", 31, 32 },
-                { "Pixel_6_32", 32, 33 },
-                { "Pixel_6_33", 33, 34 },
-                { "Pixel_6_34", 34, 35 },
-                { "Pixel_6_35", 35, 36 },
+                { "PokePixel_12_0", 0, 1 },
+                { "PokePixel_12_1", 1, 2 },
+                { "PokePixel_12_2", 2, 3 },
+                { "PokePixel_12_3", 3, 4 },
+                { "PokePixel_12_4", 4, 5 },
+                { "PokePixel_12_5", 5, 6 },
+                { "PokePixel_12_6", 6, 7 },
+                { "PokePixel_12_7", 7, 8 },
+                { "PokePixel_12_8", 8, 9 },
+                { "PokePixel_12_9", 9, 10 },
+                { "PokePixel_12_10", 10, 11 },
+                { "PokePixel_12_11", 11, 12 },
+                { "PokePixel_12_12", 12, 13 },
+                { "PokePixel_12_13", 13, 14 },
+                { "PokePixel_12_14", 14, 15 },
+                { "PokePixel_12_15", 15, 16 },
+                { "PokePixel_12_16", 16, 17 },
+                { "PokePixel_12_17", 17, 18 },
+                { "PokePixel_12_18", 18, 19 },
+                { "PokePixel_12_19", 19, 20 },
+                { "PokePixel_12_20", 20, 21 },
+                { "PokePixel_12_21", 21, 22 },
+                { "PokePixel_12_22", 22, 23 },
+                { "PokePixel_12_23", 23, 24 },
+                { "PokePixel_12_24", 24, 25 },
+                { "PokePixel_12_25", 25, 26 },
+                { "PokePixel_12_26", 26, 27 },
+                { "PokePixel_12_27", 27, 28 },
+                { "PokePixel_12_28", 28, 29 },
+                { "PokePixel_12_29", 29, 30 },
+                { "PokePixel_12_30", 30, 31 },
+                { "PokePixel_12_31", 31, 32 },
+                { "PokePixel_12_32", 32, 33 },
+                { "PokePixel_12_33", 33, 34 },
+                { "PokePixel_12_34", 34, 35 },
+                { "PokePixel_12_35", 35, 36 },
             },
             {
-                { "Pixel_7_10", 10, 11 },
-                { "Pixel_7_11", 11, 12 },
-                { "Pixel_7_12", 12, 13 },
-                { "Pixel_7_13", 13, 14 },
-                { "Pixel_7_14", 14, 15 },
-                { "Pixel_7_15", 15, 16 },
-                { "Pixel_7_16", 16, 17 },
-                { "Pixel_7_17", 17, 18 },
-                { "Pixel_7_18", 18, 19 },
-                { "Pixel_7_19", 19, 20 },
-                { "Pixel_7_20", 20, 21 },
-                { "Pixel_7_21", 21, 22 },
-                { "Pixel_7_22", 22, 23 },
-                { "Pixel_7_23", 23, 24 },
-                { "Pixel_7_24", 24, 25 },
-                { "Pixel_7_25", 25, 26 },
-                { "Pixel_7_26", 26, 27 },
-                { "Pixel_7_27", 27, 28 },
-                { "Pixel_7_28", 28, 29 },
-                { "Pixel_7_29", 29, 30 },
-                { "Pixel_7_30", 30, 31 },
-                { "Pixel_7_31", 31, 32 },
-                { "Pixel_7_32", 32, 33 },
-                { "Pixel_7_33", 33, 34 },
-                { "Pixel_7_34", 34, 35 },
-                { "Pixel_7_35", 35, 36 },
-                { "Pixel_7_36", 36, 37 },
+                { "PokePixel_14_0", 0, 1 },
+                { "PokePixel_14_2", 2, 3 },
+                { "PokePixel_14_3", 3, 4 },
+                { "PokePixel_14_4", 4, 5 },
+                { "PokePixel_14_5", 5, 6 },
+                { "PokePixel_14_6", 6, 7 },
+                { "PokePixel_14_7", 7, 8 },
+                { "PokePixel_14_8", 8, 9 },
+                { "PokePixel_14_9", 9, 10 },
+                { "PokePixel_14_10", 10, 11 },
+                { "PokePixel_14_11", 11, 12 },
+                { "PokePixel_14_12", 12, 13 },
+                { "PokePixel_14_13", 13, 14 },
+                { "PokePixel_14_14", 14, 15 },
+                { "PokePixel_14_15", 15, 16 },
+                { "PokePixel_14_16", 16, 17 },
+                { "PokePixel_14_17", 17, 18 },
+                { "PokePixel_14_18", 18, 19 },
+                { "PokePixel_14_19", 19, 20 },
+                { "PokePixel_14_20", 20, 21 },
+                { "PokePixel_14_21", 21, 22 },
+                { "PokePixel_14_22", 22, 23 },
+                { "PokePixel_14_23", 23, 24 },
+                { "PokePixel_14_24", 24, 25 },
+                { "PokePixel_14_25", 25, 26 },
+                { "PokePixel_14_26", 26, 27 },
+                { "PokePixel_14_27", 27, 28 },
+                { "PokePixel_14_28", 28, 29 },
+                { "PokePixel_14_29", 29, 30 },
+                { "PokePixel_14_30", 30, 31 },
+                { "PokePixel_14_31", 31, 32 },
+                { "PokePixel_14_32", 32, 33 },
+                { "PokePixel_14_33", 33, 34 },
+                { "PokePixel_14_34", 34, 35 },
+                { "PokePixel_14_35", 35, 36 },
             },
             {
-                { "Pixel_8_9", 9, 10 },
-                { "Pixel_8_10", 10, 11 },
-                { "Pixel_8_11", 11, 12 },
-                { "Pixel_8_12", 12, 13 },
-                { "Pixel_8_13", 13, 14 },
-                { "Pixel_8_14", 14, 15 },
-                { "Pixel_8_15", 15, 16 },
-                { "Pixel_8_16", 16, 17 },
-                { "Pixel_8_17", 17, 18 },
-                { "Pixel_8_18", 18, 19 },
-                { "Pixel_8_19", 19, 20 },
-                { "Pixel_8_20", 20, 21 },
-                { "Pixel_8_21", 21, 22 },
-                { "Pixel_8_22", 22, 23 },
-                { "Pixel_8_23", 23, 24 },
-                { "Pixel_8_24", 24, 25 },
-                { "Pixel_8_25", 25, 26 },
-                { "Pixel_8_26", 26, 27 },
-                { "Pixel_8_27", 27, 28 },
-                { "Pixel_8_28", 28, 29 },
-                { "Pixel_8_29", 29, 30 },
-                { "Pixel_8_30", 30, 31 },
-                { "Pixel_8_31", 31, 32 },
-                { "Pixel_8_32", 32, 33 },
-                { "Pixel_8_33", 33, 34 },
-                { "Pixel_8_34", 34, 35 },
-                { "Pixel_8_35", 35, 36 },
-                { "Pixel_8_36", 36, 37 },
-                { "Pixel_8_37", 37, 38 },
-                { "Pixel_8_38", 38, 39 },
-                { "Pixel_8_39", 39, 40 },
+                { "PokePixel_16_1", 1, 2 },
+                { "PokePixel_16_2", 2, 3 },
+                { "PokePixel_16_3", 3, 4 },
+                { "PokePixel_16_4", 4, 5 },
+                { "PokePixel_16_5", 5, 6 },
+                { "PokePixel_16_6", 6, 7 },
+                { "PokePixel_16_7", 7, 8 },
+                { "PokePixel_16_8", 8, 9 },
+                { "PokePixel_16_9", 9, 10 },
+                { "PokePixel_16_10", 10, 11 },
+                { "PokePixel_16_11", 11, 12 },
+                { "PokePixel_16_12", 12, 13 },
+                { "PokePixel_16_13", 13, 14 },
+                { "PokePixel_16_14", 14, 15 },
+                { "PokePixel_16_15", 15, 16 },
+                { "PokePixel_16_16", 16, 17 },
+                { "PokePixel_16_17", 17, 18 },
+                { "PokePixel_16_18", 18, 19 },
+                { "PokePixel_16_19", 19, 20 },
+                { "PokePixel_16_20", 20, 21 },
+                { "PokePixel_16_21", 21, 22 },
+                { "PokePixel_16_22", 22, 23 },
+                { "PokePixel_16_23", 23, 24 },
+                { "PokePixel_16_24", 24, 25 },
+                { "PokePixel_16_25", 25, 26 },
+                { "PokePixel_16_26", 26, 27 },
+                { "PokePixel_16_27", 27, 28 },
+                { "PokePixel_16_28", 28, 29 },
+                { "PokePixel_16_29", 29, 30 },
+                { "PokePixel_16_30", 30, 31 },
+                { "PokePixel_16_31", 31, 32 },
+                { "PokePixel_16_32", 32, 33 },
+                { "PokePixel_16_33", 33, 34 },
+                { "PokePixel_16_34", 34, 35 },
             },
             {
-                { "Pixel_9_6", 6, 7 },
-                { "Pixel_9_7", 7, 8 },
-                { "Pixel_9_8", 8, 9 },
-                { "Pixel_9_9", 9, 10 },
-                { "Pixel_9_10", 10, 11 },
-                { "Pixel_9_11", 11, 12 },
-                { "Pixel_9_12", 12, 13 },
-                { "Pixel_9_13", 13, 14 },
-                { "Pixel_9_14", 14, 15 },
-                { "Pixel_9_15", 15, 16 },
-                { "Pixel_9_16", 16, 17 },
-                { "Pixel_9_17", 17, 18 },
-                { "Pixel_9_18", 18, 19 },
-                { "Pixel_9_19", 19, 20 },
-                { "Pixel_9_20", 20, 21 },
-                { "Pixel_9_21", 21, 22 },
-                { "Pixel_9_22", 22, 23 },
-                { "Pixel_9_23", 23, 24 },
-                { "Pixel_9_24", 24, 25 },
-                { "Pixel_9_25", 25, 26 },
-                { "Pixel_9_26", 26, 27 },
-                { "Pixel_9_27", 27, 28 },
-                { "Pixel_9_28", 28, 29 },
-                { "Pixel_9_29", 29, 30 },
-                { "Pixel_9_30", 30, 31 },
-                { "Pixel_9_31", 31, 32 },
-                { "Pixel_9_32", 32, 33 },
-                { "Pixel_9_33", 33, 34 },
-                { "Pixel_9_34", 34, 35 },
-                { "Pixel_9_35", 35, 36 },
-                { "Pixel_9_36", 36, 37 },
-                { "Pixel_9_37", 37, 38 },
-                { "Pixel_9_38", 38, 39 },
-                { "Pixel_9_39", 39, 40 },
-                { "Pixel_9_40", 40, 41 },
-                { "Pixel_9_41", 41, 42 },
+                { "PokePixel_18_3", 3, 4 },
+                { "PokePixel_18_4", 4, 5 },
+                { "PokePixel_18_5", 5, 6 },
+                { "PokePixel_18_6", 6, 7 },
+                { "PokePixel_18_7", 7, 8 },
+                { "PokePixel_18_8", 8, 9 },
+                { "PokePixel_18_9", 9, 10 },
+                { "PokePixel_18_10", 10, 11 },
+                { "PokePixel_18_11", 11, 12 },
+                { "PokePixel_18_12", 12, 13 },
+                { "PokePixel_18_13", 13, 14 },
+                { "PokePixel_18_14", 14, 15 },
+                { "PokePixel_18_15", 15, 16 },
+                { "PokePixel_18_16", 16, 17 },
+                { "PokePixel_18_17", 17, 18 },
+                { "PokePixel_18_18", 18, 19 },
+                { "PokePixel_18_19", 19, 20 },
+                { "PokePixel_18_20", 20, 21 },
+                { "PokePixel_18_21", 21, 22 },
+                { "PokePixel_18_22", 22, 23 },
+                { "PokePixel_18_23", 23, 24 },
+                { "PokePixel_18_24", 24, 25 },
+                { "PokePixel_18_25", 25, 26 },
+                { "PokePixel_18_26", 26, 27 },
+                { "PokePixel_18_27", 27, 28 },
+                { "PokePixel_18_28", 28, 29 },
+                { "PokePixel_18_29", 29, 30 },
+                { "PokePixel_18_30", 30, 31 },
+                { "PokePixel_18_31", 31, 32 },
+                { "PokePixel_18_32", 32, 33 },
+                { "PokePixel_18_33", 33, 34 },
             },
             {
-                { "Pixel_10_5", 5, 6 },
-                { "Pixel_10_6", 6, 7 },
-                { "Pixel_10_7", 7, 8 },
-                { "Pixel_10_8", 8, 9 },
-                { "Pixel_10_9", 9, 10 },
-                { "Pixel_10_10", 10, 11 },
-                { "Pixel_10_11", 11, 12 },
-                { "Pixel_10_12", 12, 13 },
-                { "Pixel_10_13", 13, 14 },
-                { "Pixel_10_14", 14, 15 },
-                { "Pixel_10_15", 15, 16 },
-                { "Pixel_10_16", 16, 17 },
-                { "Pixel_10_17", 17, 18 },
-                { "Pixel_10_18", 18, 19 },
-                { "Pixel_10_19", 19, 20 },
-                { "Pixel_10_20", 20, 21 },
-                { "Pixel_10_21", 21, 22 },
-                { "Pixel_10_22", 22, 23 },
-                { "Pixel_10_23", 23, 24 },
-                { "Pixel_10_24", 24, 25 },
-                { "Pixel_10_25", 25, 26 },
-                { "Pixel_10_26", 26, 27 },
-                { "Pixel_10_27", 27, 28 },
-                { "Pixel_10_28", 28, 29 },
-                { "Pixel_10_29", 29, 30 },
-                { "Pixel_10_30", 30, 31 },
-                { "Pixel_10_31", 31, 32 },
-                { "Pixel_10_32", 32, 33 },
-                { "Pixel_10_33", 33, 34 },
-                { "Pixel_10_34", 34, 35 },
-                { "Pixel_10_35", 35, 36 },
-                { "Pixel_10_36", 36, 37 },
-                { "Pixel_10_37", 37, 38 },
-                { "Pixel_10_38", 38, 39 },
-                { "Pixel_10_39", 39, 40 },
-                { "Pixel_10_40", 40, 41 },
-                { "Pixel_10_41", 41, 42 },
-                { "Pixel_10_42", 42, 43 },
-                { "Pixel_10_43", 43, 44 },
+                { "PokePixel_20_5", 5, 6 },
+                { "PokePixel_20_6", 6, 7 },
+                { "PokePixel_20_7", 7, 8 },
+                { "PokePixel_20_8", 8, 9 },
+                { "PokePixel_20_9", 9, 10 },
+                { "PokePixel_20_10", 10, 11 },
+                { "PokePixel_20_11", 11, 12 },
+                { "PokePixel_20_12", 12, 13 },
+                { "PokePixel_20_13", 13, 14 },
+                { "PokePixel_20_14", 14, 15 },
+                { "PokePixel_20_15", 15, 16 },
+                { "PokePixel_20_16", 16, 17 },
+                { "PokePixel_20_17", 17, 18 },
+                { "PokePixel_20_18", 18, 19 },
+                { "PokePixel_20_19", 19, 20 },
+                { "PokePixel_20_20", 20, 21 },
+                { "PokePixel_20_21", 21, 22 },
+                { "PokePixel_20_22", 22, 23 },
+                { "PokePixel_20_23", 23, 24 },
+                { "PokePixel_20_24", 24, 25 },
+                { "PokePixel_20_25", 25, 26 },
+                { "PokePixel_20_27", 27, 28 },
+                { "PokePixel_20_28", 28, 29 },
+                { "PokePixel_20_29", 29, 30 },
+                { "PokePixel_20_30", 30, 31 },
+                { "PokePixel_20_31", 31, 32 },
+                { "PokePixel_20_32", 32, 33 },
+                { "PokePixel_20_33", 33, 34 },
+                { "PokePixel_20_34", 34, 35 },
+                { "PokePixel_20_35", 35, 36 },
             },
             {
-                { "Pixel_11_4", 4, 5 },
-                { "Pixel_11_5", 5, 6 },
-                { "Pixel_11_6", 6, 7 },
-                { "Pixel_11_7", 7, 8 },
-                { "Pixel_11_8", 8, 9 },
-                { "Pixel_11_9", 9, 10 },
-                { "Pixel_11_10", 10, 11 },
-                { "Pixel_11_11", 11, 12 },
-                { "Pixel_11_12", 12, 13 },
-                { "Pixel_11_13", 13, 14 },
-                { "Pixel_11_14", 14, 15 },
-                { "Pixel_11_15", 15, 16 },
-                { "Pixel_11_16", 16, 17 },
-                { "Pixel_11_17", 17, 18 },
-                { "Pixel_11_18", 18, 19 },
-                { "Pixel_11_19", 19, 20 },
-                { "Pixel_11_20", 20, 21 },
-                { "Pixel_11_21", 21, 22 },
-                { "Pixel_11_22", 22, 23 },
-                { "Pixel_11_23", 23, 24 },
-                { "Pixel_11_24", 24, 25 },
-                { "Pixel_11_25", 25, 26 },
-                { "Pixel_11_26", 26, 27 },
-                { "Pixel_11_27", 27, 28 },
-                { "Pixel_11_28", 28, 29 },
-                { "Pixel_11_29", 29, 30 },
-                { "Pixel_11_30", 30, 31 },
-                { "Pixel_11_31", 31, 32 },
-                { "Pixel_11_32", 32, 33 },
-                { "Pixel_11_33", 33, 34 },
-                { "Pixel_11_34", 34, 35 },
-                { "Pixel_11_35", 35, 36 },
-                { "Pixel_11_36", 36, 37 },
-                { "Pixel_11_37", 37, 38 },
-                { "Pixel_11_38", 38, 39 },
-                { "Pixel_11_39", 39, 40 },
-                { "Pixel_11_40", 40, 41 },
-                { "Pixel_11_41", 41, 42 },
-                { "Pixel_11_42", 42, 43 },
-                { "Pixel_11_43", 43, 44 },
-                { "Pixel_11_44", 44, 45 },
+                { "PokePixel_22_2", 2, 3 },
+                { "PokePixel_22_3", 3, 4 },
+                { "PokePixel_22_5", 5, 6 },
+                { "PokePixel_22_6", 6, 7 },
+                { "PokePixel_22_7", 7, 8 },
+                { "PokePixel_22_8", 8, 9 },
+                { "PokePixel_22_9", 9, 10 },
+                { "PokePixel_22_10", 10, 11 },
+                { "PokePixel_22_11", 11, 12 },
+                { "PokePixel_22_12", 12, 13 },
+                { "PokePixel_22_13", 13, 14 },
+                { "PokePixel_22_14", 14, 15 },
+                { "PokePixel_22_15", 15, 16 },
+                { "PokePixel_22_16", 16, 17 },
+                { "PokePixel_22_17", 17, 18 },
+                { "PokePixel_22_18", 18, 19 },
+                { "PokePixel_22_19", 19, 20 },
+                { "PokePixel_22_20", 20, 21 },
+                { "PokePixel_22_21", 21, 22 },
+                { "PokePixel_22_22", 22, 23 },
+                { "PokePixel_22_23", 23, 24 },
+                { "PokePixel_22_24", 24, 25 },
+                { "PokePixel_22_25", 25, 26 },
+                { "PokePixel_22_26", 26, 27 },
+                { "PokePixel_22_27", 27, 28 },
+                { "PokePixel_22_28", 28, 29 },
+                { "PokePixel_22_29", 29, 30 },
+                { "PokePixel_22_30", 30, 31 },
+                { "PokePixel_22_31", 31, 32 },
+                { "PokePixel_22_32", 32, 33 },
+                { "PokePixel_22_33", 33, 34 },
+                { "PokePixel_22_34", 34, 35 },
+                { "PokePixel_22_35", 35, 36 },
+                { "PokePixel_22_37", 37, 38 },
+                { "PokePixel_22_38", 38, 39 },
             },
             {
-                { "Pixel_12_3", 3, 4 },
-                { "Pixel_12_4", 4, 5 },
-                { "Pixel_12_5", 5, 6 },
-                { "Pixel_12_6", 6, 7 },
-                { "Pixel_12_7", 7, 8 },
-                { "Pixel_12_8", 8, 9 },
-                { "Pixel_12_9", 9, 10 },
-                { "Pixel_12_10", 10, 11 },
-                { "Pixel_12_11", 11, 12 },
-                { "Pixel_12_12", 12, 13 },
-                { "Pixel_12_13", 13, 14 },
-                { "Pixel_12_14", 14, 15 },
-                { "Pixel_12_15", 15, 16 },
-                { "Pixel_12_16", 16, 17 },
-                { "Pixel_12_17", 17, 18 },
-                { "Pixel_12_18", 18, 19 },
-                { "Pixel_12_19", 19, 20 },
-                { "Pixel_12_20", 20, 21 },
-                { "Pixel_12_21", 21, 22 },
-                { "Pixel_12_22", 22, 23 },
-                { "Pixel_12_23", 23, 24 },
-                { "Pixel_12_24", 24, 25 },
-                { "Pixel_12_25", 25, 26 },
-                { "Pixel_12_26", 26, 27 },
-                { "Pixel_12_27", 27, 28 },
-                { "Pixel_12_28", 28, 29 },
-                { "Pixel_12_29", 29, 30 },
-                { "Pixel_12_30", 30, 31 },
-                { "Pixel_12_31", 31, 32 },
-                { "Pixel_12_32", 32, 33 },
-                { "Pixel_12_33", 33, 34 },
-                { "Pixel_12_34", 34, 35 },
-                { "Pixel_12_35", 35, 36 },
-                { "Pixel_12_36", 36, 37 },
-                { "Pixel_12_37", 37, 38 },
-                { "Pixel_12_38", 38, 39 },
-                { "Pixel_12_39", 39, 40 },
-                { "Pixel_12_40", 40, 41 },
-                { "Pixel_12_41", 41, 42 },
-                { "Pixel_12_42", 42, 43 },
-                { "Pixel_12_43", 43, 44 },
-                { "Pixel_12_44", 44, 45 },
-                { "Pixel_12_45", 45, 46 },
-                { "Pixel_12_46", 46, 47 },
+                { "PokePixel_24_0", 0, 1 },
+                { "PokePixel_24_1", 1, 2 },
+                { "PokePixel_24_2", 2, 3 },
+                { "PokePixel_24_3", 3, 4 },
+                { "PokePixel_24_6", 6, 7 },
+                { "PokePixel_24_7", 7, 8 },
+                { "PokePixel_24_8", 8, 9 },
+                { "PokePixel_24_9", 9, 10 },
+                { "PokePixel_24_10", 10, 11 },
+                { "PokePixel_24_11", 11, 12 },
+                { "PokePixel_24_12", 12, 13 },
+                { "PokePixel_24_13", 13, 14 },
+                { "PokePixel_24_16", 16, 17 },
+                { "PokePixel_24_17", 17, 18 },
+                { "PokePixel_24_18", 18, 19 },
+                { "PokePixel_24_19", 19, 20 },
+                { "PokePixel_24_20", 20, 21 },
+                { "PokePixel_24_21", 21, 22 },
+                { "PokePixel_24_22", 22, 23 },
+                { "PokePixel_24_23", 23, 24 },
+                { "PokePixel_24_24", 24, 25 },
+                { "PokePixel_24_25", 25, 26 },
+                { "PokePixel_24_26", 26, 27 },
+                { "PokePixel_24_27", 27, 28 },
+                { "PokePixel_24_28", 28, 29 },
+                { "PokePixel_24_29", 29, 30 },
+                { "PokePixel_24_30", 30, 31 },
+                { "PokePixel_24_31", 31, 32 },
+                { "PokePixel_24_32", 32, 33 },
+                { "PokePixel_24_33", 33, 34 },
+                { "PokePixel_24_34", 34, 35 },
+                { "PokePixel_24_37", 37, 38 },
+                { "PokePixel_24_38", 38, 39 },
+                { "PokePixel_24_39", 39, 40 },
+                { "PokePixel_24_40", 40, 41 },
             },
             {
-                { "Pixel_13_3", 3, 4 },
-                { "Pixel_13_4", 4, 5 },
-                { "Pixel_13_5", 5, 6 },
-                { "Pixel_13_6", 6, 7 },
-                { "Pixel_13_7", 7, 8 },
-                { "Pixel_13_8", 8, 9 },
-                { "Pixel_13_9", 9, 10 },
-                { "Pixel_13_10", 10, 11 },
-                { "Pixel_13_11", 11, 12 },
-                { "Pixel_13_12", 12, 13 },
-                { "Pixel_13_13", 13, 14 },
-                { "Pixel_13_14", 14, 15 },
-                { "Pixel_13_15", 15, 16 },
-                { "Pixel_13_16", 16, 17 },
-                { "Pixel_13_17", 17, 18 },
-                { "Pixel_13_18", 18, 19 },
-                { "Pixel_13_19", 19, 20 },
-                { "Pixel_13_20", 20, 21 },
-                { "Pixel_13_21", 21, 22 },
-                { "Pixel_13_22", 22, 23 },
-                { "Pixel_13_23", 23, 24 },
-                { "Pixel_13_24", 24, 25 },
-                { "Pixel_13_25", 25, 26 },
-                { "Pixel_13_26", 26, 27 },
-                { "Pixel_13_27", 27, 28 },
-                { "Pixel_13_28", 28, 29 },
-                { "Pixel_13_29", 29, 30 },
-                { "Pixel_13_30", 30, 31 },
-                { "Pixel_13_31", 31, 32 },
-                { "Pixel_13_32", 32, 33 },
-                { "Pixel_13_33", 33, 34 },
-                { "Pixel_13_34", 34, 35 },
-                { "Pixel_13_35", 35, 36 },
-                { "Pixel_13_36", 36, 37 },
-                { "Pixel_13_37", 37, 38 },
-                { "Pixel_13_38", 38, 39 },
-                { "Pixel_13_39", 39, 40 },
-                { "Pixel_13_40", 40, 41 },
-                { "Pixel_13_41", 41, 42 },
-                { "Pixel_13_42", 42, 43 },
-                { "Pixel_13_43", 43, 44 },
-                { "Pixel_13_44", 44, 45 },
-                { "Pixel_13_45", 45, 46 },
-                { "Pixel_13_46", 46, 47 },
-                { "Pixel_13_47", 47, 48 },
+                { "PokePixel_26_0", 0, 1 },
+                { "PokePixel_26_1", 1, 2 },
+                { "PokePixel_26_2", 2, 3 },
+                { "PokePixel_26_3", 3, 4 },
+                { "PokePixel_26_4", 4, 5 },
+                { "PokePixel_26_5", 5, 6 },
+                { "PokePixel_26_6", 6, 7 },
+                { "PokePixel_26_7", 7, 8 },
+                { "PokePixel_26_8", 8, 9 },
+                { "PokePixel_26_9", 9, 10 },
+                { "PokePixel_26_10", 10, 11 },
+                { "PokePixel_26_11", 11, 12 },
+                { "PokePixel_26_12", 12, 13 },
+                { "PokePixel_26_13", 13, 14 },
+                { "PokePixel_26_14", 14, 15 },
+                { "PokePixel_26_15", 15, 16 },
+                { "PokePixel_26_16", 16, 17 },
+                { "PokePixel_26_17", 17, 18 },
+                { "PokePixel_26_18", 18, 19 },
+                { "PokePixel_26_19", 19, 20 },
+                { "PokePixel_26_20", 20, 21 },
+                { "PokePixel_26_21", 21, 22 },
+                { "PokePixel_26_22", 22, 23 },
+                { "PokePixel_26_23", 23, 24 },
+                { "PokePixel_26_24", 24, 25 },
+                { "PokePixel_26_25", 25, 26 },
+                { "PokePixel_26_26", 26, 27 },
+                { "PokePixel_26_27", 27, 28 },
+                { "PokePixel_26_28", 28, 29 },
+                { "PokePixel_26_29", 29, 30 },
+                { "PokePixel_26_30", 30, 31 },
+                { "PokePixel_26_31", 31, 32 },
+                { "PokePixel_26_32", 32, 33 },
+                { "PokePixel_26_33", 33, 34 },
+                { "PokePixel_26_34", 34, 35 },
+                { "PokePixel_26_35", 35, 36 },
+                { "PokePixel_26_36", 36, 37 },
+                { "PokePixel_26_37", 37, 38 },
+                { "PokePixel_26_38", 38, 39 },
+                { "PokePixel_26_39", 39, 40 },
+                { "PokePixel_26_40", 40, 41 },
             },
             {
-                { "Pixel_14_2", 2, 3 },
-                { "Pixel_14_3", 3, 4 },
-                { "Pixel_14_4", 4, 5 },
-                { "Pixel_14_5", 5, 6 },
-                { "Pixel_14_6", 6, 7 },
-                { "Pixel_14_7", 7, 8 },
-                { "Pixel_14_8", 8, 9 },
-                { "Pixel_14_9", 9, 10 },
-                { "Pixel_14_10", 10, 11 },
-                { "Pixel_14_11", 11, 12 },
-                { "Pixel_14_12", 12, 13 },
-                { "Pixel_14_13", 13, 14 },
-                { "Pixel_14_14", 14, 15 },
-                { "Pixel_14_15", 15, 16 },
-                { "Pixel_14_16", 16, 17 },
-                { "Pixel_14_17", 17, 18 },
-                { "Pixel_14_18", 18, 19 },
-                { "Pixel_14_19", 19, 20 },
-                { "Pixel_14_20", 20, 21 },
-                { "Pixel_14_21", 21, 22 },
-                { "Pixel_14_22", 22, 23 },
-                { "Pixel_14_23", 23, 24 },
-                { "Pixel_14_24", 24, 25 },
-                { "Pixel_14_25", 25, 26 },
-                { "Pixel_14_26", 26, 27 },
-                { "Pixel_14_27", 27, 28 },
-                { "Pixel_14_28", 28, 29 },
-                { "Pixel_14_29", 29, 30 },
-                { "Pixel_14_30", 30, 31 },
-                { "Pixel_14_31", 31, 32 },
-                { "Pixel_14_35", 35, 36 },
-                { "Pixel_14_36", 36, 37 },
-                { "Pixel_14_37", 37, 38 },
-                { "Pixel_14_38", 38, 39 },
-                { "Pixel_14_39", 39, 40 },
-                { "Pixel_14_40", 40, 41 },
-                { "Pixel_14_41", 41, 42 },
-                { "Pixel_14_42", 42, 43 },
-                { "Pixel_14_43", 43, 44 },
-                { "Pixel_14_44", 44, 45 },
-                { "Pixel_14_45", 45, 46 },
-                { "Pixel_14_46", 46, 47 },
-                { "Pixel_14_47", 47, 48 },
-                { "Pixel_14_48", 48, 49 },
+                { "PokePixel_28_0", 0, 1 },
+                { "PokePixel_28_1", 1, 2 },
+                { "PokePixel_28_2", 2, 3 },
+                { "PokePixel_28_3", 3, 4 },
+                { "PokePixel_28_4", 4, 5 },
+                { "PokePixel_28_5", 5, 6 },
+                { "PokePixel_28_6", 6, 7 },
+                { "PokePixel_28_7", 7, 8 },
+                { "PokePixel_28_8", 8, 9 },
+                { "PokePixel_28_9", 9, 10 },
+                { "PokePixel_28_10", 10, 11 },
+                { "PokePixel_28_11", 11, 12 },
+                { "PokePixel_28_12", 12, 13 },
+                { "PokePixel_28_13", 13, 14 },
+                { "PokePixel_28_14", 14, 15 },
+                { "PokePixel_28_15", 15, 16 },
+                { "PokePixel_28_16", 16, 17 },
+                { "PokePixel_28_17", 17, 18 },
+                { "PokePixel_28_18", 18, 19 },
+                { "PokePixel_28_19", 19, 20 },
+                { "PokePixel_28_20", 20, 21 },
+                { "PokePixel_28_21", 21, 22 },
+                { "PokePixel_28_22", 22, 23 },
+                { "PokePixel_28_23", 23, 24 },
+                { "PokePixel_28_24", 24, 25 },
+                { "PokePixel_28_25", 25, 26 },
+                { "PokePixel_28_26", 26, 27 },
+                { "PokePixel_28_27", 27, 28 },
+                { "PokePixel_28_28", 28, 29 },
+                { "PokePixel_28_29", 29, 30 },
+                { "PokePixel_28_30", 30, 31 },
+                { "PokePixel_28_31", 31, 32 },
+                { "PokePixel_28_32", 32, 33 },
+                { "PokePixel_28_33", 33, 34 },
+                { "PokePixel_28_34", 34, 35 },
+                { "PokePixel_28_35", 35, 36 },
+                { "PokePixel_28_36", 36, 37 },
+                { "PokePixel_28_37", 37, 38 },
+                { "PokePixel_28_38", 38, 39 },
+                { "PokePixel_28_39", 39, 40 },
+                { "PokePixel_28_40", 40, 41 },
             },
             {
-                { "Pixel_15_2", 2, 3 },
-                { "Pixel_15_3", 3, 4 },
-                { "Pixel_15_4", 4, 5 },
-                { "Pixel_15_5", 5, 6 },
-                { "Pixel_15_6", 6, 7 },
-                { "Pixel_15_7", 7, 8 },
-                { "Pixel_15_8", 8, 9 },
-                { "Pixel_15_9", 9, 10 },
-                { "Pixel_15_10", 10, 11 },
-                { "Pixel_15_16", 16, 17 },
-                { "Pixel_15_17", 17, 18 },
-                { "Pixel_15_18", 18, 19 },
-                { "Pixel_15_19", 19, 20 },
-                { "Pixel_15_20", 20, 21 },
-                { "Pixel_15_21", 21, 22 },
-                { "Pixel_15_22", 22, 23 },
-                { "Pixel_15_23", 23, 24 },
-                { "Pixel_15_24", 24, 25 },
-                { "Pixel_15_25", 25, 26 },
-                { "Pixel_15_26", 26, 27 },
-                { "Pixel_15_27", 27, 28 },
-                { "Pixel_15_28", 28, 29 },
-                { "Pixel_15_38", 38, 39 },
-                { "Pixel_15_39", 39, 40 },
-                { "Pixel_15_40", 40, 41 },
-                { "Pixel_15_41", 41, 42 },
-                { "Pixel_15_42", 42, 43 },
-                { "Pixel_15_43", 43, 44 },
-                { "Pixel_15_44", 44, 45 },
-                { "Pixel_15_45", 45, 46 },
-                { "Pixel_15_46", 46, 47 },
-                { "Pixel_15_47", 47, 48 },
-                { "Pixel_15_48", 48, 49 },
+                { "PokePixel_30_0", 0, 1 },
+                { "PokePixel_30_1", 1, 2 },
+                { "PokePixel_30_2", 2, 3 },
+                { "PokePixel_30_3", 3, 4 },
+                { "PokePixel_30_4", 4, 5 },
+                { "PokePixel_30_5", 5, 6 },
+                { "PokePixel_30_6", 6, 7 },
+                { "PokePixel_30_7", 7, 8 },
+                { "PokePixel_30_8", 8, 9 },
+                { "PokePixel_30_9", 9, 10 },
+                { "PokePixel_30_10", 10, 11 },
+                { "PokePixel_30_11", 11, 12 },
+                { "PokePixel_30_12", 12, 13 },
+                { "PokePixel_30_13", 13, 14 },
+                { "PokePixel_30_14", 14, 15 },
+                { "PokePixel_30_15", 15, 16 },
+                { "PokePixel_30_16", 16, 17 },
+                { "PokePixel_30_17", 17, 18 },
+                { "PokePixel_30_18", 18, 19 },
+                { "PokePixel_30_19", 19, 20 },
+                { "PokePixel_30_21", 21, 22 },
+                { "PokePixel_30_22", 22, 23 },
+                { "PokePixel_30_23", 23, 24 },
+                { "PokePixel_30_24", 24, 25 },
+                { "PokePixel_30_25", 25, 26 },
+                { "PokePixel_30_26", 26, 27 },
+                { "PokePixel_30_27", 27, 28 },
+                { "PokePixel_30_28", 28, 29 },
+                { "PokePixel_30_29", 29, 30 },
+                { "PokePixel_30_30", 30, 31 },
+                { "PokePixel_30_31", 31, 32 },
+                { "PokePixel_30_32", 32, 33 },
+                { "PokePixel_30_33", 33, 34 },
+                { "PokePixel_30_34", 34, 35 },
+                { "PokePixel_30_35", 35, 36 },
+                { "PokePixel_30_36", 36, 37 },
+                { "PokePixel_30_37", 37, 38 },
+                { "PokePixel_30_38", 38, 39 },
+                { "PokePixel_30_39", 39, 40 },
+                { "PokePixel_30_40", 40, 41 },
             },
             {
-                { "Pixel_16_2", 2, 3 },
-                { "Pixel_16_3", 3, 4 },
-                { "Pixel_16_4", 4, 5 },
-                { "Pixel_16_5", 5, 6 },
-                { "Pixel_16_6", 6, 7 },
-                { "Pixel_16_7", 7, 8 },
-                { "Pixel_16_8", 8, 9 },
-                { "Pixel_16_9", 9, 10 },
-                { "Pixel_16_10", 10, 11 },
-                { "Pixel_16_17", 17, 18 },
-                { "Pixel_16_18", 18, 19 },
-                { "Pixel_16_19", 19, 20 },
-                { "Pixel_16_20", 20, 21 },
-                { "Pixel_16_21", 21, 22 },
-                { "Pixel_16_22", 22, 23 },
-                { "Pixel_16_23", 23, 24 },
-                { "Pixel_16_24", 24, 25 },
-                { "Pixel_16_25", 25, 26 },
-                { "Pixel_16_26", 26, 27 },
-                { "Pixel_16_27", 27, 28 },
-                { "Pixel_16_28", 28, 29 },
-                { "Pixel_16_29", 29, 30 },
-                { "Pixel_16_30", 30, 31 },
-                { "Pixel_16_31", 31, 32 },
-                { "Pixel_16_32", 32, 33 },
-                { "Pixel_16_33", 33, 34 },
-                { "Pixel_16_34", 34, 35 },
-                { "Pixel_16_35", 35, 36 },
-                { "Pixel_16_36", 36, 37 },
-                { "Pixel_16_37", 37, 38 },
-                { "Pixel_16_38", 38, 39 },
-                { "Pixel_16_39", 39, 40 },
-                { "Pixel_16_40", 40, 41 },
-                { "Pixel_16_41", 41, 42 },
-                { "Pixel_16_42", 42, 43 },
-                { "Pixel_16_43", 43, 44 },
-                { "Pixel_16_44", 44, 45 },
-                { "Pixel_16_45", 45, 46 },
-                { "Pixel_16_46", 46, 47 },
-                { "Pixel_16_47", 47, 48 },
-                { "Pixel_16_48", 48, 49 },
-            },
-            {
-                { "Pixel_17_2", 2, 3 },
-                { "Pixel_17_3", 3, 4 },
-                { "Pixel_17_4", 4, 5 },
-                { "Pixel_17_5", 5, 6 },
-                { "Pixel_17_6", 6, 7 },
-                { "Pixel_17_7", 7, 8 },
-                { "Pixel_17_8", 8, 9 },
-                { "Pixel_17_9", 9, 10 },
-                { "Pixel_17_10", 10, 11 },
-                { "Pixel_17_11", 11, 12 },
-                { "Pixel_17_18", 18, 19 },
-                { "Pixel_17_19", 19, 20 },
-                { "Pixel_17_20", 20, 21 },
-                { "Pixel_17_21", 21, 22 },
-                { "Pixel_17_22", 22, 23 },
-                { "Pixel_17_23", 23, 24 },
-                { "Pixel_17_24", 24, 25 },
-                { "Pixel_17_25", 25, 26 },
-                { "Pixel_17_26", 26, 27 },
-                { "Pixel_17_27", 27, 28 },
-                { "Pixel_17_39", 39, 40 },
-                { "Pixel_17_40", 40, 41 },
-                { "Pixel_17_41", 41, 42 },
-                { "Pixel_17_42", 42, 43 },
-                { "Pixel_17_43", 43, 44 },
-                { "Pixel_17_44", 44, 45 },
-                { "Pixel_17_45", 45, 46 },
-                { "Pixel_17_46", 46, 47 },
-                { "Pixel_17_47", 47, 48 },
-            },
-            {
-                { "Pixel_18_2", 2, 3 },
-                { "Pixel_18_3", 3, 4 },
-                { "Pixel_18_4", 4, 5 },
-                { "Pixel_18_5", 5, 6 },
-                { "Pixel_18_6", 6, 7 },
-                { "Pixel_18_7", 7, 8 },
-                { "Pixel_18_8", 8, 9 },
-                { "Pixel_18_9", 9, 10 },
-                { "Pixel_18_10", 10, 11 },
-                { "Pixel_18_11", 11, 12 },
-                { "Pixel_18_12", 12, 13 },
-                { "Pixel_18_18", 18, 19 },
-                { "Pixel_18_19", 19, 20 },
-                { "Pixel_18_20", 20, 21 },
-                { "Pixel_18_21", 21, 22 },
-                { "Pixel_18_22", 22, 23 },
-                { "Pixel_18_23", 23, 24 },
-                { "Pixel_18_24", 24, 25 },
-                { "Pixel_18_25", 25, 26 },
-                { "Pixel_18_26", 26, 27 },
-                { "Pixel_18_27", 27, 28 },
-                { "Pixel_18_39", 39, 40 },
-                { "Pixel_18_40", 40, 41 },
-                { "Pixel_18_41", 41, 42 },
-                { "Pixel_18_42", 42, 43 },
-                { "Pixel_18_43", 43, 44 },
-                { "Pixel_18_44", 44, 45 },
-                { "Pixel_18_45", 45, 46 },
-                { "Pixel_18_46", 46, 47 },
-                { "Pixel_18_47", 47, 48 },
-                { "Pixel_18_48", 48, 49 },
-                { "Pixel_18_49", 49, 50 },
-                { "Pixel_18_50", 50, 51 },
-                { "Pixel_18_51", 51, 52 },
-                { "Pixel_18_52", 52, 53 },
-                { "Pixel_18_53", 53, 54 },
-                { "Pixel_18_54", 54, 55 },
-                { "Pixel_18_55", 55, 56 },
-            },
-            {
-                { "Pixel_19_2", 2, 3 },
-                { "Pixel_19_3", 3, 4 },
-                { "Pixel_19_4", 4, 5 },
-                { "Pixel_19_5", 5, 6 },
-                { "Pixel_19_6", 6, 7 },
-                { "Pixel_19_7", 7, 8 },
-                { "Pixel_19_8", 8, 9 },
-                { "Pixel_19_9", 9, 10 },
-                { "Pixel_19_10", 10, 11 },
-                { "Pixel_19_11", 11, 12 },
-                { "Pixel_19_12", 12, 13 },
-                { "Pixel_19_13", 13, 14 },
-                { "Pixel_19_14", 14, 15 },
-                { "Pixel_19_19", 19, 20 },
-                { "Pixel_19_20", 20, 21 },
-                { "Pixel_19_21", 21, 22 },
-                { "Pixel_19_22", 22, 23 },
-                { "Pixel_19_23", 23, 24 },
-                { "Pixel_19_24", 24, 25 },
-                { "Pixel_19_25", 25, 26 },
-                { "Pixel_19_26", 26, 27 },
-                { "Pixel_19_39", 39, 40 },
-                { "Pixel_19_40", 40, 41 },
-                { "Pixel_19_41", 41, 42 },
-                { "Pixel_19_42", 42, 43 },
-                { "Pixel_19_43", 43, 44 },
-                { "Pixel_19_44", 44, 45 },
-                { "Pixel_19_45", 45, 46 },
-                { "Pixel_19_46", 46, 47 },
-            },
-            {
-                { "Pixel_20_4", 4, 5 },
-                { "Pixel_20_5", 5, 6 },
-                { "Pixel_20_6", 6, 7 },
-                { "Pixel_20_7", 7, 8 },
-                { "Pixel_20_8", 8, 9 },
-                { "Pixel_20_9", 9, 10 },
-                { "Pixel_20_10", 10, 11 },
-                { "Pixel_20_11", 11, 12 },
-                { "Pixel_20_12", 12, 13 },
-                { "Pixel_20_13", 13, 14 },
-                { "Pixel_20_14", 14, 15 },
-                { "Pixel_20_15", 15, 16 },
-                { "Pixel_20_16", 16, 17 },
-                { "Pixel_20_17", 17, 18 },
-                { "Pixel_20_18", 18, 19 },
-                { "Pixel_20_20", 20, 21 },
-                { "Pixel_20_21", 21, 22 },
-                { "Pixel_20_22", 22, 23 },
-                { "Pixel_20_23", 23, 24 },
-                { "Pixel_20_24", 24, 25 },
-                { "Pixel_20_25", 25, 26 },
-                { "Pixel_20_26", 26, 27 },
-                { "Pixel_20_27", 27, 28 },
-                { "Pixel_20_38", 38, 39 },
-                { "Pixel_20_39", 39, 40 },
-                { "Pixel_20_40", 40, 41 },
-                { "Pixel_20_41", 41, 42 },
-                { "Pixel_20_42", 42, 43 },
-                { "Pixel_20_43", 43, 44 },
-                { "Pixel_20_44", 44, 45 },
-            },
-            {
-                { "Pixel_21_5", 5, 6 },
-                { "Pixel_21_6", 6, 7 },
-                { "Pixel_21_7", 7, 8 },
-                { "Pixel_21_8", 8, 9 },
-                { "Pixel_21_9", 9, 10 },
-                { "Pixel_21_10", 10, 11 },
-                { "Pixel_21_11", 11, 12 },
-                { "Pixel_21_12", 12, 13 },
-                { "Pixel_21_13", 13, 14 },
-                { "Pixel_21_14", 14, 15 },
-                { "Pixel_21_15", 15, 16 },
-                { "Pixel_21_16", 16, 17 },
-                { "Pixel_21_17", 17, 18 },
-                { "Pixel_21_18", 18, 19 },
-                { "Pixel_21_20", 20, 21 },
-                { "Pixel_21_21", 21, 22 },
-                { "Pixel_21_22", 22, 23 },
-                { "Pixel_21_23", 23, 24 },
-                { "Pixel_21_24", 24, 25 },
-                { "Pixel_21_25", 25, 26 },
-                { "Pixel_21_26", 26, 27 },
-                { "Pixel_21_27", 27, 28 },
-                { "Pixel_21_35", 35, 36 },
-                { "Pixel_21_36", 36, 37 },
-                { "Pixel_21_37", 37, 38 },
-                { "Pixel_21_38", 38, 39 },
-                { "Pixel_21_39", 39, 40 },
-                { "Pixel_21_40", 40, 41 },
-                { "Pixel_21_41", 41, 42 },
-                { "Pixel_21_42", 42, 43 },
-                { "Pixel_21_43", 43, 44 },
-                { "Pixel_21_44", 44, 45 },
-            },
-            {
-                { "Pixel_22_9", 9, 10 },
-                { "Pixel_22_10", 10, 11 },
-                { "Pixel_22_11", 11, 12 },
-                { "Pixel_22_12", 12, 13 },
-                { "Pixel_22_13", 13, 14 },
-                { "Pixel_22_14", 14, 15 },
-                { "Pixel_22_20", 20, 21 },
-                { "Pixel_22_21", 21, 22 },
-                { "Pixel_22_22", 22, 23 },
-                { "Pixel_22_23", 23, 24 },
-                { "Pixel_22_24", 24, 25 },
-                { "Pixel_22_25", 25, 26 },
-                { "Pixel_22_26", 26, 27 },
-                { "Pixel_22_27", 27, 28 },
-                { "Pixel_22_35", 35, 36 },
-                { "Pixel_22_36", 36, 37 },
-                { "Pixel_22_37", 37, 38 },
-                { "Pixel_22_38", 38, 39 },
-                { "Pixel_22_39", 39, 40 },
-                { "Pixel_22_40", 40, 41 },
-                { "Pixel_22_41", 41, 42 },
-                { "Pixel_22_42", 42, 43 },
-                { "Pixel_22_43", 43, 44 },
-                { "Pixel_22_44", 44, 45 },
-                { "Pixel_22_45", 45, 46 },
-                { "Pixel_22_46", 46, 47 },
-            },
-            {
-                { "Pixel_23_9", 9, 10 },
-                { "Pixel_23_10", 10, 11 },
-                { "Pixel_23_11", 11, 12 },
-                { "Pixel_23_12", 12, 13 },
-                { "Pixel_23_13", 13, 14 },
-                { "Pixel_23_14", 14, 15 },
-                { "Pixel_23_20", 20, 21 },
-                { "Pixel_23_21", 21, 22 },
-                { "Pixel_23_22", 22, 23 },
-                { "Pixel_23_23", 23, 24 },
-                { "Pixel_23_24", 24, 25 },
-                { "Pixel_23_25", 25, 26 },
-                { "Pixel_23_26", 26, 27 },
-                { "Pixel_23_27", 27, 28 },
-                { "Pixel_23_35", 35, 36 },
-                { "Pixel_23_36", 36, 37 },
-                { "Pixel_23_37", 37, 38 },
-                { "Pixel_23_38", 38, 39 },
-                { "Pixel_23_39", 39, 40 },
-                { "Pixel_23_42", 42, 43 },
-                { "Pixel_23_43", 43, 44 },
-                { "Pixel_23_44", 44, 45 },
-                { "Pixel_23_45", 45, 46 },
-                { "Pixel_23_46", 46, 47 },
-            },
-            {
-                { "Pixel_24_9", 9, 10 },
-                { "Pixel_24_10", 10, 11 },
-                { "Pixel_24_11", 11, 12 },
-                { "Pixel_24_12", 12, 13 },
-                { "Pixel_24_13", 13, 14 },
-                { "Pixel_24_14", 14, 15 },
-                { "Pixel_24_21", 21, 22 },
-                { "Pixel_24_22", 22, 23 },
-                { "Pixel_24_23", 23, 24 },
-                { "Pixel_24_24", 24, 25 },
-                { "Pixel_24_25", 25, 26 },
-                { "Pixel_24_26", 26, 27 },
-                { "Pixel_24_43", 43, 44 },
-                { "Pixel_24_44", 44, 45 },
-                { "Pixel_24_45", 45, 46 },
-                { "Pixel_24_46", 46, 47 },
-                { "Pixel_24_47", 47, 48 },
-                { "Pixel_24_48", 48, 49 },
-                { "Pixel_24_49", 49, 50 },
-            },
-            {
-                { "Pixel_25_11", 11, 12 },
-                { "Pixel_25_12", 12, 13 },
-                { "Pixel_25_13", 13, 14 },
-                { "Pixel_25_14", 14, 15 },
-                { "Pixel_25_21", 21, 22 },
-                { "Pixel_25_22", 22, 23 },
-                { "Pixel_25_23", 23, 24 },
-                { "Pixel_25_24", 24, 25 },
-                { "Pixel_25_25", 25, 26 },
-                { "Pixel_25_26", 26, 27 },
-                { "Pixel_25_45", 45, 46 },
-                { "Pixel_25_46", 46, 47 },
-                { "Pixel_25_47", 47, 48 },
-                { "Pixel_25_48", 48, 49 },
-            },
-            {
-                { "Pixel_26_21", 21, 22 },
-                { "Pixel_26_22", 22, 23 },
-                { "Pixel_26_23", 23, 24 },
-                { "Pixel_26_24", 24, 25 },
-                { "Pixel_26_25", 25, 26 },
-            },
-            {
-                { "Pixel_27_20", 20, 21 },
-                { "Pixel_27_21", 21, 22 },
-                { "Pixel_27_22", 22, 23 },
-                { "Pixel_27_23", 23, 24 },
-                { "Pixel_27_24", 24, 25 },
-                { "Pixel_27_25", 25, 26 },
-                { "Pixel_27_26", 26, 27 },
-            },
-            {
-                { "Pixel_28_20", 20, 21 },
-                { "Pixel_28_21", 21, 22 },
-                { "Pixel_28_22", 22, 23 },
-                { "Pixel_28_23", 23, 24 },
-                { "Pixel_28_24", 24, 25 },
-                { "Pixel_28_25", 25, 26 },
-                { "Pixel_28_26", 26, 27 },
-            },
-            {
-                { "Pixel_29_20", 20, 21 },
-                { "Pixel_29_21", 21, 22 },
-                { "Pixel_29_22", 22, 23 },
-                { "Pixel_29_23", 23, 24 },
-                { "Pixel_29_24", 24, 25 },
-                { "Pixel_29_25", 25, 26 },
-                { "Pixel_29_26", 26, 27 },
+                { "PokePixel_32_2", 2, 3 },
+                { "PokePixel_32_3", 3, 4 },
+                { "PokePixel_32_4", 4, 5 },
+                { "PokePixel_32_5", 5, 6 },
+                { "PokePixel_32_6", 6, 7 },
+                { "PokePixel_32_7", 7, 8 },
+                { "PokePixel_32_8", 8, 9 },
+                { "PokePixel_32_9", 9, 10 },
+                { "PokePixel_32_10", 10, 11 },
+                { "PokePixel_32_11", 11, 12 },
+                { "PokePixel_32_12", 12, 13 },
+                { "PokePixel_32_13", 13, 14 },
+                { "PokePixel_32_17", 17, 18 },
+                { "PokePixel_32_18", 18, 19 },
+                { "PokePixel_32_19", 19, 20 },
+                { "PokePixel_32_20", 20, 21 },
+                { "PokePixel_32_21", 21, 22 },
+                { "PokePixel_32_22", 22, 23 },
+                { "PokePixel_32_23", 23, 24 },
+                { "PokePixel_32_27", 27, 28 },
+                { "PokePixel_32_28", 28, 29 },
+                { "PokePixel_32_29", 29, 30 },
+                { "PokePixel_32_30", 30, 31 },
+                { "PokePixel_32_31", 31, 32 },
+                { "PokePixel_32_32", 32, 33 },
+                { "PokePixel_32_33", 33, 34 },
+                { "PokePixel_32_34", 34, 35 },
+                { "PokePixel_32_35", 35, 36 },
+                { "PokePixel_32_36", 36, 37 },
+                { "PokePixel_32_37", 37, 38 },
+                { "PokePixel_32_38", 38, 39 },
             },
         }
 
-        -- set_colors()
-        local function set_colors()
-            vim.api.nvim_set_hl(0, "Pixel_0_18", { fg = "#3b3739" })
-            vim.api.nvim_set_hl(0, "Pixel_0_19", { fg = "#705b65" })
-            vim.api.nvim_set_hl(0, "Pixel_0_20", { fg = "#6d5864" })
-            vim.api.nvim_set_hl(0, "Pixel_0_21", { fg = "#687878" })
-            vim.api.nvim_set_hl(0, "Pixel_0_22", { fg = "#8bb4b3" })
-            vim.api.nvim_set_hl(0, "Pixel_0_23", { fg = "#7eb8b6" })
-            vim.api.nvim_set_hl(0, "Pixel_0_24", { fg = "#75b1ae" })
-            vim.api.nvim_set_hl(0, "Pixel_0_25", { fg = "#6c9b9b" })
-            vim.api.nvim_set_hl(0, "Pixel_0_26", { fg = "#557172" })
-            vim.api.nvim_set_hl(0, "Pixel_0_27", { fg = "#353436" })
-            vim.api.nvim_set_hl(0, "Pixel_0_28", { fg = "#5e414b" })
-            vim.api.nvim_set_hl(0, "Pixel_0_29", { fg = "#211f1f" })
-            vim.api.nvim_set_hl(0, "Pixel_1_16", { fg = "#1a1a1a" })
-            vim.api.nvim_set_hl(0, "Pixel_1_17", { fg = "#484d4c" })
-            vim.api.nvim_set_hl(0, "Pixel_1_18", { fg = "#585c66" })
-            vim.api.nvim_set_hl(0, "Pixel_1_19", { fg = "#4c737b" })
-            vim.api.nvim_set_hl(0, "Pixel_1_20", { fg = "#98d1cf" })
-            vim.api.nvim_set_hl(0, "Pixel_1_21", { fg = "#a9dad7" })
-            vim.api.nvim_set_hl(0, "Pixel_1_22", { fg = "#add9d5" })
-            vim.api.nvim_set_hl(0, "Pixel_1_23", { fg = "#9ad5d4" })
-            vim.api.nvim_set_hl(0, "Pixel_1_24", { fg = "#9ddbd8" })
-            vim.api.nvim_set_hl(0, "Pixel_1_25", { fg = "#87cdcc" })
-            vim.api.nvim_set_hl(0, "Pixel_1_26", { fg = "#83c9c7" })
-            vim.api.nvim_set_hl(0, "Pixel_1_27", { fg = "#4d7c80" })
-            vim.api.nvim_set_hl(0, "Pixel_1_28", { fg = "#725063" })
-            vim.api.nvim_set_hl(0, "Pixel_1_29", { fg = "#3f4e52" })
-            vim.api.nvim_set_hl(0, "Pixel_1_30", { fg = "#212121" })
-            vim.api.nvim_set_hl(0, "Pixel_1_31", { fg = "#050505" })
-            vim.api.nvim_set_hl(0, "Pixel_2_15", { fg = "#646564" })
-            vim.api.nvim_set_hl(0, "Pixel_2_16", { fg = "#929b9c" })
-            vim.api.nvim_set_hl(0, "Pixel_2_17", { fg = "#8fc4c4" })
-            vim.api.nvim_set_hl(0, "Pixel_2_18", { fg = "#2e8590" })
-            vim.api.nvim_set_hl(0, "Pixel_2_19", { fg = "#4c8b92" })
-            vim.api.nvim_set_hl(0, "Pixel_2_20", { fg = "#84b4b5" })
-            vim.api.nvim_set_hl(0, "Pixel_2_21", { fg = "#9fb2b6" })
-            vim.api.nvim_set_hl(0, "Pixel_2_22", { fg = "#c1d6d3" })
-            vim.api.nvim_set_hl(0, "Pixel_2_23", { fg = "#abcac8" })
-            vim.api.nvim_set_hl(0, "Pixel_2_24", { fg = "#a7bbbc" })
-            vim.api.nvim_set_hl(0, "Pixel_2_25", { fg = "#66a1a7" })
-            vim.api.nvim_set_hl(0, "Pixel_2_26", { fg = "#8fcdcc" })
-            vim.api.nvim_set_hl(0, "Pixel_2_27", { fg = "#609295" })
-            vim.api.nvim_set_hl(0, "Pixel_2_28", { fg = "#39707c" })
-            vim.api.nvim_set_hl(0, "Pixel_2_29", { fg = "#60a4a8" })
-            vim.api.nvim_set_hl(0, "Pixel_2_30", { fg = "#859b9b" })
-            vim.api.nvim_set_hl(0, "Pixel_2_31", { fg = "#282727" })
-            vim.api.nvim_set_hl(0, "Pixel_2_32", { fg = "#060606" })
-            vim.api.nvim_set_hl(0, "Pixel_3_13", { fg = "#0c0c0c" })
-            vim.api.nvim_set_hl(0, "Pixel_3_14", { fg = "#525757" })
-            vim.api.nvim_set_hl(0, "Pixel_3_15", { fg = "#89acac" })
-            vim.api.nvim_set_hl(0, "Pixel_3_16", { fg = "#8bcac7" })
-            vim.api.nvim_set_hl(0, "Pixel_3_17", { fg = "#4696a2" })
-            vim.api.nvim_set_hl(0, "Pixel_3_18", { fg = "#2a5963" })
-            vim.api.nvim_set_hl(0, "Pixel_3_19", { fg = "#39494d" })
-            vim.api.nvim_set_hl(0, "Pixel_3_20", { fg = "#83908f" })
-            vim.api.nvim_set_hl(0, "Pixel_3_21", { fg = "#e5e6df" })
-            vim.api.nvim_set_hl(0, "Pixel_3_22", { fg = "#f6f1e7" })
-            vim.api.nvim_set_hl(0, "Pixel_3_23", { fg = "#eaeae1" })
-            vim.api.nvim_set_hl(0, "Pixel_3_24", { fg = "#c6d3d2" })
-            vim.api.nvim_set_hl(0, "Pixel_3_25", { fg = "#90b1b4" })
-            vim.api.nvim_set_hl(0, "Pixel_3_26", { fg = "#64868a" })
-            vim.api.nvim_set_hl(0, "Pixel_3_27", { fg = "#538083" })
-            vim.api.nvim_set_hl(0, "Pixel_3_28", { fg = "#2d6772" })
-            vim.api.nvim_set_hl(0, "Pixel_3_29", { fg = "#499aa4" })
-            vim.api.nvim_set_hl(0, "Pixel_3_30", { fg = "#9ecdcd" })
-            vim.api.nvim_set_hl(0, "Pixel_3_31", { fg = "#a2b1b0" })
-            vim.api.nvim_set_hl(0, "Pixel_3_32", { fg = "#2f3030" })
-            vim.api.nvim_set_hl(0, "Pixel_4_12", { fg = "#0c0b0b" })
-            vim.api.nvim_set_hl(0, "Pixel_4_13", { fg = "#22282b" })
-            vim.api.nvim_set_hl(0, "Pixel_4_14", { fg = "#669a9a" })
-            vim.api.nvim_set_hl(0, "Pixel_4_15", { fg = "#80c4c3" })
-            vim.api.nvim_set_hl(0, "Pixel_4_16", { fg = "#3c8891" })
-            vim.api.nvim_set_hl(0, "Pixel_4_17", { fg = "#193e46" })
-            vim.api.nvim_set_hl(0, "Pixel_4_18", { fg = "#0e1113" })
-            vim.api.nvim_set_hl(0, "Pixel_4_19", { fg = "#111112" })
-            vim.api.nvim_set_hl(0, "Pixel_4_20", { fg = "#302f32" })
-            vim.api.nvim_set_hl(0, "Pixel_4_21", { fg = "#817e7f" })
-            vim.api.nvim_set_hl(0, "Pixel_4_22", { fg = "#dcc3bf" })
-            vim.api.nvim_set_hl(0, "Pixel_4_23", { fg = "#e3cbc7" })
-            vim.api.nvim_set_hl(0, "Pixel_4_24", { fg = "#959a99" })
-            vim.api.nvim_set_hl(0, "Pixel_4_25", { fg = "#4e6065" })
-            vim.api.nvim_set_hl(0, "Pixel_4_26", { fg = "#4b464a" })
-            vim.api.nvim_set_hl(0, "Pixel_4_27", { fg = "#3b3e41" })
-            vim.api.nvim_set_hl(0, "Pixel_4_28", { fg = "#263233" })
-            vim.api.nvim_set_hl(0, "Pixel_4_29", { fg = "#205f6c" })
-            vim.api.nvim_set_hl(0, "Pixel_4_30", { fg = "#3a8c97" })
-            vim.api.nvim_set_hl(0, "Pixel_4_31", { fg = "#83c5c3" })
-            vim.api.nvim_set_hl(0, "Pixel_4_32", { fg = "#6e8987" })
-            vim.api.nvim_set_hl(0, "Pixel_4_33", { fg = "#313232" })
-            vim.api.nvim_set_hl(0, "Pixel_5_11", { fg = "#070707" })
-            vim.api.nvim_set_hl(0, "Pixel_5_12", { fg = "#223031" })
-            vim.api.nvim_set_hl(0, "Pixel_5_13", { fg = "#3c7a82" })
-            vim.api.nvim_set_hl(0, "Pixel_5_14", { fg = "#63afaf" })
-            vim.api.nvim_set_hl(0, "Pixel_5_15", { fg = "#27717b" })
-            vim.api.nvim_set_hl(0, "Pixel_5_16", { fg = "#2e383c" })
-            vim.api.nvim_set_hl(0, "Pixel_5_17", { fg = "#111112" })
-            vim.api.nvim_set_hl(0, "Pixel_5_18", { fg = "#575253" })
-            vim.api.nvim_set_hl(0, "Pixel_5_19", { fg = "#aea6a1" })
-            vim.api.nvim_set_hl(0, "Pixel_5_20", { fg = "#c1b8b7" })
-            vim.api.nvim_set_hl(0, "Pixel_5_21", { fg = "#83b3c1" })
-            vim.api.nvim_set_hl(0, "Pixel_5_22", { fg = "#50a9b9" })
-            vim.api.nvim_set_hl(0, "Pixel_5_23", { fg = "#a2bfd4" })
-            vim.api.nvim_set_hl(0, "Pixel_5_24", { fg = "#9eaabd" })
-            vim.api.nvim_set_hl(0, "Pixel_5_25", { fg = "#bdb3b4" })
-            vim.api.nvim_set_hl(0, "Pixel_5_26", { fg = "#b3ada9" })
-            vim.api.nvim_set_hl(0, "Pixel_5_27", { fg = "#73706f" })
-            vim.api.nvim_set_hl(0, "Pixel_5_28", { fg = "#262526" })
-            vim.api.nvim_set_hl(0, "Pixel_5_29", { fg = "#354a4e" })
-            vim.api.nvim_set_hl(0, "Pixel_5_30", { fg = "#356167" })
-            vim.api.nvim_set_hl(0, "Pixel_5_31", { fg = "#57a0a4" })
-            vim.api.nvim_set_hl(0, "Pixel_5_32", { fg = "#72b3b1" })
-            vim.api.nvim_set_hl(0, "Pixel_5_33", { fg = "#3f4f4e" })
-            vim.api.nvim_set_hl(0, "Pixel_5_34", { fg = "#131313" })
-            vim.api.nvim_set_hl(0, "Pixel_6_10", { fg = "#050606" })
-            vim.api.nvim_set_hl(0, "Pixel_6_11", { fg = "#212728" })
-            vim.api.nvim_set_hl(0, "Pixel_6_12", { fg = "#286b75" })
-            vim.api.nvim_set_hl(0, "Pixel_6_13", { fg = "#46969c" })
-            vim.api.nvim_set_hl(0, "Pixel_6_14", { fg = "#215660" })
-            vim.api.nvim_set_hl(0, "Pixel_6_15", { fg = "#2f3e41" })
-            vim.api.nvim_set_hl(0, "Pixel_6_16", { fg = "#0c0b0b" })
-            vim.api.nvim_set_hl(0, "Pixel_6_17", { fg = "#444344" })
-            vim.api.nvim_set_hl(0, "Pixel_6_18", { fg = "#9c9290" })
-            vim.api.nvim_set_hl(0, "Pixel_6_19", { fg = "#f3eeea" })
-            vim.api.nvim_set_hl(0, "Pixel_6_20", { fg = "#f7fafb" })
-            vim.api.nvim_set_hl(0, "Pixel_6_21", { fg = "#6dd3d8" })
-            vim.api.nvim_set_hl(0, "Pixel_6_22", { fg = "#b2d9e0" })
-            vim.api.nvim_set_hl(0, "Pixel_6_23", { fg = "#f3f5f7" })
-            vim.api.nvim_set_hl(0, "Pixel_6_24", { fg = "#f4f2f0" })
-            vim.api.nvim_set_hl(0, "Pixel_6_25", { fg = "#faf1e7" })
-            vim.api.nvim_set_hl(0, "Pixel_6_26", { fg = "#fdf3eb" })
-            vim.api.nvim_set_hl(0, "Pixel_6_27", { fg = "#cc949e" })
-            vim.api.nvim_set_hl(0, "Pixel_6_28", { fg = "#766465" })
-            vim.api.nvim_set_hl(0, "Pixel_6_29", { fg = "#1e181a" })
-            vim.api.nvim_set_hl(0, "Pixel_6_30", { fg = "#436d6f" })
-            vim.api.nvim_set_hl(0, "Pixel_6_31", { fg = "#306871" })
-            vim.api.nvim_set_hl(0, "Pixel_6_32", { fg = "#5eacab" })
-            vim.api.nvim_set_hl(0, "Pixel_6_33", { fg = "#538386" })
-            vim.api.nvim_set_hl(0, "Pixel_6_34", { fg = "#38393a" })
-            vim.api.nvim_set_hl(0, "Pixel_6_35", { fg = "#0a0a0a" })
-            vim.api.nvim_set_hl(0, "Pixel_7_10", { fg = "#2f2f31" })
-            vim.api.nvim_set_hl(0, "Pixel_7_11", { fg = "#3f7377" })
-            vim.api.nvim_set_hl(0, "Pixel_7_12", { fg = "#3b858d" })
-            vim.api.nvim_set_hl(0, "Pixel_7_13", { fg = "#215560" })
-            vim.api.nvim_set_hl(0, "Pixel_7_14", { fg = "#2a3f45" })
-            vim.api.nvim_set_hl(0, "Pixel_7_15", { fg = "#221f20" })
-            vim.api.nvim_set_hl(0, "Pixel_7_16", { fg = "#050505" })
-            vim.api.nvim_set_hl(0, "Pixel_7_17", { fg = "#2e2b2d" })
-            vim.api.nvim_set_hl(0, "Pixel_7_18", { fg = "#53565e" })
-            vim.api.nvim_set_hl(0, "Pixel_7_19", { fg = "#e6e7e9" })
-            vim.api.nvim_set_hl(0, "Pixel_7_20", { fg = "#b1e9eb" })
-            vim.api.nvim_set_hl(0, "Pixel_7_21", { fg = "#4ac5cd" })
-            vim.api.nvim_set_hl(0, "Pixel_7_22", { fg = "#f9fdfd" })
-            vim.api.nvim_set_hl(0, "Pixel_7_23", { fg = "#f9fbfd" })
-            vim.api.nvim_set_hl(0, "Pixel_7_24", { fg = "#ebeaef" })
-            vim.api.nvim_set_hl(0, "Pixel_7_25", { fg = "#bcaab9" })
-            vim.api.nvim_set_hl(0, "Pixel_7_26", { fg = "#b3bbbb" })
-            vim.api.nvim_set_hl(0, "Pixel_7_27", { fg = "#9fa7a8" })
-            vim.api.nvim_set_hl(0, "Pixel_7_28", { fg = "#6f7374" })
-            vim.api.nvim_set_hl(0, "Pixel_7_29", { fg = "#221c1d" })
-            vim.api.nvim_set_hl(0, "Pixel_7_30", { fg = "#38393a" })
-            vim.api.nvim_set_hl(0, "Pixel_7_31", { fg = "#3c7078" })
-            vim.api.nvim_set_hl(0, "Pixel_7_32", { fg = "#31818b" })
-            vim.api.nvim_set_hl(0, "Pixel_7_33", { fg = "#64aeb2" })
-            vim.api.nvim_set_hl(0, "Pixel_7_34", { fg = "#337982" })
-            vim.api.nvim_set_hl(0, "Pixel_7_35", { fg = "#445c61" })
-            vim.api.nvim_set_hl(0, "Pixel_7_36", { fg = "#393a3c" })
-            vim.api.nvim_set_hl(0, "Pixel_8_9", { fg = "#627271" })
-            vim.api.nvim_set_hl(0, "Pixel_8_10", { fg = "#70a5a2" })
-            vim.api.nvim_set_hl(0, "Pixel_8_11", { fg = "#438c94" })
-            vim.api.nvim_set_hl(0, "Pixel_8_12", { fg = "#244b55" })
-            vim.api.nvim_set_hl(0, "Pixel_8_13", { fg = "#233c42" })
-            vim.api.nvim_set_hl(0, "Pixel_8_14", { fg = "#262120" })
-            vim.api.nvim_set_hl(0, "Pixel_8_15", { fg = "#060303" })
-            vim.api.nvim_set_hl(0, "Pixel_8_16", { fg = "#0d0c0c" })
-            vim.api.nvim_set_hl(0, "Pixel_8_17", { fg = "#312629" })
-            vim.api.nvim_set_hl(0, "Pixel_8_18", { fg = "#4b4043" })
-            vim.api.nvim_set_hl(0, "Pixel_8_19", { fg = "#dadade" })
-            vim.api.nvim_set_hl(0, "Pixel_8_20", { fg = "#52d3d6" })
-            vim.api.nvim_set_hl(0, "Pixel_8_21", { fg = "#6dd2d8" })
-            vim.api.nvim_set_hl(0, "Pixel_8_22", { fg = "#fafcfd" })
-            vim.api.nvim_set_hl(0, "Pixel_8_23", { fg = "#fafcfd" })
-            vim.api.nvim_set_hl(0, "Pixel_8_24", { fg = "#cccce0" })
-            vim.api.nvim_set_hl(0, "Pixel_8_25", { fg = "#797382" })
-            vim.api.nvim_set_hl(0, "Pixel_8_26", { fg = "#514849" })
-            vim.api.nvim_set_hl(0, "Pixel_8_27", { fg = "#564a4b" })
-            vim.api.nvim_set_hl(0, "Pixel_8_28", { fg = "#6c6362" })
-            vim.api.nvim_set_hl(0, "Pixel_8_29", { fg = "#675d5d" })
-            vim.api.nvim_set_hl(0, "Pixel_8_30", { fg = "#4d4748" })
-            vim.api.nvim_set_hl(0, "Pixel_8_31", { fg = "#363738" })
-            vim.api.nvim_set_hl(0, "Pixel_8_32", { fg = "#315f68" })
-            vim.api.nvim_set_hl(0, "Pixel_8_33", { fg = "#418e99" })
-            vim.api.nvim_set_hl(0, "Pixel_8_34", { fg = "#4c9aa3" })
-            vim.api.nvim_set_hl(0, "Pixel_8_35", { fg = "#44929b" })
-            vim.api.nvim_set_hl(0, "Pixel_8_36", { fg = "#41757d" })
-            vim.api.nvim_set_hl(0, "Pixel_8_37", { fg = "#3c5256" })
-            vim.api.nvim_set_hl(0, "Pixel_8_38", { fg = "#1e1f1f" })
-            vim.api.nvim_set_hl(0, "Pixel_8_39", { fg = "#090909" })
-            vim.api.nvim_set_hl(0, "Pixel_9_6", { fg = "#040404" })
-            vim.api.nvim_set_hl(0, "Pixel_9_7", { fg = "#1b1c1c" })
-            vim.api.nvim_set_hl(0, "Pixel_9_8", { fg = "#5f7979" })
-            vim.api.nvim_set_hl(0, "Pixel_9_9", { fg = "#6dadab" })
-            vim.api.nvim_set_hl(0, "Pixel_9_10", { fg = "#45969f" })
-            vim.api.nvim_set_hl(0, "Pixel_9_11", { fg = "#285b64" })
-            vim.api.nvim_set_hl(0, "Pixel_9_12", { fg = "#28444b" })
-            vim.api.nvim_set_hl(0, "Pixel_9_13", { fg = "#262426" })
-            vim.api.nvim_set_hl(0, "Pixel_9_14", { fg = "#090606" })
-            vim.api.nvim_set_hl(0, "Pixel_9_15", { fg = "#131211" })
-            vim.api.nvim_set_hl(0, "Pixel_9_16", { fg = "#383839" })
-            vim.api.nvim_set_hl(0, "Pixel_9_17", { fg = "#504448" })
-            vim.api.nvim_set_hl(0, "Pixel_9_18", { fg = "#544c4f" })
-            vim.api.nvim_set_hl(0, "Pixel_9_19", { fg = "#c6d1d7" })
-            vim.api.nvim_set_hl(0, "Pixel_9_20", { fg = "#2e9ca6" })
-            vim.api.nvim_set_hl(0, "Pixel_9_21", { fg = "#63cdd4" })
-            vim.api.nvim_set_hl(0, "Pixel_9_22", { fg = "#f6f8f9" })
-            vim.api.nvim_set_hl(0, "Pixel_9_23", { fg = "#e8e9f1" })
-            vim.api.nvim_set_hl(0, "Pixel_9_24", { fg = "#a6a0b8" })
-            vim.api.nvim_set_hl(0, "Pixel_9_25", { fg = "#3b373b" })
-            vim.api.nvim_set_hl(0, "Pixel_9_26", { fg = "#151616" })
-            vim.api.nvim_set_hl(0, "Pixel_9_27", { fg = "#262021" })
-            vim.api.nvim_set_hl(0, "Pixel_9_28", { fg = "#3f3334" })
-            vim.api.nvim_set_hl(0, "Pixel_9_29", { fg = "#5f5657" })
-            vim.api.nvim_set_hl(0, "Pixel_9_30", { fg = "#605959" })
-            vim.api.nvim_set_hl(0, "Pixel_9_31", { fg = "#4a4b4e" })
-            vim.api.nvim_set_hl(0, "Pixel_9_32", { fg = "#56585e" })
-            vim.api.nvim_set_hl(0, "Pixel_9_33", { fg = "#436e74" })
-            vim.api.nvim_set_hl(0, "Pixel_9_34", { fg = "#48939e" })
-            vim.api.nvim_set_hl(0, "Pixel_9_35", { fg = "#3e8d99" })
-            vim.api.nvim_set_hl(0, "Pixel_9_36", { fg = "#57a1aa" })
-            vim.api.nvim_set_hl(0, "Pixel_9_37", { fg = "#60a5a9" })
-            vim.api.nvim_set_hl(0, "Pixel_9_38", { fg = "#4a7d83" })
-            vim.api.nvim_set_hl(0, "Pixel_9_39", { fg = "#2f494b" })
-            vim.api.nvim_set_hl(0, "Pixel_9_40", { fg = "#1e1f20" })
-            vim.api.nvim_set_hl(0, "Pixel_9_41", { fg = "#050505" })
-            vim.api.nvim_set_hl(0, "Pixel_10_5", { fg = "#050504" })
-            vim.api.nvim_set_hl(0, "Pixel_10_6", { fg = "#1b1f1f" })
-            vim.api.nvim_set_hl(0, "Pixel_10_7", { fg = "#5a8687" })
-            vim.api.nvim_set_hl(0, "Pixel_10_8", { fg = "#5fa9aa" })
-            vim.api.nvim_set_hl(0, "Pixel_10_9", { fg = "#6fb6b5" })
-            vim.api.nvim_set_hl(0, "Pixel_10_10", { fg = "#2e7d88" })
-            vim.api.nvim_set_hl(0, "Pixel_10_11", { fg = "#385055" })
-            vim.api.nvim_set_hl(0, "Pixel_10_12", { fg = "#272525" })
-            vim.api.nvim_set_hl(0, "Pixel_10_13", { fg = "#0a0707" })
-            vim.api.nvim_set_hl(0, "Pixel_10_14", { fg = "#171616" })
-            vim.api.nvim_set_hl(0, "Pixel_10_15", { fg = "#5e6365" })
-            vim.api.nvim_set_hl(0, "Pixel_10_16", { fg = "#5d5a5b" })
-            vim.api.nvim_set_hl(0, "Pixel_10_17", { fg = "#555053" })
-            vim.api.nvim_set_hl(0, "Pixel_10_18", { fg = "#8a868d" })
-            vim.api.nvim_set_hl(0, "Pixel_10_19", { fg = "#e8f6f9" })
-            vim.api.nvim_set_hl(0, "Pixel_10_20", { fg = "#39cbd0" })
-            vim.api.nvim_set_hl(0, "Pixel_10_21", { fg = "#58c1cc" })
-            vim.api.nvim_set_hl(0, "Pixel_10_22", { fg = "#fafcfe" })
-            vim.api.nvim_set_hl(0, "Pixel_10_23", { fg = "#f8fafb" })
-            vim.api.nvim_set_hl(0, "Pixel_10_24", { fg = "#dbdde8" })
-            vim.api.nvim_set_hl(0, "Pixel_10_25", { fg = "#8a8698" })
-            vim.api.nvim_set_hl(0, "Pixel_10_26", { fg = "#4d4a51" })
-            vim.api.nvim_set_hl(0, "Pixel_10_27", { fg = "#181717" })
-            vim.api.nvim_set_hl(0, "Pixel_10_28", { fg = "#171515" })
-            vim.api.nvim_set_hl(0, "Pixel_10_29", { fg = "#362f31" })
-            vim.api.nvim_set_hl(0, "Pixel_10_30", { fg = "#4c4649" })
-            vim.api.nvim_set_hl(0, "Pixel_10_31", { fg = "#4c4a4e" })
-            vim.api.nvim_set_hl(0, "Pixel_10_32", { fg = "#4e5961" })
-            vim.api.nvim_set_hl(0, "Pixel_10_33", { fg = "#4f737d" })
-            vim.api.nvim_set_hl(0, "Pixel_10_34", { fg = "#467d86" })
-            vim.api.nvim_set_hl(0, "Pixel_10_35", { fg = "#3c7880" })
-            vim.api.nvim_set_hl(0, "Pixel_10_36", { fg = "#3e7b84" })
-            vim.api.nvim_set_hl(0, "Pixel_10_37", { fg = "#509aa3" })
-            vim.api.nvim_set_hl(0, "Pixel_10_38", { fg = "#74b5b6" })
-            vim.api.nvim_set_hl(0, "Pixel_10_39", { fg = "#75b6b9" })
-            vim.api.nvim_set_hl(0, "Pixel_10_40", { fg = "#497c80" })
-            vim.api.nvim_set_hl(0, "Pixel_10_41", { fg = "#465b5b" })
-            vim.api.nvim_set_hl(0, "Pixel_10_42", { fg = "#2d2e2e" })
-            vim.api.nvim_set_hl(0, "Pixel_10_43", { fg = "#0a0a0a" })
-            vim.api.nvim_set_hl(0, "Pixel_11_4", { fg = "#1e1f1f" })
-            vim.api.nvim_set_hl(0, "Pixel_11_5", { fg = "#4d5454" })
-            vim.api.nvim_set_hl(0, "Pixel_11_6", { fg = "#598888" })
-            vim.api.nvim_set_hl(0, "Pixel_11_7", { fg = "#65acaf" })
-            vim.api.nvim_set_hl(0, "Pixel_11_8", { fg = "#84c3c1" })
-            vim.api.nvim_set_hl(0, "Pixel_11_9", { fg = "#58a2a9" })
-            vim.api.nvim_set_hl(0, "Pixel_11_10", { fg = "#354c51" })
-            vim.api.nvim_set_hl(0, "Pixel_11_11", { fg = "#1a1c1b" })
-            vim.api.nvim_set_hl(0, "Pixel_11_12", { fg = "#101010" })
-            vim.api.nvim_set_hl(0, "Pixel_11_13", { fg = "#313031" })
-            vim.api.nvim_set_hl(0, "Pixel_11_14", { fg = "#5d757c" })
-            vim.api.nvim_set_hl(0, "Pixel_11_15", { fg = "#3b4950" })
-            vim.api.nvim_set_hl(0, "Pixel_11_16", { fg = "#37373d" })
-            vim.api.nvim_set_hl(0, "Pixel_11_17", { fg = "#5c5c61" })
-            vim.api.nvim_set_hl(0, "Pixel_11_18", { fg = "#f3f4f6" })
-            vim.api.nvim_set_hl(0, "Pixel_11_19", { fg = "#fcfdfe" })
-            vim.api.nvim_set_hl(0, "Pixel_11_20", { fg = "#596166" })
-            vim.api.nvim_set_hl(0, "Pixel_11_21", { fg = "#898b90" })
-            vim.api.nvim_set_hl(0, "Pixel_11_22", { fg = "#fafcfe" })
-            vim.api.nvim_set_hl(0, "Pixel_11_23", { fg = "#fbfdff" })
-            vim.api.nvim_set_hl(0, "Pixel_11_24", { fg = "#fafcfd" })
-            vim.api.nvim_set_hl(0, "Pixel_11_25", { fg = "#fbfdff" })
-            vim.api.nvim_set_hl(0, "Pixel_11_26", { fg = "#eeeff3" })
-            vim.api.nvim_set_hl(0, "Pixel_11_27", { fg = "#c0bdc3" })
-            vim.api.nvim_set_hl(0, "Pixel_11_28", { fg = "#686368" })
-            vim.api.nvim_set_hl(0, "Pixel_11_29", { fg = "#161516" })
-            vim.api.nvim_set_hl(0, "Pixel_11_30", { fg = "#262125" })
-            vim.api.nvim_set_hl(0, "Pixel_11_31", { fg = "#2b292e" })
-            vim.api.nvim_set_hl(0, "Pixel_11_32", { fg = "#323338" })
-            vim.api.nvim_set_hl(0, "Pixel_11_33", { fg = "#313239" })
-            vim.api.nvim_set_hl(0, "Pixel_11_34", { fg = "#37424c" })
-            vim.api.nvim_set_hl(0, "Pixel_11_35", { fg = "#4b5f68" })
-            vim.api.nvim_set_hl(0, "Pixel_11_36", { fg = "#475c62" })
-            vim.api.nvim_set_hl(0, "Pixel_11_37", { fg = "#395258" })
-            vim.api.nvim_set_hl(0, "Pixel_11_38", { fg = "#488891" })
-            vim.api.nvim_set_hl(0, "Pixel_11_39", { fg = "#72b2b5" })
-            vim.api.nvim_set_hl(0, "Pixel_11_40", { fg = "#89c5c4" })
-            vim.api.nvim_set_hl(0, "Pixel_11_41", { fg = "#61a2a9" })
-            vim.api.nvim_set_hl(0, "Pixel_11_42", { fg = "#518385" })
-            vim.api.nvim_set_hl(0, "Pixel_11_43", { fg = "#596a69" })
-            vim.api.nvim_set_hl(0, "Pixel_11_44", { fg = "#484949" })
-            vim.api.nvim_set_hl(0, "Pixel_12_3", { fg = "#232323" })
-            vim.api.nvim_set_hl(0, "Pixel_12_4", { fg = "#535959" })
-            vim.api.nvim_set_hl(0, "Pixel_12_5", { fg = "#5c8a88" })
-            vim.api.nvim_set_hl(0, "Pixel_12_6", { fg = "#5d9fa2" })
-            vim.api.nvim_set_hl(0, "Pixel_12_7", { fg = "#8fcbc7" })
-            vim.api.nvim_set_hl(0, "Pixel_12_8", { fg = "#71b3b6" })
-            vim.api.nvim_set_hl(0, "Pixel_12_9", { fg = "#42828a" })
-            vim.api.nvim_set_hl(0, "Pixel_12_10", { fg = "#232a2d" })
-            vim.api.nvim_set_hl(0, "Pixel_12_11", { fg = "#1e1d1f" })
-            vim.api.nvim_set_hl(0, "Pixel_12_12", { fg = "#3c4245" })
-            vim.api.nvim_set_hl(0, "Pixel_12_13", { fg = "#46555d" })
-            vim.api.nvim_set_hl(0, "Pixel_12_14", { fg = "#2e353c" })
-            vim.api.nvim_set_hl(0, "Pixel_12_15", { fg = "#2c2c35" })
-            vim.api.nvim_set_hl(0, "Pixel_12_16", { fg = "#23262c" })
-            vim.api.nvim_set_hl(0, "Pixel_12_17", { fg = "#d3dee0" })
-            vim.api.nvim_set_hl(0, "Pixel_12_18", { fg = "#fafdfe" })
-            vim.api.nvim_set_hl(0, "Pixel_12_19", { fg = "#f1f2f5" })
-            vim.api.nvim_set_hl(0, "Pixel_12_20", { fg = "#2f3038" })
-            vim.api.nvim_set_hl(0, "Pixel_12_21", { fg = "#303139" })
-            vim.api.nvim_set_hl(0, "Pixel_12_22", { fg = "#b1b2b6" })
-            vim.api.nvim_set_hl(0, "Pixel_12_23", { fg = "#f6f8fb" })
-            vim.api.nvim_set_hl(0, "Pixel_12_24", { fg = "#f2f5fa" })
-            vim.api.nvim_set_hl(0, "Pixel_12_25", { fg = "#eff7f9" })
-            vim.api.nvim_set_hl(0, "Pixel_12_26", { fg = "#bad5d7" })
-            vim.api.nvim_set_hl(0, "Pixel_12_27", { fg = "#657f85" })
-            vim.api.nvim_set_hl(0, "Pixel_12_28", { fg = "#31444b" })
-            vim.api.nvim_set_hl(0, "Pixel_12_29", { fg = "#404447" })
-            vim.api.nvim_set_hl(0, "Pixel_12_30", { fg = "#263334" })
-            vim.api.nvim_set_hl(0, "Pixel_12_31", { fg = "#171317" })
-            vim.api.nvim_set_hl(0, "Pixel_12_32", { fg = "#1d2125" })
-            vim.api.nvim_set_hl(0, "Pixel_12_33", { fg = "#26434d" })
-            vim.api.nvim_set_hl(0, "Pixel_12_34", { fg = "#4a5c63" })
-            vim.api.nvim_set_hl(0, "Pixel_12_35", { fg = "#899798" })
-            vim.api.nvim_set_hl(0, "Pixel_12_36", { fg = "#94a0a0" })
-            vim.api.nvim_set_hl(0, "Pixel_12_37", { fg = "#93a6a9" })
-            vim.api.nvim_set_hl(0, "Pixel_12_38", { fg = "#929394" })
-            vim.api.nvim_set_hl(0, "Pixel_12_39", { fg = "#557d84" })
-            vim.api.nvim_set_hl(0, "Pixel_12_40", { fg = "#70acb1" })
-            vim.api.nvim_set_hl(0, "Pixel_12_41", { fg = "#a1d4d2" })
-            vim.api.nvim_set_hl(0, "Pixel_12_42", { fg = "#8ac5c5" })
-            vim.api.nvim_set_hl(0, "Pixel_12_43", { fg = "#4d868e" })
-            vim.api.nvim_set_hl(0, "Pixel_12_44", { fg = "#5c7879" })
-            vim.api.nvim_set_hl(0, "Pixel_12_45", { fg = "#636969" })
-            vim.api.nvim_set_hl(0, "Pixel_12_46", { fg = "#0e0f0f" })
-            vim.api.nvim_set_hl(0, "Pixel_13_3", { fg = "#474948" })
-            vim.api.nvim_set_hl(0, "Pixel_13_4", { fg = "#669190" })
-            vim.api.nvim_set_hl(0, "Pixel_13_5", { fg = "#548c94" })
-            vim.api.nvim_set_hl(0, "Pixel_13_6", { fg = "#87c5c3" })
-            vim.api.nvim_set_hl(0, "Pixel_13_7", { fg = "#99d0cd" })
-            vim.api.nvim_set_hl(0, "Pixel_13_8", { fg = "#56a0a8" })
-            vim.api.nvim_set_hl(0, "Pixel_13_9", { fg = "#406b73" })
-            vim.api.nvim_set_hl(0, "Pixel_13_10", { fg = "#828281" })
-            vim.api.nvim_set_hl(0, "Pixel_13_11", { fg = "#889291" })
-            vim.api.nvim_set_hl(0, "Pixel_13_12", { fg = "#879b9d" })
-            vim.api.nvim_set_hl(0, "Pixel_13_13", { fg = "#828c92" })
-            vim.api.nvim_set_hl(0, "Pixel_13_14", { fg = "#70767c" })
-            vim.api.nvim_set_hl(0, "Pixel_13_15", { fg = "#2e414a" })
-            vim.api.nvim_set_hl(0, "Pixel_13_16", { fg = "#252f35" })
-            vim.api.nvim_set_hl(0, "Pixel_13_17", { fg = "#44545a" })
-            vim.api.nvim_set_hl(0, "Pixel_13_18", { fg = "#90a3a7" })
-            vim.api.nvim_set_hl(0, "Pixel_13_19", { fg = "#91a2a7" })
-            vim.api.nvim_set_hl(0, "Pixel_13_20", { fg = "#3b3c43" })
-            vim.api.nvim_set_hl(0, "Pixel_13_21", { fg = "#3b3d43" })
-            vim.api.nvim_set_hl(0, "Pixel_13_22", { fg = "#3a3c42" })
-            vim.api.nvim_set_hl(0, "Pixel_13_23", { fg = "#8e999f" })
-            vim.api.nvim_set_hl(0, "Pixel_13_24", { fg = "#68818b" })
-            vim.api.nvim_set_hl(0, "Pixel_13_25", { fg = "#41545c" })
-            vim.api.nvim_set_hl(0, "Pixel_13_26", { fg = "#42444a" })
-            vim.api.nvim_set_hl(0, "Pixel_13_27", { fg = "#484b50" })
-            vim.api.nvim_set_hl(0, "Pixel_13_28", { fg = "#4b5b61" })
-            vim.api.nvim_set_hl(0, "Pixel_13_29", { fg = "#407780" })
-            vim.api.nvim_set_hl(0, "Pixel_13_30", { fg = "#30878a" })
-            vim.api.nvim_set_hl(0, "Pixel_13_31", { fg = "#0c1112" })
-            vim.api.nvim_set_hl(0, "Pixel_13_32", { fg = "#080606" })
-            vim.api.nvim_set_hl(0, "Pixel_13_33", { fg = "#0d0b0b" })
-            vim.api.nvim_set_hl(0, "Pixel_13_34", { fg = "#393535" })
-            vim.api.nvim_set_hl(0, "Pixel_13_35", { fg = "#847778" })
-            vim.api.nvim_set_hl(0, "Pixel_13_36", { fg = "#9baeab" })
-            vim.api.nvim_set_hl(0, "Pixel_13_37", { fg = "#5c797f" })
-            vim.api.nvim_set_hl(0, "Pixel_13_38", { fg = "#63919b" })
-            vim.api.nvim_set_hl(0, "Pixel_13_39", { fg = "#586e74" })
-            vim.api.nvim_set_hl(0, "Pixel_13_40", { fg = "#46646b" })
-            vim.api.nvim_set_hl(0, "Pixel_13_41", { fg = "#87bebf" })
-            vim.api.nvim_set_hl(0, "Pixel_13_42", { fg = "#a4d6d3" })
-            vim.api.nvim_set_hl(0, "Pixel_13_43", { fg = "#99d0ce" })
-            vim.api.nvim_set_hl(0, "Pixel_13_44", { fg = "#59898f" })
-            vim.api.nvim_set_hl(0, "Pixel_13_45", { fg = "#687f80" })
-            vim.api.nvim_set_hl(0, "Pixel_13_46", { fg = "#617171" })
-            vim.api.nvim_set_hl(0, "Pixel_13_47", { fg = "#1e1f1e" })
-            vim.api.nvim_set_hl(0, "Pixel_14_2", { fg = "#3d3c3d" })
-            vim.api.nvim_set_hl(0, "Pixel_14_3", { fg = "#627c7b" })
-            vim.api.nvim_set_hl(0, "Pixel_14_4", { fg = "#548c90" })
-            vim.api.nvim_set_hl(0, "Pixel_14_5", { fg = "#66a2a6" })
-            vim.api.nvim_set_hl(0, "Pixel_14_6", { fg = "#95cdcb" })
-            vim.api.nvim_set_hl(0, "Pixel_14_7", { fg = "#95ccca" })
-            vim.api.nvim_set_hl(0, "Pixel_14_8", { fg = "#4f99a3" })
-            vim.api.nvim_set_hl(0, "Pixel_14_9", { fg = "#466a71" })
-            vim.api.nvim_set_hl(0, "Pixel_14_10", { fg = "#646a6a" })
-            vim.api.nvim_set_hl(0, "Pixel_14_11", { fg = "#877a7e" })
-            vim.api.nvim_set_hl(0, "Pixel_14_12", { fg = "#8a8081" })
-            vim.api.nvim_set_hl(0, "Pixel_14_13", { fg = "#847375" })
-            vim.api.nvim_set_hl(0, "Pixel_14_14", { fg = "#302d2c" })
-            vim.api.nvim_set_hl(0, "Pixel_14_15", { fg = "#324245" })
-            vim.api.nvim_set_hl(0, "Pixel_14_16", { fg = "#25636d" })
-            vim.api.nvim_set_hl(0, "Pixel_14_17", { fg = "#436970" })
-            vim.api.nvim_set_hl(0, "Pixel_14_18", { fg = "#3e454c" })
-            vim.api.nvim_set_hl(0, "Pixel_14_19", { fg = "#45454b" })
-            vim.api.nvim_set_hl(0, "Pixel_14_20", { fg = "#44474c" })
-            vim.api.nvim_set_hl(0, "Pixel_14_21", { fg = "#48494f" })
-            vim.api.nvim_set_hl(0, "Pixel_14_22", { fg = "#505057" })
-            vim.api.nvim_set_hl(0, "Pixel_14_23", { fg = "#484d53" })
-            vim.api.nvim_set_hl(0, "Pixel_14_24", { fg = "#4f6065" })
-            vim.api.nvim_set_hl(0, "Pixel_14_25", { fg = "#3f6468" })
-            vim.api.nvim_set_hl(0, "Pixel_14_26", { fg = "#58838a" })
-            vim.api.nvim_set_hl(0, "Pixel_14_27", { fg = "#54868b" })
-            vim.api.nvim_set_hl(0, "Pixel_14_28", { fg = "#448f93" })
-            vim.api.nvim_set_hl(0, "Pixel_14_29", { fg = "#597676" })
-            vim.api.nvim_set_hl(0, "Pixel_14_30", { fg = "#171719" })
-            vim.api.nvim_set_hl(0, "Pixel_14_31", { fg = "#040403" })
-            vim.api.nvim_set_hl(0, "Pixel_14_35", { fg = "#0d0d0c" })
-            vim.api.nvim_set_hl(0, "Pixel_14_36", { fg = "#2b2b2b" })
-            vim.api.nvim_set_hl(0, "Pixel_14_37", { fg = "#242323" })
-            vim.api.nvim_set_hl(0, "Pixel_14_38", { fg = "#435e62" })
-            vim.api.nvim_set_hl(0, "Pixel_14_39", { fg = "#64a0a5" })
-            vim.api.nvim_set_hl(0, "Pixel_14_40", { fg = "#527f85" })
-            vim.api.nvim_set_hl(0, "Pixel_14_41", { fg = "#4e8187" })
-            vim.api.nvim_set_hl(0, "Pixel_14_42", { fg = "#a7d7d6" })
-            vim.api.nvim_set_hl(0, "Pixel_14_43", { fg = "#a3d4d4" })
-            vim.api.nvim_set_hl(0, "Pixel_14_44", { fg = "#9acdcc" })
-            vim.api.nvim_set_hl(0, "Pixel_14_45", { fg = "#53747a" })
-            vim.api.nvim_set_hl(0, "Pixel_14_46", { fg = "#50787a" })
-            vim.api.nvim_set_hl(0, "Pixel_14_47", { fg = "#272828" })
-            vim.api.nvim_set_hl(0, "Pixel_14_48", { fg = "#050505" })
-            vim.api.nvim_set_hl(0, "Pixel_15_2", { fg = "#595e5e" })
-            vim.api.nvim_set_hl(0, "Pixel_15_3", { fg = "#679ea0" })
-            vim.api.nvim_set_hl(0, "Pixel_15_4", { fg = "#4c777f" })
-            vim.api.nvim_set_hl(0, "Pixel_15_5", { fg = "#67acb2" })
-            vim.api.nvim_set_hl(0, "Pixel_15_6", { fg = "#a1d5d2" })
-            vim.api.nvim_set_hl(0, "Pixel_15_7", { fg = "#81bdbd" })
-            vim.api.nvim_set_hl(0, "Pixel_15_8", { fg = "#66aab1" })
-            vim.api.nvim_set_hl(0, "Pixel_15_9", { fg = "#486d74" })
-            vim.api.nvim_set_hl(0, "Pixel_15_10", { fg = "#1b1b1a" })
-            vim.api.nvim_set_hl(0, "Pixel_15_16", { fg = "#1d1e1e" })
-            vim.api.nvim_set_hl(0, "Pixel_15_17", { fg = "#576d6e" })
-            vim.api.nvim_set_hl(0, "Pixel_15_18", { fg = "#879da1" })
-            vim.api.nvim_set_hl(0, "Pixel_15_19", { fg = "#97b6bb" })
-            vim.api.nvim_set_hl(0, "Pixel_15_20", { fg = "#93b1b6" })
-            vim.api.nvim_set_hl(0, "Pixel_15_21", { fg = "#98b4ba" })
-            vim.api.nvim_set_hl(0, "Pixel_15_22", { fg = "#87a5aa" })
-            vim.api.nvim_set_hl(0, "Pixel_15_23", { fg = "#9eb7bc" })
-            vim.api.nvim_set_hl(0, "Pixel_15_24", { fg = "#c3d4d2" })
-            vim.api.nvim_set_hl(0, "Pixel_15_25", { fg = "#ded9d6" })
-            vim.api.nvim_set_hl(0, "Pixel_15_26", { fg = "#f2e6e0" })
-            vim.api.nvim_set_hl(0, "Pixel_15_27", { fg = "#cbbcb8" })
-            vim.api.nvim_set_hl(0, "Pixel_15_28", { fg = "#7c7b7b" })
-            vim.api.nvim_set_hl(0, "Pixel_15_38", { fg = "#3a3938" })
-            vim.api.nvim_set_hl(0, "Pixel_15_39", { fg = "#41656b" })
-            vim.api.nvim_set_hl(0, "Pixel_15_40", { fg = "#83b6b8" })
-            vim.api.nvim_set_hl(0, "Pixel_15_41", { fg = "#57848c" })
-            vim.api.nvim_set_hl(0, "Pixel_15_42", { fg = "#7fb1b2" })
-            vim.api.nvim_set_hl(0, "Pixel_15_43", { fg = "#a9d6d5" })
-            vim.api.nvim_set_hl(0, "Pixel_15_44", { fg = "#99cccd" })
-            vim.api.nvim_set_hl(0, "Pixel_15_45", { fg = "#83abae" })
-            vim.api.nvim_set_hl(0, "Pixel_15_46", { fg = "#557e85" })
-            vim.api.nvim_set_hl(0, "Pixel_15_47", { fg = "#565353" })
-            vim.api.nvim_set_hl(0, "Pixel_15_48", { fg = "#232323" })
-            vim.api.nvim_set_hl(0, "Pixel_16_2", { fg = "#596362" })
-            vim.api.nvim_set_hl(0, "Pixel_16_3", { fg = "#649da1" })
-            vim.api.nvim_set_hl(0, "Pixel_16_4", { fg = "#4f6268" })
-            vim.api.nvim_set_hl(0, "Pixel_16_5", { fg = "#5ca4ae" })
-            vim.api.nvim_set_hl(0, "Pixel_16_6", { fg = "#a4d6d5" })
-            vim.api.nvim_set_hl(0, "Pixel_16_7", { fg = "#5da2ab" })
-            vim.api.nvim_set_hl(0, "Pixel_16_8", { fg = "#92c7ca" })
-            vim.api.nvim_set_hl(0, "Pixel_16_9", { fg = "#497780" })
-            vim.api.nvim_set_hl(0, "Pixel_16_10", { fg = "#1d1d1d" })
-            vim.api.nvim_set_hl(0, "Pixel_16_17", { fg = "#252525" })
-            vim.api.nvim_set_hl(0, "Pixel_16_18", { fg = "#6d6065" })
-            vim.api.nvim_set_hl(0, "Pixel_16_19", { fg = "#bbabaf" })
-            vim.api.nvim_set_hl(0, "Pixel_16_20", { fg = "#c8b5ba" })
-            vim.api.nvim_set_hl(0, "Pixel_16_21", { fg = "#bcb0b5" })
-            vim.api.nvim_set_hl(0, "Pixel_16_22", { fg = "#9a9398" })
-            vim.api.nvim_set_hl(0, "Pixel_16_23", { fg = "#a9b2b1" })
-            vim.api.nvim_set_hl(0, "Pixel_16_24", { fg = "#d8e7de" })
-            vim.api.nvim_set_hl(0, "Pixel_16_25", { fg = "#d9e7df" })
-            vim.api.nvim_set_hl(0, "Pixel_16_26", { fg = "#c9d7d0" })
-            vim.api.nvim_set_hl(0, "Pixel_16_27", { fg = "#6a6a6b" })
-            vim.api.nvim_set_hl(0, "Pixel_16_28", { fg = "#16090a" })
-            vim.api.nvim_set_hl(0, "Pixel_16_29", { fg = "#16090a" })
-            vim.api.nvim_set_hl(0, "Pixel_16_30", { fg = "#16090a" })
-            vim.api.nvim_set_hl(0, "Pixel_16_31", { fg = "#16090a" })
-            vim.api.nvim_set_hl(0, "Pixel_16_32", { fg = "#16090a" })
-            vim.api.nvim_set_hl(0, "Pixel_16_33", { fg = "#16090a" })
-            vim.api.nvim_set_hl(0, "Pixel_16_34", { fg = "#16090a" })
-            vim.api.nvim_set_hl(0, "Pixel_16_35", { fg = "#16090a" })
-            vim.api.nvim_set_hl(0, "Pixel_16_36", { fg = "#16090a" })
-            vim.api.nvim_set_hl(0, "Pixel_16_37", { fg = "#16090a" })
-            vim.api.nvim_set_hl(0, "Pixel_16_38", { fg = "#16090a" })
-            vim.api.nvim_set_hl(0, "Pixel_16_39", { fg = "#3c4142" })
-            vim.api.nvim_set_hl(0, "Pixel_16_40", { fg = "#59959c" })
-            vim.api.nvim_set_hl(0, "Pixel_16_41", { fg = "#809fa0" })
-            vim.api.nvim_set_hl(0, "Pixel_16_42", { fg = "#64989d" })
-            vim.api.nvim_set_hl(0, "Pixel_16_43", { fg = "#9acccb" })
-            vim.api.nvim_set_hl(0, "Pixel_16_44", { fg = "#98cacd" })
-            vim.api.nvim_set_hl(0, "Pixel_16_45", { fg = "#99bcbd" })
-            vim.api.nvim_set_hl(0, "Pixel_16_46", { fg = "#729aa0" })
-            vim.api.nvim_set_hl(0, "Pixel_16_47", { fg = "#5b5a5a" })
-            vim.api.nvim_set_hl(0, "Pixel_16_48", { fg = "#202020" })
-            vim.api.nvim_set_hl(0, "Pixel_17_2", { fg = "#656f6e" })
-            vim.api.nvim_set_hl(0, "Pixel_17_3", { fg = "#76a4a8" })
-            vim.api.nvim_set_hl(0, "Pixel_17_4", { fg = "#6b7579" })
-            vim.api.nvim_set_hl(0, "Pixel_17_5", { fg = "#4e8c98" })
-            vim.api.nvim_set_hl(0, "Pixel_17_6", { fg = "#8ac1c4" })
-            vim.api.nvim_set_hl(0, "Pixel_17_7", { fg = "#84bcbf" })
-            vim.api.nvim_set_hl(0, "Pixel_17_8", { fg = "#6aacb3" })
-            vim.api.nvim_set_hl(0, "Pixel_17_9", { fg = "#70a7ad" })
-            vim.api.nvim_set_hl(0, "Pixel_17_10", { fg = "#2d383b" })
-            vim.api.nvim_set_hl(0, "Pixel_17_11", { fg = "#0d0c0d" })
-            vim.api.nvim_set_hl(0, "Pixel_17_18", { fg = "#1e1d1d" })
-            vim.api.nvim_set_hl(0, "Pixel_17_19", { fg = "#393032" })
-            vim.api.nvim_set_hl(0, "Pixel_17_20", { fg = "#4c4b4c" })
-            vim.api.nvim_set_hl(0, "Pixel_17_21", { fg = "#4c4547" })
-            vim.api.nvim_set_hl(0, "Pixel_17_22", { fg = "#4d4246" })
-            vim.api.nvim_set_hl(0, "Pixel_17_23", { fg = "#605756" })
-            vim.api.nvim_set_hl(0, "Pixel_17_24", { fg = "#6f6564" })
-            vim.api.nvim_set_hl(0, "Pixel_17_25", { fg = "#695f5e" })
-            vim.api.nvim_set_hl(0, "Pixel_17_26", { fg = "#59504e" })
-            vim.api.nvim_set_hl(0, "Pixel_17_27", { fg = "#302c2c" })
-            vim.api.nvim_set_hl(0, "Pixel_17_39", { fg = "#353535" })
-            vim.api.nvim_set_hl(0, "Pixel_17_40", { fg = "#447379" })
-            vim.api.nvim_set_hl(0, "Pixel_17_41", { fg = "#83a5a6" })
-            vim.api.nvim_set_hl(0, "Pixel_17_42", { fg = "#4d6e75" })
-            vim.api.nvim_set_hl(0, "Pixel_17_43", { fg = "#a1d0d1" })
-            vim.api.nvim_set_hl(0, "Pixel_17_44", { fg = "#89c0c5" })
-            vim.api.nvim_set_hl(0, "Pixel_17_45", { fg = "#a2cacb" })
-            vim.api.nvim_set_hl(0, "Pixel_17_46", { fg = "#8d9b9c" })
-            vim.api.nvim_set_hl(0, "Pixel_17_47", { fg = "#292827" })
-            vim.api.nvim_set_hl(0, "Pixel_18_2", { fg = "#6e7071" })
-            vim.api.nvim_set_hl(0, "Pixel_18_3", { fg = "#95b6b5" })
-            vim.api.nvim_set_hl(0, "Pixel_18_4", { fg = "#667a7c" })
-            vim.api.nvim_set_hl(0, "Pixel_18_5", { fg = "#526567" })
-            vim.api.nvim_set_hl(0, "Pixel_18_6", { fg = "#55939c" })
-            vim.api.nvim_set_hl(0, "Pixel_18_7", { fg = "#a2ced1" })
-            vim.api.nvim_set_hl(0, "Pixel_18_8", { fg = "#7caab1" })
-            vim.api.nvim_set_hl(0, "Pixel_18_9", { fg = "#61a1a9" })
-            vim.api.nvim_set_hl(0, "Pixel_18_10", { fg = "#5b8c92" })
-            vim.api.nvim_set_hl(0, "Pixel_18_11", { fg = "#373a3c" })
-            vim.api.nvim_set_hl(0, "Pixel_18_12", { fg = "#080808" })
-            vim.api.nvim_set_hl(0, "Pixel_18_18", { fg = "#050505" })
-            vim.api.nvim_set_hl(0, "Pixel_18_19", { fg = "#1f1c1b" })
-            vim.api.nvim_set_hl(0, "Pixel_18_20", { fg = "#463a3b" })
-            vim.api.nvim_set_hl(0, "Pixel_18_21", { fg = "#635a5a" })
-            vim.api.nvim_set_hl(0, "Pixel_18_22", { fg = "#52484a" })
-            vim.api.nvim_set_hl(0, "Pixel_18_23", { fg = "#625959" })
-            vim.api.nvim_set_hl(0, "Pixel_18_24", { fg = "#6d6463" })
-            vim.api.nvim_set_hl(0, "Pixel_18_25", { fg = "#665d5b" })
-            vim.api.nvim_set_hl(0, "Pixel_18_26", { fg = "#504545" })
-            vim.api.nvim_set_hl(0, "Pixel_18_27", { fg = "#2d2b2b" })
-            vim.api.nvim_set_hl(0, "Pixel_18_39", { fg = "#292929" })
-            vim.api.nvim_set_hl(0, "Pixel_18_40", { fg = "#4a656b" })
-            vim.api.nvim_set_hl(0, "Pixel_18_41", { fg = "#81a3a5" })
-            vim.api.nvim_set_hl(0, "Pixel_18_42", { fg = "#60939a" })
-            vim.api.nvim_set_hl(0, "Pixel_18_43", { fg = "#81bdc5" })
-            vim.api.nvim_set_hl(0, "Pixel_18_44", { fg = "#9bcbcf" })
-            vim.api.nvim_set_hl(0, "Pixel_18_45", { fg = "#8cadb0" })
-            vim.api.nvim_set_hl(0, "Pixel_18_46", { fg = "#363738" })
-            vim.api.nvim_set_hl(0, "Pixel_18_47", { fg = "#140f11" })
-            vim.api.nvim_set_hl(0, "Pixel_18_48", { fg = "#090507" })
-            vim.api.nvim_set_hl(0, "Pixel_18_49", { fg = "#090507" })
-            vim.api.nvim_set_hl(0, "Pixel_18_50", { fg = "#090507" })
-            vim.api.nvim_set_hl(0, "Pixel_18_51", { fg = "#090507" })
-            vim.api.nvim_set_hl(0, "Pixel_18_52", { fg = "#090507" })
-            vim.api.nvim_set_hl(0, "Pixel_18_53", { fg = "#090507" })
-            vim.api.nvim_set_hl(0, "Pixel_18_54", { fg = "#090507" })
-            vim.api.nvim_set_hl(0, "Pixel_18_55", { fg = "#090507" })
-            vim.api.nvim_set_hl(0, "Pixel_19_2", { fg = "#343434" })
-            vim.api.nvim_set_hl(0, "Pixel_19_3", { fg = "#727979" })
-            vim.api.nvim_set_hl(0, "Pixel_19_4", { fg = "#7e9fa1" })
-            vim.api.nvim_set_hl(0, "Pixel_19_5", { fg = "#5f7c7f" })
-            vim.api.nvim_set_hl(0, "Pixel_19_6", { fg = "#646e70" })
-            vim.api.nvim_set_hl(0, "Pixel_19_7", { fg = "#557d82" })
-            vim.api.nvim_set_hl(0, "Pixel_19_8", { fg = "#9ec8cd" })
-            vim.api.nvim_set_hl(0, "Pixel_19_9", { fg = "#9ebbbd" })
-            vim.api.nvim_set_hl(0, "Pixel_19_10", { fg = "#6b989e" })
-            vim.api.nvim_set_hl(0, "Pixel_19_11", { fg = "#57888f" })
-            vim.api.nvim_set_hl(0, "Pixel_19_12", { fg = "#4e6165" })
-            vim.api.nvim_set_hl(0, "Pixel_19_13", { fg = "#2d3738" })
-            vim.api.nvim_set_hl(0, "Pixel_19_14", { fg = "#222325" })
-            vim.api.nvim_set_hl(0, "Pixel_19_19", { fg = "#0a0b0a" })
-            vim.api.nvim_set_hl(0, "Pixel_19_20", { fg = "#272323" })
-            vim.api.nvim_set_hl(0, "Pixel_19_21", { fg = "#544a4b" })
-            vim.api.nvim_set_hl(0, "Pixel_19_22", { fg = "#625e5d" })
-            vim.api.nvim_set_hl(0, "Pixel_19_23", { fg = "#615b5b" })
-            vim.api.nvim_set_hl(0, "Pixel_19_24", { fg = "#6c6765" })
-            vim.api.nvim_set_hl(0, "Pixel_19_25", { fg = "#5b5151" })
-            vim.api.nvim_set_hl(0, "Pixel_19_26", { fg = "#2b2425" })
-            vim.api.nvim_set_hl(0, "Pixel_19_39", { fg = "#272626" })
-            vim.api.nvim_set_hl(0, "Pixel_19_40", { fg = "#436a70" })
-            vim.api.nvim_set_hl(0, "Pixel_19_41", { fg = "#67878c" })
-            vim.api.nvim_set_hl(0, "Pixel_19_42", { fg = "#61a9b2" })
-            vim.api.nvim_set_hl(0, "Pixel_19_43", { fg = "#78b9bf" })
-            vim.api.nvim_set_hl(0, "Pixel_19_44", { fg = "#a7c1c3" })
-            vim.api.nvim_set_hl(0, "Pixel_19_45", { fg = "#5e6b6d" })
-            vim.api.nvim_set_hl(0, "Pixel_19_46", { fg = "#0f0f0f" })
-            vim.api.nvim_set_hl(0, "Pixel_20_4", { fg = "#222323" })
-            vim.api.nvim_set_hl(0, "Pixel_20_5", { fg = "#435c60" })
-            vim.api.nvim_set_hl(0, "Pixel_20_6", { fg = "#4d7177" })
-            vim.api.nvim_set_hl(0, "Pixel_20_7", { fg = "#43595d" })
-            vim.api.nvim_set_hl(0, "Pixel_20_8", { fg = "#58797f" })
-            vim.api.nvim_set_hl(0, "Pixel_20_9", { fg = "#6aa0a7" })
-            vim.api.nvim_set_hl(0, "Pixel_20_10", { fg = "#8bb9be" })
-            vim.api.nvim_set_hl(0, "Pixel_20_11", { fg = "#88aaae" })
-            vim.api.nvim_set_hl(0, "Pixel_20_12", { fg = "#699ba2" })
-            vim.api.nvim_set_hl(0, "Pixel_20_13", { fg = "#59858b" })
-            vim.api.nvim_set_hl(0, "Pixel_20_14", { fg = "#628489" })
-            vim.api.nvim_set_hl(0, "Pixel_20_15", { fg = "#647b82" })
-            vim.api.nvim_set_hl(0, "Pixel_20_16", { fg = "#5f7b7e" })
-            vim.api.nvim_set_hl(0, "Pixel_20_17", { fg = "#484646" })
-            vim.api.nvim_set_hl(0, "Pixel_20_18", { fg = "#1b1515" })
-            vim.api.nvim_set_hl(0, "Pixel_20_20", { fg = "#0d0c0b" })
-            vim.api.nvim_set_hl(0, "Pixel_20_21", { fg = "#342a2c" })
-            vim.api.nvim_set_hl(0, "Pixel_20_22", { fg = "#4c4648" })
-            vim.api.nvim_set_hl(0, "Pixel_20_23", { fg = "#564e4f" })
-            vim.api.nvim_set_hl(0, "Pixel_20_24", { fg = "#675f60" })
-            vim.api.nvim_set_hl(0, "Pixel_20_25", { fg = "#58504f" })
-            vim.api.nvim_set_hl(0, "Pixel_20_26", { fg = "#342c2d" })
-            vim.api.nvim_set_hl(0, "Pixel_20_27", { fg = "#151515" })
-            vim.api.nvim_set_hl(0, "Pixel_20_38", { fg = "#222424" })
-            vim.api.nvim_set_hl(0, "Pixel_20_39", { fg = "#435659" })
-            vim.api.nvim_set_hl(0, "Pixel_20_40", { fg = "#548087" })
-            vim.api.nvim_set_hl(0, "Pixel_20_41", { fg = "#4e828b" })
-            vim.api.nvim_set_hl(0, "Pixel_20_42", { fg = "#5a939c" })
-            vim.api.nvim_set_hl(0, "Pixel_20_43", { fg = "#97c8ce" })
-            vim.api.nvim_set_hl(0, "Pixel_20_44", { fg = "#9ba2a3" })
-            vim.api.nvim_set_hl(0, "Pixel_21_5", { fg = "#040404" })
-            vim.api.nvim_set_hl(0, "Pixel_21_6", { fg = "#0e0e0e" })
-            vim.api.nvim_set_hl(0, "Pixel_21_7", { fg = "#0b0f0f" })
-            vim.api.nvim_set_hl(0, "Pixel_21_8", { fg = "#091213" })
-            vim.api.nvim_set_hl(0, "Pixel_21_9", { fg = "#6a7274" })
-            vim.api.nvim_set_hl(0, "Pixel_21_10", { fg = "#6f989d" })
-            vim.api.nvim_set_hl(0, "Pixel_21_11", { fg = "#5e868c" })
-            vim.api.nvim_set_hl(0, "Pixel_21_12", { fg = "#88b9bd" })
-            vim.api.nvim_set_hl(0, "Pixel_21_13", { fg = "#94b6b9" })
-            vim.api.nvim_set_hl(0, "Pixel_21_14", { fg = "#505759" })
-            vim.api.nvim_set_hl(0, "Pixel_21_15", { fg = "#111111" })
-            vim.api.nvim_set_hl(0, "Pixel_21_16", { fg = "#0f0f0f" })
-            vim.api.nvim_set_hl(0, "Pixel_21_17", { fg = "#0d0d0d" })
-            vim.api.nvim_set_hl(0, "Pixel_21_18", { fg = "#050506" })
-            vim.api.nvim_set_hl(0, "Pixel_21_20", { fg = "#0d0d0d" })
-            vim.api.nvim_set_hl(0, "Pixel_21_21", { fg = "#342d2f" })
-            vim.api.nvim_set_hl(0, "Pixel_21_22", { fg = "#40393c" })
-            vim.api.nvim_set_hl(0, "Pixel_21_23", { fg = "#453d40" })
-            vim.api.nvim_set_hl(0, "Pixel_21_24", { fg = "#5e5759" })
-            vim.api.nvim_set_hl(0, "Pixel_21_25", { fg = "#5c5557" })
-            vim.api.nvim_set_hl(0, "Pixel_21_26", { fg = "#4d4648" })
-            vim.api.nvim_set_hl(0, "Pixel_21_27", { fg = "#363635" })
-            vim.api.nvim_set_hl(0, "Pixel_21_35", { fg = "#0c0807" })
-            vim.api.nvim_set_hl(0, "Pixel_21_36", { fg = "#282e30" })
-            vim.api.nvim_set_hl(0, "Pixel_21_37", { fg = "#3b4e51" })
-            vim.api.nvim_set_hl(0, "Pixel_21_38", { fg = "#485c62" })
-            vim.api.nvim_set_hl(0, "Pixel_21_39", { fg = "#3d5d64" })
-            vim.api.nvim_set_hl(0, "Pixel_21_40", { fg = "#3d4d51" })
-            vim.api.nvim_set_hl(0, "Pixel_21_41", { fg = "#3f6268" })
-            vim.api.nvim_set_hl(0, "Pixel_21_42", { fg = "#558289" })
-            vim.api.nvim_set_hl(0, "Pixel_21_43", { fg = "#a2cfd4" })
-            vim.api.nvim_set_hl(0, "Pixel_21_44", { fg = "#777f81" })
-            vim.api.nvim_set_hl(0, "Pixel_22_9", { fg = "#222222" })
-            vim.api.nvim_set_hl(0, "Pixel_22_10", { fg = "#707c7c" })
-            vim.api.nvim_set_hl(0, "Pixel_22_11", { fg = "#4c5b5d" })
-            vim.api.nvim_set_hl(0, "Pixel_22_12", { fg = "#536164" })
-            vim.api.nvim_set_hl(0, "Pixel_22_13", { fg = "#79aab1" })
-            vim.api.nvim_set_hl(0, "Pixel_22_14", { fg = "#6d888d" })
-            vim.api.nvim_set_hl(0, "Pixel_22_20", { fg = "#0b0b0b" })
-            vim.api.nvim_set_hl(0, "Pixel_22_21", { fg = "#2d282b" })
-            vim.api.nvim_set_hl(0, "Pixel_22_22", { fg = "#373236" })
-            vim.api.nvim_set_hl(0, "Pixel_22_23", { fg = "#403a3e" })
-            vim.api.nvim_set_hl(0, "Pixel_22_24", { fg = "#514d50" })
-            vim.api.nvim_set_hl(0, "Pixel_22_25", { fg = "#504c4e" })
-            vim.api.nvim_set_hl(0, "Pixel_22_26", { fg = "#3f393b" })
-            vim.api.nvim_set_hl(0, "Pixel_22_27", { fg = "#252424" })
-            vim.api.nvim_set_hl(0, "Pixel_22_35", { fg = "#060606" })
-            vim.api.nvim_set_hl(0, "Pixel_22_36", { fg = "#1a1d1e" })
-            vim.api.nvim_set_hl(0, "Pixel_22_37", { fg = "#415152" })
-            vim.api.nvim_set_hl(0, "Pixel_22_38", { fg = "#3b5359" })
-            vim.api.nvim_set_hl(0, "Pixel_22_39", { fg = "#475b63" })
-            vim.api.nvim_set_hl(0, "Pixel_22_40", { fg = "#3f4a4f" })
-            vim.api.nvim_set_hl(0, "Pixel_22_41", { fg = "#3c4547" })
-            vim.api.nvim_set_hl(0, "Pixel_22_42", { fg = "#46595c" })
-            vim.api.nvim_set_hl(0, "Pixel_22_43", { fg = "#82b2ba" })
-            vim.api.nvim_set_hl(0, "Pixel_22_44", { fg = "#657a7f" })
-            vim.api.nvim_set_hl(0, "Pixel_22_45", { fg = "#282c2d" })
-            vim.api.nvim_set_hl(0, "Pixel_22_46", { fg = "#090607" })
-            vim.api.nvim_set_hl(0, "Pixel_23_9", { fg = "#373535" })
-            vim.api.nvim_set_hl(0, "Pixel_23_10", { fg = "#7a817f" })
-            vim.api.nvim_set_hl(0, "Pixel_23_11", { fg = "#474646" })
-            vim.api.nvim_set_hl(0, "Pixel_23_12", { fg = "#464d4d" })
-            vim.api.nvim_set_hl(0, "Pixel_23_13", { fg = "#7eaaae" })
-            vim.api.nvim_set_hl(0, "Pixel_23_14", { fg = "#628184" })
-            vim.api.nvim_set_hl(0, "Pixel_23_20", { fg = "#080808" })
-            vim.api.nvim_set_hl(0, "Pixel_23_21", { fg = "#1d1b1b" })
-            vim.api.nvim_set_hl(0, "Pixel_23_22", { fg = "#2c292d" })
-            vim.api.nvim_set_hl(0, "Pixel_23_23", { fg = "#37353a" })
-            vim.api.nvim_set_hl(0, "Pixel_23_24", { fg = "#454247" })
-            vim.api.nvim_set_hl(0, "Pixel_23_25", { fg = "#444145" })
-            vim.api.nvim_set_hl(0, "Pixel_23_26", { fg = "#2d282b" })
-            vim.api.nvim_set_hl(0, "Pixel_23_27", { fg = "#0e0e0e" })
-            vim.api.nvim_set_hl(0, "Pixel_23_35", { fg = "#100d0d" })
-            vim.api.nvim_set_hl(0, "Pixel_23_36", { fg = "#2a373a" })
-            vim.api.nvim_set_hl(0, "Pixel_23_37", { fg = "#202525" })
-            vim.api.nvim_set_hl(0, "Pixel_23_38", { fg = "#121111" })
-            vim.api.nvim_set_hl(0, "Pixel_23_39", { fg = "#050505" })
-            vim.api.nvim_set_hl(0, "Pixel_23_42", { fg = "#1e1e1e" })
-            vim.api.nvim_set_hl(0, "Pixel_23_43", { fg = "#59797d" })
-            vim.api.nvim_set_hl(0, "Pixel_23_44", { fg = "#508a94" })
-            vim.api.nvim_set_hl(0, "Pixel_23_45", { fg = "#506265" })
-            vim.api.nvim_set_hl(0, "Pixel_23_46", { fg = "#150e0f" })
-            vim.api.nvim_set_hl(0, "Pixel_24_9", { fg = "#0b0809" })
-            vim.api.nvim_set_hl(0, "Pixel_24_10", { fg = "#1a1616" })
-            vim.api.nvim_set_hl(0, "Pixel_24_11", { fg = "#2a2928" })
-            vim.api.nvim_set_hl(0, "Pixel_24_12", { fg = "#3f4547" })
-            vim.api.nvim_set_hl(0, "Pixel_24_13", { fg = "#6e8588" })
-            vim.api.nvim_set_hl(0, "Pixel_24_14", { fg = "#707375" })
-            vim.api.nvim_set_hl(0, "Pixel_24_21", { fg = "#050505" })
-            vim.api.nvim_set_hl(0, "Pixel_24_22", { fg = "#252125" })
-            vim.api.nvim_set_hl(0, "Pixel_24_23", { fg = "#333238" })
-            vim.api.nvim_set_hl(0, "Pixel_24_24", { fg = "#3d3c41" })
-            vim.api.nvim_set_hl(0, "Pixel_24_25", { fg = "#2f2a2e" })
-            vim.api.nvim_set_hl(0, "Pixel_24_26", { fg = "#171516" })
-            vim.api.nvim_set_hl(0, "Pixel_24_43", { fg = "#09090a" })
-            vim.api.nvim_set_hl(0, "Pixel_24_44", { fg = "#2d494c" })
-            vim.api.nvim_set_hl(0, "Pixel_24_45", { fg = "#2e5f67" })
-            vim.api.nvim_set_hl(0, "Pixel_24_46", { fg = "#334c52" })
-            vim.api.nvim_set_hl(0, "Pixel_24_47", { fg = "#3e545b" })
-            vim.api.nvim_set_hl(0, "Pixel_24_48", { fg = "#24363d" })
-            vim.api.nvim_set_hl(0, "Pixel_24_49", { fg = "#110c0b" })
-            vim.api.nvim_set_hl(0, "Pixel_25_11", { fg = "#221a1c" })
-            vim.api.nvim_set_hl(0, "Pixel_25_12", { fg = "#364a4f" })
-            vim.api.nvim_set_hl(0, "Pixel_25_13", { fg = "#414445" })
-            vim.api.nvim_set_hl(0, "Pixel_25_14", { fg = "#111111" })
-            vim.api.nvim_set_hl(0, "Pixel_25_21", { fg = "#040405" })
-            vim.api.nvim_set_hl(0, "Pixel_25_22", { fg = "#1f1b1e" })
-            vim.api.nvim_set_hl(0, "Pixel_25_23", { fg = "#313139" })
-            vim.api.nvim_set_hl(0, "Pixel_25_24", { fg = "#2e2c31" })
-            vim.api.nvim_set_hl(0, "Pixel_25_25", { fg = "#161011" })
-            vim.api.nvim_set_hl(0, "Pixel_25_26", { fg = "#070707" })
-            vim.api.nvim_set_hl(0, "Pixel_25_45", { fg = "#090909" })
-            vim.api.nvim_set_hl(0, "Pixel_25_46", { fg = "#080808" })
-            vim.api.nvim_set_hl(0, "Pixel_25_47", { fg = "#070b0b" })
-            vim.api.nvim_set_hl(0, "Pixel_25_48", { fg = "#070707" })
-            vim.api.nvim_set_hl(0, "Pixel_26_21", { fg = "#050405" })
-            vim.api.nvim_set_hl(0, "Pixel_26_22", { fg = "#262225" })
-            vim.api.nvim_set_hl(0, "Pixel_26_23", { fg = "#2d2e37" })
-            vim.api.nvim_set_hl(0, "Pixel_26_24", { fg = "#1f1b21" })
-            vim.api.nvim_set_hl(0, "Pixel_26_25", { fg = "#0d0808" })
-            vim.api.nvim_set_hl(0, "Pixel_27_20", { fg = "#030404" })
-            vim.api.nvim_set_hl(0, "Pixel_27_21", { fg = "#110d0f" })
-            vim.api.nvim_set_hl(0, "Pixel_27_22", { fg = "#27252c" })
-            vim.api.nvim_set_hl(0, "Pixel_27_23", { fg = "#2b2f38" })
-            vim.api.nvim_set_hl(0, "Pixel_27_24", { fg = "#1c2027" })
-            vim.api.nvim_set_hl(0, "Pixel_27_25", { fg = "#1a1417" })
-            vim.api.nvim_set_hl(0, "Pixel_27_26", { fg = "#0c0c0c" })
-            vim.api.nvim_set_hl(0, "Pixel_28_20", { fg = "#080808" })
-            vim.api.nvim_set_hl(0, "Pixel_28_21", { fg = "#201b1e" })
-            vim.api.nvim_set_hl(0, "Pixel_28_22", { fg = "#2c2d35" })
-            vim.api.nvim_set_hl(0, "Pixel_28_23", { fg = "#2d2f38" })
-            vim.api.nvim_set_hl(0, "Pixel_28_24", { fg = "#1c272f" })
-            vim.api.nvim_set_hl(0, "Pixel_28_25", { fg = "#1b424d" })
-            vim.api.nvim_set_hl(0, "Pixel_28_26", { fg = "#1c2326" })
-            vim.api.nvim_set_hl(0, "Pixel_29_20", { fg = "#0c0c0b" })
-            vim.api.nvim_set_hl(0, "Pixel_29_21", { fg = "#143b43" })
-            vim.api.nvim_set_hl(0, "Pixel_29_22", { fg = "#26404a" })
-            vim.api.nvim_set_hl(0, "Pixel_29_23", { fg = "#293b43" })
-            vim.api.nvim_set_hl(0, "Pixel_29_24", { fg = "#274549" })
-            vim.api.nvim_set_hl(0, "Pixel_29_25", { fg = "#1b1a1b" })
-            vim.api.nvim_set_hl(0, "Pixel_29_26", { fg = "#080707" })
-        end
+        -- -- sprite
+        -- local sprite = {
+        --     [====[                  ~((flljc\<];                      ]====],
+        --     [====[                :])\qbbpdmzt)]i.                    ]====],
+        --     [====[               |yz/rl0kqzzmn(zxl.                   ]====],
+        --     [====[             ^{czx]-cm8wklrf{nq0>                   ]====],
+        --     [====[            ^lv0f<"">xbhy1?+i[fon>                  ]====],
+        --     [====[           .!\y)<"}lmlzmqz0tl-{vj]\                 ]====],
+        --     [====[          .l1x?~^-x8$zk%%%%l\:(1xf~`                ]====],
+        --     [====[          i|t?~;.i{woj$$&omcf;~(\y|{~               ]====],
+        --     [====[         /xj_<i.^!-o0z$$kj][|(?<}jnr|];`            ]====],
+        --     [====[      .:tyx]+l."~?[kr0bwc~\i<11]1(xjczt_;.          ]====],
+        --     [====[     .;rxj\]l`,(1}v%jc$$*v],\>?]{\/\\ucc/{i`        ]====],
+        --     [====[    ;}ryoc?:">t-~)%@)v$$$$8q|\i!>>_1{]jjozf|?       ]====],
+        --     [====[   i{rcmjtl;_}<ilo$%>>ob%%bj_-i\;+{xujxfupojt\"     ]====],
+        --     [====[   ?uroqv)nzxvf+i[ju+++yr[-]{\/".^<rltu\)0dqrj/;    ]====],
+        --     [====[  +frzwwu(\xnji+})-??]}]11jjr/,.   ^!i{cffdpw//l.   ]====],
+        --     [====[  )c/ypqy(:     ;|y0q0uokowqr         ~1ljcdwjf}i   ]====],
+        --     [====[  (c)zdcm/:      l|owzx0##h\^^^^^^^^^^^_nxvwwoc1;   ]====],
+        --     [====[  /yfroqyy<^      :>]??1\(}i           <|u|qowyl    ]====],
+        --     [====[  tqf(nqucx~`     .:+)])|(?!           !)yuqwc<"    ]====],
+        --     [====[  <jxf/fwovr)<i    `i[))\}l            l)xxlm\"     ]====],
+        --     [====[    i{\}tzqjcjrff?, ^i?[(}i\          i}ffnmj       ]====],
+        --     [====[     .^^"tcrqq{""^. ^i+_1{?<       `i?{}?1jqx       ]====],
+        --     [====[         ij{)un     ^!<+[[+i       .:]]{?-}cf!.     ]====],
+        --     [====[         <x?]uj     `:!<--!^       ^<i".  ;tr)"     ]====],
+        --     [====[         `,!-xf      .i>+!\                `_}-[>^  ]====],
+        --     [====[           :--"      .:>i".                  ```.   ]====],
+        --     [====[                     .ii:`                          ]====],
+        --     [====[                    .^li;,^                         ]====],
+        --     [====[                    `:iii~i                         ]====],
+        --     [====[                    ^>~<+:.                         ]====],
+        -- }
+
+        -- -- highlight ranges
+        -- local hl = {
+        --     {
+        --         { "Pixel_0_18", 18, 19 },
+        --         { "Pixel_0_19", 19, 20 },
+        --         { "Pixel_0_20", 20, 21 },
+        --         { "Pixel_0_21", 21, 22 },
+        --         { "Pixel_0_22", 22, 23 },
+        --         { "Pixel_0_23", 23, 24 },
+        --         { "Pixel_0_24", 24, 25 },
+        --         { "Pixel_0_25", 25, 26 },
+        --         { "Pixel_0_26", 26, 27 },
+        --         { "Pixel_0_27", 27, 28 },
+        --         { "Pixel_0_28", 28, 29 },
+        --         { "Pixel_0_29", 29, 30 },
+        --     },
+        --     {
+        --         { "Pixel_1_16", 16, 17 },
+        --         { "Pixel_1_17", 17, 18 },
+        --         { "Pixel_1_18", 18, 19 },
+        --         { "Pixel_1_19", 19, 20 },
+        --         { "Pixel_1_20", 20, 21 },
+        --         { "Pixel_1_21", 21, 22 },
+        --         { "Pixel_1_22", 22, 23 },
+        --         { "Pixel_1_23", 23, 24 },
+        --         { "Pixel_1_24", 24, 25 },
+        --         { "Pixel_1_25", 25, 26 },
+        --         { "Pixel_1_26", 26, 27 },
+        --         { "Pixel_1_27", 27, 28 },
+        --         { "Pixel_1_28", 28, 29 },
+        --         { "Pixel_1_29", 29, 30 },
+        --         { "Pixel_1_30", 30, 31 },
+        --         { "Pixel_1_31", 31, 32 },
+        --     },
+        --     {
+        --         { "Pixel_2_15", 15, 16 },
+        --         { "Pixel_2_16", 16, 17 },
+        --         { "Pixel_2_17", 17, 18 },
+        --         { "Pixel_2_18", 18, 19 },
+        --         { "Pixel_2_19", 19, 20 },
+        --         { "Pixel_2_20", 20, 21 },
+        --         { "Pixel_2_21", 21, 22 },
+        --         { "Pixel_2_22", 22, 23 },
+        --         { "Pixel_2_23", 23, 24 },
+        --         { "Pixel_2_24", 24, 25 },
+        --         { "Pixel_2_25", 25, 26 },
+        --         { "Pixel_2_26", 26, 27 },
+        --         { "Pixel_2_27", 27, 28 },
+        --         { "Pixel_2_28", 28, 29 },
+        --         { "Pixel_2_29", 29, 30 },
+        --         { "Pixel_2_30", 30, 31 },
+        --         { "Pixel_2_31", 31, 32 },
+        --         { "Pixel_2_32", 32, 33 },
+        --     },
+        --     {
+        --         { "Pixel_3_13", 13, 14 },
+        --         { "Pixel_3_14", 14, 15 },
+        --         { "Pixel_3_15", 15, 16 },
+        --         { "Pixel_3_16", 16, 17 },
+        --         { "Pixel_3_17", 17, 18 },
+        --         { "Pixel_3_18", 18, 19 },
+        --         { "Pixel_3_19", 19, 20 },
+        --         { "Pixel_3_20", 20, 21 },
+        --         { "Pixel_3_21", 21, 22 },
+        --         { "Pixel_3_22", 22, 23 },
+        --         { "Pixel_3_23", 23, 24 },
+        --         { "Pixel_3_24", 24, 25 },
+        --         { "Pixel_3_25", 25, 26 },
+        --         { "Pixel_3_26", 26, 27 },
+        --         { "Pixel_3_27", 27, 28 },
+        --         { "Pixel_3_28", 28, 29 },
+        --         { "Pixel_3_29", 29, 30 },
+        --         { "Pixel_3_30", 30, 31 },
+        --         { "Pixel_3_31", 31, 32 },
+        --         { "Pixel_3_32", 32, 33 },
+        --     },
+        --     {
+        --         { "Pixel_4_12", 12, 13 },
+        --         { "Pixel_4_13", 13, 14 },
+        --         { "Pixel_4_14", 14, 15 },
+        --         { "Pixel_4_15", 15, 16 },
+        --         { "Pixel_4_16", 16, 17 },
+        --         { "Pixel_4_17", 17, 18 },
+        --         { "Pixel_4_18", 18, 19 },
+        --         { "Pixel_4_19", 19, 20 },
+        --         { "Pixel_4_20", 20, 21 },
+        --         { "Pixel_4_21", 21, 22 },
+        --         { "Pixel_4_22", 22, 23 },
+        --         { "Pixel_4_23", 23, 24 },
+        --         { "Pixel_4_24", 24, 25 },
+        --         { "Pixel_4_25", 25, 26 },
+        --         { "Pixel_4_26", 26, 27 },
+        --         { "Pixel_4_27", 27, 28 },
+        --         { "Pixel_4_28", 28, 29 },
+        --         { "Pixel_4_29", 29, 30 },
+        --         { "Pixel_4_30", 30, 31 },
+        --         { "Pixel_4_31", 31, 32 },
+        --         { "Pixel_4_32", 32, 33 },
+        --         { "Pixel_4_33", 33, 34 },
+        --     },
+        --     {
+        --         { "Pixel_5_11", 11, 12 },
+        --         { "Pixel_5_12", 12, 13 },
+        --         { "Pixel_5_13", 13, 14 },
+        --         { "Pixel_5_14", 14, 15 },
+        --         { "Pixel_5_15", 15, 16 },
+        --         { "Pixel_5_16", 16, 17 },
+        --         { "Pixel_5_17", 17, 18 },
+        --         { "Pixel_5_18", 18, 19 },
+        --         { "Pixel_5_19", 19, 20 },
+        --         { "Pixel_5_20", 20, 21 },
+        --         { "Pixel_5_21", 21, 22 },
+        --         { "Pixel_5_22", 22, 23 },
+        --         { "Pixel_5_23", 23, 24 },
+        --         { "Pixel_5_24", 24, 25 },
+        --         { "Pixel_5_25", 25, 26 },
+        --         { "Pixel_5_26", 26, 27 },
+        --         { "Pixel_5_27", 27, 28 },
+        --         { "Pixel_5_28", 28, 29 },
+        --         { "Pixel_5_29", 29, 30 },
+        --         { "Pixel_5_30", 30, 31 },
+        --         { "Pixel_5_31", 31, 32 },
+        --         { "Pixel_5_32", 32, 33 },
+        --         { "Pixel_5_33", 33, 34 },
+        --         { "Pixel_5_34", 34, 35 },
+        --     },
+        --     {
+        --         { "Pixel_6_10", 10, 11 },
+        --         { "Pixel_6_11", 11, 12 },
+        --         { "Pixel_6_12", 12, 13 },
+        --         { "Pixel_6_13", 13, 14 },
+        --         { "Pixel_6_14", 14, 15 },
+        --         { "Pixel_6_15", 15, 16 },
+        --         { "Pixel_6_16", 16, 17 },
+        --         { "Pixel_6_17", 17, 18 },
+        --         { "Pixel_6_18", 18, 19 },
+        --         { "Pixel_6_19", 19, 20 },
+        --         { "Pixel_6_20", 20, 21 },
+        --         { "Pixel_6_21", 21, 22 },
+        --         { "Pixel_6_22", 22, 23 },
+        --         { "Pixel_6_23", 23, 24 },
+        --         { "Pixel_6_24", 24, 25 },
+        --         { "Pixel_6_25", 25, 26 },
+        --         { "Pixel_6_26", 26, 27 },
+        --         { "Pixel_6_27", 27, 28 },
+        --         { "Pixel_6_28", 28, 29 },
+        --         { "Pixel_6_29", 29, 30 },
+        --         { "Pixel_6_30", 30, 31 },
+        --         { "Pixel_6_31", 31, 32 },
+        --         { "Pixel_6_32", 32, 33 },
+        --         { "Pixel_6_33", 33, 34 },
+        --         { "Pixel_6_34", 34, 35 },
+        --         { "Pixel_6_35", 35, 36 },
+        --     },
+        --     {
+        --         { "Pixel_7_10", 10, 11 },
+        --         { "Pixel_7_11", 11, 12 },
+        --         { "Pixel_7_12", 12, 13 },
+        --         { "Pixel_7_13", 13, 14 },
+        --         { "Pixel_7_14", 14, 15 },
+        --         { "Pixel_7_15", 15, 16 },
+        --         { "Pixel_7_16", 16, 17 },
+        --         { "Pixel_7_17", 17, 18 },
+        --         { "Pixel_7_18", 18, 19 },
+        --         { "Pixel_7_19", 19, 20 },
+        --         { "Pixel_7_20", 20, 21 },
+        --         { "Pixel_7_21", 21, 22 },
+        --         { "Pixel_7_22", 22, 23 },
+        --         { "Pixel_7_23", 23, 24 },
+        --         { "Pixel_7_24", 24, 25 },
+        --         { "Pixel_7_25", 25, 26 },
+        --         { "Pixel_7_26", 26, 27 },
+        --         { "Pixel_7_27", 27, 28 },
+        --         { "Pixel_7_28", 28, 29 },
+        --         { "Pixel_7_29", 29, 30 },
+        --         { "Pixel_7_30", 30, 31 },
+        --         { "Pixel_7_31", 31, 32 },
+        --         { "Pixel_7_32", 32, 33 },
+        --         { "Pixel_7_33", 33, 34 },
+        --         { "Pixel_7_34", 34, 35 },
+        --         { "Pixel_7_35", 35, 36 },
+        --         { "Pixel_7_36", 36, 37 },
+        --     },
+        --     {
+        --         { "Pixel_8_9", 9, 10 },
+        --         { "Pixel_8_10", 10, 11 },
+        --         { "Pixel_8_11", 11, 12 },
+        --         { "Pixel_8_12", 12, 13 },
+        --         { "Pixel_8_13", 13, 14 },
+        --         { "Pixel_8_14", 14, 15 },
+        --         { "Pixel_8_15", 15, 16 },
+        --         { "Pixel_8_16", 16, 17 },
+        --         { "Pixel_8_17", 17, 18 },
+        --         { "Pixel_8_18", 18, 19 },
+        --         { "Pixel_8_19", 19, 20 },
+        --         { "Pixel_8_20", 20, 21 },
+        --         { "Pixel_8_21", 21, 22 },
+        --         { "Pixel_8_22", 22, 23 },
+        --         { "Pixel_8_23", 23, 24 },
+        --         { "Pixel_8_24", 24, 25 },
+        --         { "Pixel_8_25", 25, 26 },
+        --         { "Pixel_8_26", 26, 27 },
+        --         { "Pixel_8_27", 27, 28 },
+        --         { "Pixel_8_28", 28, 29 },
+        --         { "Pixel_8_29", 29, 30 },
+        --         { "Pixel_8_30", 30, 31 },
+        --         { "Pixel_8_31", 31, 32 },
+        --         { "Pixel_8_32", 32, 33 },
+        --         { "Pixel_8_33", 33, 34 },
+        --         { "Pixel_8_34", 34, 35 },
+        --         { "Pixel_8_35", 35, 36 },
+        --         { "Pixel_8_36", 36, 37 },
+        --         { "Pixel_8_37", 37, 38 },
+        --         { "Pixel_8_38", 38, 39 },
+        --         { "Pixel_8_39", 39, 40 },
+        --     },
+        --     {
+        --         { "Pixel_9_6", 6, 7 },
+        --         { "Pixel_9_7", 7, 8 },
+        --         { "Pixel_9_8", 8, 9 },
+        --         { "Pixel_9_9", 9, 10 },
+        --         { "Pixel_9_10", 10, 11 },
+        --         { "Pixel_9_11", 11, 12 },
+        --         { "Pixel_9_12", 12, 13 },
+        --         { "Pixel_9_13", 13, 14 },
+        --         { "Pixel_9_14", 14, 15 },
+        --         { "Pixel_9_15", 15, 16 },
+        --         { "Pixel_9_16", 16, 17 },
+        --         { "Pixel_9_17", 17, 18 },
+        --         { "Pixel_9_18", 18, 19 },
+        --         { "Pixel_9_19", 19, 20 },
+        --         { "Pixel_9_20", 20, 21 },
+        --         { "Pixel_9_21", 21, 22 },
+        --         { "Pixel_9_22", 22, 23 },
+        --         { "Pixel_9_23", 23, 24 },
+        --         { "Pixel_9_24", 24, 25 },
+        --         { "Pixel_9_25", 25, 26 },
+        --         { "Pixel_9_26", 26, 27 },
+        --         { "Pixel_9_27", 27, 28 },
+        --         { "Pixel_9_28", 28, 29 },
+        --         { "Pixel_9_29", 29, 30 },
+        --         { "Pixel_9_30", 30, 31 },
+        --         { "Pixel_9_31", 31, 32 },
+        --         { "Pixel_9_32", 32, 33 },
+        --         { "Pixel_9_33", 33, 34 },
+        --         { "Pixel_9_34", 34, 35 },
+        --         { "Pixel_9_35", 35, 36 },
+        --         { "Pixel_9_36", 36, 37 },
+        --         { "Pixel_9_37", 37, 38 },
+        --         { "Pixel_9_38", 38, 39 },
+        --         { "Pixel_9_39", 39, 40 },
+        --         { "Pixel_9_40", 40, 41 },
+        --         { "Pixel_9_41", 41, 42 },
+        --     },
+        --     {
+        --         { "Pixel_10_5", 5, 6 },
+        --         { "Pixel_10_6", 6, 7 },
+        --         { "Pixel_10_7", 7, 8 },
+        --         { "Pixel_10_8", 8, 9 },
+        --         { "Pixel_10_9", 9, 10 },
+        --         { "Pixel_10_10", 10, 11 },
+        --         { "Pixel_10_11", 11, 12 },
+        --         { "Pixel_10_12", 12, 13 },
+        --         { "Pixel_10_13", 13, 14 },
+        --         { "Pixel_10_14", 14, 15 },
+        --         { "Pixel_10_15", 15, 16 },
+        --         { "Pixel_10_16", 16, 17 },
+        --         { "Pixel_10_17", 17, 18 },
+        --         { "Pixel_10_18", 18, 19 },
+        --         { "Pixel_10_19", 19, 20 },
+        --         { "Pixel_10_20", 20, 21 },
+        --         { "Pixel_10_21", 21, 22 },
+        --         { "Pixel_10_22", 22, 23 },
+        --         { "Pixel_10_23", 23, 24 },
+        --         { "Pixel_10_24", 24, 25 },
+        --         { "Pixel_10_25", 25, 26 },
+        --         { "Pixel_10_26", 26, 27 },
+        --         { "Pixel_10_27", 27, 28 },
+        --         { "Pixel_10_28", 28, 29 },
+        --         { "Pixel_10_29", 29, 30 },
+        --         { "Pixel_10_30", 30, 31 },
+        --         { "Pixel_10_31", 31, 32 },
+        --         { "Pixel_10_32", 32, 33 },
+        --         { "Pixel_10_33", 33, 34 },
+        --         { "Pixel_10_34", 34, 35 },
+        --         { "Pixel_10_35", 35, 36 },
+        --         { "Pixel_10_36", 36, 37 },
+        --         { "Pixel_10_37", 37, 38 },
+        --         { "Pixel_10_38", 38, 39 },
+        --         { "Pixel_10_39", 39, 40 },
+        --         { "Pixel_10_40", 40, 41 },
+        --         { "Pixel_10_41", 41, 42 },
+        --         { "Pixel_10_42", 42, 43 },
+        --         { "Pixel_10_43", 43, 44 },
+        --     },
+        --     {
+        --         { "Pixel_11_4", 4, 5 },
+        --         { "Pixel_11_5", 5, 6 },
+        --         { "Pixel_11_6", 6, 7 },
+        --         { "Pixel_11_7", 7, 8 },
+        --         { "Pixel_11_8", 8, 9 },
+        --         { "Pixel_11_9", 9, 10 },
+        --         { "Pixel_11_10", 10, 11 },
+        --         { "Pixel_11_11", 11, 12 },
+        --         { "Pixel_11_12", 12, 13 },
+        --         { "Pixel_11_13", 13, 14 },
+        --         { "Pixel_11_14", 14, 15 },
+        --         { "Pixel_11_15", 15, 16 },
+        --         { "Pixel_11_16", 16, 17 },
+        --         { "Pixel_11_17", 17, 18 },
+        --         { "Pixel_11_18", 18, 19 },
+        --         { "Pixel_11_19", 19, 20 },
+        --         { "Pixel_11_20", 20, 21 },
+        --         { "Pixel_11_21", 21, 22 },
+        --         { "Pixel_11_22", 22, 23 },
+        --         { "Pixel_11_23", 23, 24 },
+        --         { "Pixel_11_24", 24, 25 },
+        --         { "Pixel_11_25", 25, 26 },
+        --         { "Pixel_11_26", 26, 27 },
+        --         { "Pixel_11_27", 27, 28 },
+        --         { "Pixel_11_28", 28, 29 },
+        --         { "Pixel_11_29", 29, 30 },
+        --         { "Pixel_11_30", 30, 31 },
+        --         { "Pixel_11_31", 31, 32 },
+        --         { "Pixel_11_32", 32, 33 },
+        --         { "Pixel_11_33", 33, 34 },
+        --         { "Pixel_11_34", 34, 35 },
+        --         { "Pixel_11_35", 35, 36 },
+        --         { "Pixel_11_36", 36, 37 },
+        --         { "Pixel_11_37", 37, 38 },
+        --         { "Pixel_11_38", 38, 39 },
+        --         { "Pixel_11_39", 39, 40 },
+        --         { "Pixel_11_40", 40, 41 },
+        --         { "Pixel_11_41", 41, 42 },
+        --         { "Pixel_11_42", 42, 43 },
+        --         { "Pixel_11_43", 43, 44 },
+        --         { "Pixel_11_44", 44, 45 },
+        --     },
+        --     {
+        --         { "Pixel_12_3", 3, 4 },
+        --         { "Pixel_12_4", 4, 5 },
+        --         { "Pixel_12_5", 5, 6 },
+        --         { "Pixel_12_6", 6, 7 },
+        --         { "Pixel_12_7", 7, 8 },
+        --         { "Pixel_12_8", 8, 9 },
+        --         { "Pixel_12_9", 9, 10 },
+        --         { "Pixel_12_10", 10, 11 },
+        --         { "Pixel_12_11", 11, 12 },
+        --         { "Pixel_12_12", 12, 13 },
+        --         { "Pixel_12_13", 13, 14 },
+        --         { "Pixel_12_14", 14, 15 },
+        --         { "Pixel_12_15", 15, 16 },
+        --         { "Pixel_12_16", 16, 17 },
+        --         { "Pixel_12_17", 17, 18 },
+        --         { "Pixel_12_18", 18, 19 },
+        --         { "Pixel_12_19", 19, 20 },
+        --         { "Pixel_12_20", 20, 21 },
+        --         { "Pixel_12_21", 21, 22 },
+        --         { "Pixel_12_22", 22, 23 },
+        --         { "Pixel_12_23", 23, 24 },
+        --         { "Pixel_12_24", 24, 25 },
+        --         { "Pixel_12_25", 25, 26 },
+        --         { "Pixel_12_26", 26, 27 },
+        --         { "Pixel_12_27", 27, 28 },
+        --         { "Pixel_12_28", 28, 29 },
+        --         { "Pixel_12_29", 29, 30 },
+        --         { "Pixel_12_30", 30, 31 },
+        --         { "Pixel_12_31", 31, 32 },
+        --         { "Pixel_12_32", 32, 33 },
+        --         { "Pixel_12_33", 33, 34 },
+        --         { "Pixel_12_34", 34, 35 },
+        --         { "Pixel_12_35", 35, 36 },
+        --         { "Pixel_12_36", 36, 37 },
+        --         { "Pixel_12_37", 37, 38 },
+        --         { "Pixel_12_38", 38, 39 },
+        --         { "Pixel_12_39", 39, 40 },
+        --         { "Pixel_12_40", 40, 41 },
+        --         { "Pixel_12_41", 41, 42 },
+        --         { "Pixel_12_42", 42, 43 },
+        --         { "Pixel_12_43", 43, 44 },
+        --         { "Pixel_12_44", 44, 45 },
+        --         { "Pixel_12_45", 45, 46 },
+        --         { "Pixel_12_46", 46, 47 },
+        --     },
+        --     {
+        --         { "Pixel_13_3", 3, 4 },
+        --         { "Pixel_13_4", 4, 5 },
+        --         { "Pixel_13_5", 5, 6 },
+        --         { "Pixel_13_6", 6, 7 },
+        --         { "Pixel_13_7", 7, 8 },
+        --         { "Pixel_13_8", 8, 9 },
+        --         { "Pixel_13_9", 9, 10 },
+        --         { "Pixel_13_10", 10, 11 },
+        --         { "Pixel_13_11", 11, 12 },
+        --         { "Pixel_13_12", 12, 13 },
+        --         { "Pixel_13_13", 13, 14 },
+        --         { "Pixel_13_14", 14, 15 },
+        --         { "Pixel_13_15", 15, 16 },
+        --         { "Pixel_13_16", 16, 17 },
+        --         { "Pixel_13_17", 17, 18 },
+        --         { "Pixel_13_18", 18, 19 },
+        --         { "Pixel_13_19", 19, 20 },
+        --         { "Pixel_13_20", 20, 21 },
+        --         { "Pixel_13_21", 21, 22 },
+        --         { "Pixel_13_22", 22, 23 },
+        --         { "Pixel_13_23", 23, 24 },
+        --         { "Pixel_13_24", 24, 25 },
+        --         { "Pixel_13_25", 25, 26 },
+        --         { "Pixel_13_26", 26, 27 },
+        --         { "Pixel_13_27", 27, 28 },
+        --         { "Pixel_13_28", 28, 29 },
+        --         { "Pixel_13_29", 29, 30 },
+        --         { "Pixel_13_30", 30, 31 },
+        --         { "Pixel_13_31", 31, 32 },
+        --         { "Pixel_13_32", 32, 33 },
+        --         { "Pixel_13_33", 33, 34 },
+        --         { "Pixel_13_34", 34, 35 },
+        --         { "Pixel_13_35", 35, 36 },
+        --         { "Pixel_13_36", 36, 37 },
+        --         { "Pixel_13_37", 37, 38 },
+        --         { "Pixel_13_38", 38, 39 },
+        --         { "Pixel_13_39", 39, 40 },
+        --         { "Pixel_13_40", 40, 41 },
+        --         { "Pixel_13_41", 41, 42 },
+        --         { "Pixel_13_42", 42, 43 },
+        --         { "Pixel_13_43", 43, 44 },
+        --         { "Pixel_13_44", 44, 45 },
+        --         { "Pixel_13_45", 45, 46 },
+        --         { "Pixel_13_46", 46, 47 },
+        --         { "Pixel_13_47", 47, 48 },
+        --     },
+        --     {
+        --         { "Pixel_14_2", 2, 3 },
+        --         { "Pixel_14_3", 3, 4 },
+        --         { "Pixel_14_4", 4, 5 },
+        --         { "Pixel_14_5", 5, 6 },
+        --         { "Pixel_14_6", 6, 7 },
+        --         { "Pixel_14_7", 7, 8 },
+        --         { "Pixel_14_8", 8, 9 },
+        --         { "Pixel_14_9", 9, 10 },
+        --         { "Pixel_14_10", 10, 11 },
+        --         { "Pixel_14_11", 11, 12 },
+        --         { "Pixel_14_12", 12, 13 },
+        --         { "Pixel_14_13", 13, 14 },
+        --         { "Pixel_14_14", 14, 15 },
+        --         { "Pixel_14_15", 15, 16 },
+        --         { "Pixel_14_16", 16, 17 },
+        --         { "Pixel_14_17", 17, 18 },
+        --         { "Pixel_14_18", 18, 19 },
+        --         { "Pixel_14_19", 19, 20 },
+        --         { "Pixel_14_20", 20, 21 },
+        --         { "Pixel_14_21", 21, 22 },
+        --         { "Pixel_14_22", 22, 23 },
+        --         { "Pixel_14_23", 23, 24 },
+        --         { "Pixel_14_24", 24, 25 },
+        --         { "Pixel_14_25", 25, 26 },
+        --         { "Pixel_14_26", 26, 27 },
+        --         { "Pixel_14_27", 27, 28 },
+        --         { "Pixel_14_28", 28, 29 },
+        --         { "Pixel_14_29", 29, 30 },
+        --         { "Pixel_14_30", 30, 31 },
+        --         { "Pixel_14_31", 31, 32 },
+        --         { "Pixel_14_35", 35, 36 },
+        --         { "Pixel_14_36", 36, 37 },
+        --         { "Pixel_14_37", 37, 38 },
+        --         { "Pixel_14_38", 38, 39 },
+        --         { "Pixel_14_39", 39, 40 },
+        --         { "Pixel_14_40", 40, 41 },
+        --         { "Pixel_14_41", 41, 42 },
+        --         { "Pixel_14_42", 42, 43 },
+        --         { "Pixel_14_43", 43, 44 },
+        --         { "Pixel_14_44", 44, 45 },
+        --         { "Pixel_14_45", 45, 46 },
+        --         { "Pixel_14_46", 46, 47 },
+        --         { "Pixel_14_47", 47, 48 },
+        --         { "Pixel_14_48", 48, 49 },
+        --     },
+        --     {
+        --         { "Pixel_15_2", 2, 3 },
+        --         { "Pixel_15_3", 3, 4 },
+        --         { "Pixel_15_4", 4, 5 },
+        --         { "Pixel_15_5", 5, 6 },
+        --         { "Pixel_15_6", 6, 7 },
+        --         { "Pixel_15_7", 7, 8 },
+        --         { "Pixel_15_8", 8, 9 },
+        --         { "Pixel_15_9", 9, 10 },
+        --         { "Pixel_15_10", 10, 11 },
+        --         { "Pixel_15_16", 16, 17 },
+        --         { "Pixel_15_17", 17, 18 },
+        --         { "Pixel_15_18", 18, 19 },
+        --         { "Pixel_15_19", 19, 20 },
+        --         { "Pixel_15_20", 20, 21 },
+        --         { "Pixel_15_21", 21, 22 },
+        --         { "Pixel_15_22", 22, 23 },
+        --         { "Pixel_15_23", 23, 24 },
+        --         { "Pixel_15_24", 24, 25 },
+        --         { "Pixel_15_25", 25, 26 },
+        --         { "Pixel_15_26", 26, 27 },
+        --         { "Pixel_15_27", 27, 28 },
+        --         { "Pixel_15_28", 28, 29 },
+        --         { "Pixel_15_38", 38, 39 },
+        --         { "Pixel_15_39", 39, 40 },
+        --         { "Pixel_15_40", 40, 41 },
+        --         { "Pixel_15_41", 41, 42 },
+        --         { "Pixel_15_42", 42, 43 },
+        --         { "Pixel_15_43", 43, 44 },
+        --         { "Pixel_15_44", 44, 45 },
+        --         { "Pixel_15_45", 45, 46 },
+        --         { "Pixel_15_46", 46, 47 },
+        --         { "Pixel_15_47", 47, 48 },
+        --         { "Pixel_15_48", 48, 49 },
+        --     },
+        --     {
+        --         { "Pixel_16_2", 2, 3 },
+        --         { "Pixel_16_3", 3, 4 },
+        --         { "Pixel_16_4", 4, 5 },
+        --         { "Pixel_16_5", 5, 6 },
+        --         { "Pixel_16_6", 6, 7 },
+        --         { "Pixel_16_7", 7, 8 },
+        --         { "Pixel_16_8", 8, 9 },
+        --         { "Pixel_16_9", 9, 10 },
+        --         { "Pixel_16_10", 10, 11 },
+        --         { "Pixel_16_17", 17, 18 },
+        --         { "Pixel_16_18", 18, 19 },
+        --         { "Pixel_16_19", 19, 20 },
+        --         { "Pixel_16_20", 20, 21 },
+        --         { "Pixel_16_21", 21, 22 },
+        --         { "Pixel_16_22", 22, 23 },
+        --         { "Pixel_16_23", 23, 24 },
+        --         { "Pixel_16_24", 24, 25 },
+        --         { "Pixel_16_25", 25, 26 },
+        --         { "Pixel_16_26", 26, 27 },
+        --         { "Pixel_16_27", 27, 28 },
+        --         { "Pixel_16_28", 28, 29 },
+        --         { "Pixel_16_29", 29, 30 },
+        --         { "Pixel_16_30", 30, 31 },
+        --         { "Pixel_16_31", 31, 32 },
+        --         { "Pixel_16_32", 32, 33 },
+        --         { "Pixel_16_33", 33, 34 },
+        --         { "Pixel_16_34", 34, 35 },
+        --         { "Pixel_16_35", 35, 36 },
+        --         { "Pixel_16_36", 36, 37 },
+        --         { "Pixel_16_37", 37, 38 },
+        --         { "Pixel_16_38", 38, 39 },
+        --         { "Pixel_16_39", 39, 40 },
+        --         { "Pixel_16_40", 40, 41 },
+        --         { "Pixel_16_41", 41, 42 },
+        --         { "Pixel_16_42", 42, 43 },
+        --         { "Pixel_16_43", 43, 44 },
+        --         { "Pixel_16_44", 44, 45 },
+        --         { "Pixel_16_45", 45, 46 },
+        --         { "Pixel_16_46", 46, 47 },
+        --         { "Pixel_16_47", 47, 48 },
+        --         { "Pixel_16_48", 48, 49 },
+        --     },
+        --     {
+        --         { "Pixel_17_2", 2, 3 },
+        --         { "Pixel_17_3", 3, 4 },
+        --         { "Pixel_17_4", 4, 5 },
+        --         { "Pixel_17_5", 5, 6 },
+        --         { "Pixel_17_6", 6, 7 },
+        --         { "Pixel_17_7", 7, 8 },
+        --         { "Pixel_17_8", 8, 9 },
+        --         { "Pixel_17_9", 9, 10 },
+        --         { "Pixel_17_10", 10, 11 },
+        --         { "Pixel_17_11", 11, 12 },
+        --         { "Pixel_17_18", 18, 19 },
+        --         { "Pixel_17_19", 19, 20 },
+        --         { "Pixel_17_20", 20, 21 },
+        --         { "Pixel_17_21", 21, 22 },
+        --         { "Pixel_17_22", 22, 23 },
+        --         { "Pixel_17_23", 23, 24 },
+        --         { "Pixel_17_24", 24, 25 },
+        --         { "Pixel_17_25", 25, 26 },
+        --         { "Pixel_17_26", 26, 27 },
+        --         { "Pixel_17_27", 27, 28 },
+        --         { "Pixel_17_39", 39, 40 },
+        --         { "Pixel_17_40", 40, 41 },
+        --         { "Pixel_17_41", 41, 42 },
+        --         { "Pixel_17_42", 42, 43 },
+        --         { "Pixel_17_43", 43, 44 },
+        --         { "Pixel_17_44", 44, 45 },
+        --         { "Pixel_17_45", 45, 46 },
+        --         { "Pixel_17_46", 46, 47 },
+        --         { "Pixel_17_47", 47, 48 },
+        --     },
+        --     {
+        --         { "Pixel_18_2", 2, 3 },
+        --         { "Pixel_18_3", 3, 4 },
+        --         { "Pixel_18_4", 4, 5 },
+        --         { "Pixel_18_5", 5, 6 },
+        --         { "Pixel_18_6", 6, 7 },
+        --         { "Pixel_18_7", 7, 8 },
+        --         { "Pixel_18_8", 8, 9 },
+        --         { "Pixel_18_9", 9, 10 },
+        --         { "Pixel_18_10", 10, 11 },
+        --         { "Pixel_18_11", 11, 12 },
+        --         { "Pixel_18_12", 12, 13 },
+        --         { "Pixel_18_18", 18, 19 },
+        --         { "Pixel_18_19", 19, 20 },
+        --         { "Pixel_18_20", 20, 21 },
+        --         { "Pixel_18_21", 21, 22 },
+        --         { "Pixel_18_22", 22, 23 },
+        --         { "Pixel_18_23", 23, 24 },
+        --         { "Pixel_18_24", 24, 25 },
+        --         { "Pixel_18_25", 25, 26 },
+        --         { "Pixel_18_26", 26, 27 },
+        --         { "Pixel_18_27", 27, 28 },
+        --         { "Pixel_18_39", 39, 40 },
+        --         { "Pixel_18_40", 40, 41 },
+        --         { "Pixel_18_41", 41, 42 },
+        --         { "Pixel_18_42", 42, 43 },
+        --         { "Pixel_18_43", 43, 44 },
+        --         { "Pixel_18_44", 44, 45 },
+        --         { "Pixel_18_45", 45, 46 },
+        --         { "Pixel_18_46", 46, 47 },
+        --         { "Pixel_18_47", 47, 48 },
+        --         { "Pixel_18_48", 48, 49 },
+        --         { "Pixel_18_49", 49, 50 },
+        --         { "Pixel_18_50", 50, 51 },
+        --         { "Pixel_18_51", 51, 52 },
+        --         { "Pixel_18_52", 52, 53 },
+        --         { "Pixel_18_53", 53, 54 },
+        --         { "Pixel_18_54", 54, 55 },
+        --         { "Pixel_18_55", 55, 56 },
+        --     },
+        --     {
+        --         { "Pixel_19_2", 2, 3 },
+        --         { "Pixel_19_3", 3, 4 },
+        --         { "Pixel_19_4", 4, 5 },
+        --         { "Pixel_19_5", 5, 6 },
+        --         { "Pixel_19_6", 6, 7 },
+        --         { "Pixel_19_7", 7, 8 },
+        --         { "Pixel_19_8", 8, 9 },
+        --         { "Pixel_19_9", 9, 10 },
+        --         { "Pixel_19_10", 10, 11 },
+        --         { "Pixel_19_11", 11, 12 },
+        --         { "Pixel_19_12", 12, 13 },
+        --         { "Pixel_19_13", 13, 14 },
+        --         { "Pixel_19_14", 14, 15 },
+        --         { "Pixel_19_19", 19, 20 },
+        --         { "Pixel_19_20", 20, 21 },
+        --         { "Pixel_19_21", 21, 22 },
+        --         { "Pixel_19_22", 22, 23 },
+        --         { "Pixel_19_23", 23, 24 },
+        --         { "Pixel_19_24", 24, 25 },
+        --         { "Pixel_19_25", 25, 26 },
+        --         { "Pixel_19_26", 26, 27 },
+        --         { "Pixel_19_39", 39, 40 },
+        --         { "Pixel_19_40", 40, 41 },
+        --         { "Pixel_19_41", 41, 42 },
+        --         { "Pixel_19_42", 42, 43 },
+        --         { "Pixel_19_43", 43, 44 },
+        --         { "Pixel_19_44", 44, 45 },
+        --         { "Pixel_19_45", 45, 46 },
+        --         { "Pixel_19_46", 46, 47 },
+        --     },
+        --     {
+        --         { "Pixel_20_4", 4, 5 },
+        --         { "Pixel_20_5", 5, 6 },
+        --         { "Pixel_20_6", 6, 7 },
+        --         { "Pixel_20_7", 7, 8 },
+        --         { "Pixel_20_8", 8, 9 },
+        --         { "Pixel_20_9", 9, 10 },
+        --         { "Pixel_20_10", 10, 11 },
+        --         { "Pixel_20_11", 11, 12 },
+        --         { "Pixel_20_12", 12, 13 },
+        --         { "Pixel_20_13", 13, 14 },
+        --         { "Pixel_20_14", 14, 15 },
+        --         { "Pixel_20_15", 15, 16 },
+        --         { "Pixel_20_16", 16, 17 },
+        --         { "Pixel_20_17", 17, 18 },
+        --         { "Pixel_20_18", 18, 19 },
+        --         { "Pixel_20_20", 20, 21 },
+        --         { "Pixel_20_21", 21, 22 },
+        --         { "Pixel_20_22", 22, 23 },
+        --         { "Pixel_20_23", 23, 24 },
+        --         { "Pixel_20_24", 24, 25 },
+        --         { "Pixel_20_25", 25, 26 },
+        --         { "Pixel_20_26", 26, 27 },
+        --         { "Pixel_20_27", 27, 28 },
+        --         { "Pixel_20_38", 38, 39 },
+        --         { "Pixel_20_39", 39, 40 },
+        --         { "Pixel_20_40", 40, 41 },
+        --         { "Pixel_20_41", 41, 42 },
+        --         { "Pixel_20_42", 42, 43 },
+        --         { "Pixel_20_43", 43, 44 },
+        --         { "Pixel_20_44", 44, 45 },
+        --     },
+        --     {
+        --         { "Pixel_21_5", 5, 6 },
+        --         { "Pixel_21_6", 6, 7 },
+        --         { "Pixel_21_7", 7, 8 },
+        --         { "Pixel_21_8", 8, 9 },
+        --         { "Pixel_21_9", 9, 10 },
+        --         { "Pixel_21_10", 10, 11 },
+        --         { "Pixel_21_11", 11, 12 },
+        --         { "Pixel_21_12", 12, 13 },
+        --         { "Pixel_21_13", 13, 14 },
+        --         { "Pixel_21_14", 14, 15 },
+        --         { "Pixel_21_15", 15, 16 },
+        --         { "Pixel_21_16", 16, 17 },
+        --         { "Pixel_21_17", 17, 18 },
+        --         { "Pixel_21_18", 18, 19 },
+        --         { "Pixel_21_20", 20, 21 },
+        --         { "Pixel_21_21", 21, 22 },
+        --         { "Pixel_21_22", 22, 23 },
+        --         { "Pixel_21_23", 23, 24 },
+        --         { "Pixel_21_24", 24, 25 },
+        --         { "Pixel_21_25", 25, 26 },
+        --         { "Pixel_21_26", 26, 27 },
+        --         { "Pixel_21_27", 27, 28 },
+        --         { "Pixel_21_35", 35, 36 },
+        --         { "Pixel_21_36", 36, 37 },
+        --         { "Pixel_21_37", 37, 38 },
+        --         { "Pixel_21_38", 38, 39 },
+        --         { "Pixel_21_39", 39, 40 },
+        --         { "Pixel_21_40", 40, 41 },
+        --         { "Pixel_21_41", 41, 42 },
+        --         { "Pixel_21_42", 42, 43 },
+        --         { "Pixel_21_43", 43, 44 },
+        --         { "Pixel_21_44", 44, 45 },
+        --     },
+        --     {
+        --         { "Pixel_22_9", 9, 10 },
+        --         { "Pixel_22_10", 10, 11 },
+        --         { "Pixel_22_11", 11, 12 },
+        --         { "Pixel_22_12", 12, 13 },
+        --         { "Pixel_22_13", 13, 14 },
+        --         { "Pixel_22_14", 14, 15 },
+        --         { "Pixel_22_20", 20, 21 },
+        --         { "Pixel_22_21", 21, 22 },
+        --         { "Pixel_22_22", 22, 23 },
+        --         { "Pixel_22_23", 23, 24 },
+        --         { "Pixel_22_24", 24, 25 },
+        --         { "Pixel_22_25", 25, 26 },
+        --         { "Pixel_22_26", 26, 27 },
+        --         { "Pixel_22_27", 27, 28 },
+        --         { "Pixel_22_35", 35, 36 },
+        --         { "Pixel_22_36", 36, 37 },
+        --         { "Pixel_22_37", 37, 38 },
+        --         { "Pixel_22_38", 38, 39 },
+        --         { "Pixel_22_39", 39, 40 },
+        --         { "Pixel_22_40", 40, 41 },
+        --         { "Pixel_22_41", 41, 42 },
+        --         { "Pixel_22_42", 42, 43 },
+        --         { "Pixel_22_43", 43, 44 },
+        --         { "Pixel_22_44", 44, 45 },
+        --         { "Pixel_22_45", 45, 46 },
+        --         { "Pixel_22_46", 46, 47 },
+        --     },
+        --     {
+        --         { "Pixel_23_9", 9, 10 },
+        --         { "Pixel_23_10", 10, 11 },
+        --         { "Pixel_23_11", 11, 12 },
+        --         { "Pixel_23_12", 12, 13 },
+        --         { "Pixel_23_13", 13, 14 },
+        --         { "Pixel_23_14", 14, 15 },
+        --         { "Pixel_23_20", 20, 21 },
+        --         { "Pixel_23_21", 21, 22 },
+        --         { "Pixel_23_22", 22, 23 },
+        --         { "Pixel_23_23", 23, 24 },
+        --         { "Pixel_23_24", 24, 25 },
+        --         { "Pixel_23_25", 25, 26 },
+        --         { "Pixel_23_26", 26, 27 },
+        --         { "Pixel_23_27", 27, 28 },
+        --         { "Pixel_23_35", 35, 36 },
+        --         { "Pixel_23_36", 36, 37 },
+        --         { "Pixel_23_37", 37, 38 },
+        --         { "Pixel_23_38", 38, 39 },
+        --         { "Pixel_23_39", 39, 40 },
+        --         { "Pixel_23_42", 42, 43 },
+        --         { "Pixel_23_43", 43, 44 },
+        --         { "Pixel_23_44", 44, 45 },
+        --         { "Pixel_23_45", 45, 46 },
+        --         { "Pixel_23_46", 46, 47 },
+        --     },
+        --     {
+        --         { "Pixel_24_9", 9, 10 },
+        --         { "Pixel_24_10", 10, 11 },
+        --         { "Pixel_24_11", 11, 12 },
+        --         { "Pixel_24_12", 12, 13 },
+        --         { "Pixel_24_13", 13, 14 },
+        --         { "Pixel_24_14", 14, 15 },
+        --         { "Pixel_24_21", 21, 22 },
+        --         { "Pixel_24_22", 22, 23 },
+        --         { "Pixel_24_23", 23, 24 },
+        --         { "Pixel_24_24", 24, 25 },
+        --         { "Pixel_24_25", 25, 26 },
+        --         { "Pixel_24_26", 26, 27 },
+        --         { "Pixel_24_43", 43, 44 },
+        --         { "Pixel_24_44", 44, 45 },
+        --         { "Pixel_24_45", 45, 46 },
+        --         { "Pixel_24_46", 46, 47 },
+        --         { "Pixel_24_47", 47, 48 },
+        --         { "Pixel_24_48", 48, 49 },
+        --         { "Pixel_24_49", 49, 50 },
+        --     },
+        --     {
+        --         { "Pixel_25_11", 11, 12 },
+        --         { "Pixel_25_12", 12, 13 },
+        --         { "Pixel_25_13", 13, 14 },
+        --         { "Pixel_25_14", 14, 15 },
+        --         { "Pixel_25_21", 21, 22 },
+        --         { "Pixel_25_22", 22, 23 },
+        --         { "Pixel_25_23", 23, 24 },
+        --         { "Pixel_25_24", 24, 25 },
+        --         { "Pixel_25_25", 25, 26 },
+        --         { "Pixel_25_26", 26, 27 },
+        --         { "Pixel_25_45", 45, 46 },
+        --         { "Pixel_25_46", 46, 47 },
+        --         { "Pixel_25_47", 47, 48 },
+        --         { "Pixel_25_48", 48, 49 },
+        --     },
+        --     {
+        --         { "Pixel_26_21", 21, 22 },
+        --         { "Pixel_26_22", 22, 23 },
+        --         { "Pixel_26_23", 23, 24 },
+        --         { "Pixel_26_24", 24, 25 },
+        --         { "Pixel_26_25", 25, 26 },
+        --     },
+        --     {
+        --         { "Pixel_27_20", 20, 21 },
+        --         { "Pixel_27_21", 21, 22 },
+        --         { "Pixel_27_22", 22, 23 },
+        --         { "Pixel_27_23", 23, 24 },
+        --         { "Pixel_27_24", 24, 25 },
+        --         { "Pixel_27_25", 25, 26 },
+        --         { "Pixel_27_26", 26, 27 },
+        --     },
+        --     {
+        --         { "Pixel_28_20", 20, 21 },
+        --         { "Pixel_28_21", 21, 22 },
+        --         { "Pixel_28_22", 22, 23 },
+        --         { "Pixel_28_23", 23, 24 },
+        --         { "Pixel_28_24", 24, 25 },
+        --         { "Pixel_28_25", 25, 26 },
+        --         { "Pixel_28_26", 26, 27 },
+        --     },
+        --     {
+        --         { "Pixel_29_20", 20, 21 },
+        --         { "Pixel_29_21", 21, 22 },
+        --         { "Pixel_29_22", 22, 23 },
+        --         { "Pixel_29_23", 23, 24 },
+        --         { "Pixel_29_24", 24, 25 },
+        --         { "Pixel_29_25", 25, 26 },
+        --         { "Pixel_29_26", 26, 27 },
+        --     },
+        -- }
+
+        -- -- set_colors()
+        -- local function set_colors()
+        --     vim.api.nvim_set_hl(0, "Pixel_0_18", { fg = "#3b3739" })
+        --     vim.api.nvim_set_hl(0, "Pixel_0_19", { fg = "#705b65" })
+        --     vim.api.nvim_set_hl(0, "Pixel_0_20", { fg = "#6d5864" })
+        --     vim.api.nvim_set_hl(0, "Pixel_0_21", { fg = "#687878" })
+        --     vim.api.nvim_set_hl(0, "Pixel_0_22", { fg = "#8bb4b3" })
+        --     vim.api.nvim_set_hl(0, "Pixel_0_23", { fg = "#7eb8b6" })
+        --     vim.api.nvim_set_hl(0, "Pixel_0_24", { fg = "#75b1ae" })
+        --     vim.api.nvim_set_hl(0, "Pixel_0_25", { fg = "#6c9b9b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_0_26", { fg = "#557172" })
+        --     vim.api.nvim_set_hl(0, "Pixel_0_27", { fg = "#353436" })
+        --     vim.api.nvim_set_hl(0, "Pixel_0_28", { fg = "#5e414b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_0_29", { fg = "#211f1f" })
+        --     vim.api.nvim_set_hl(0, "Pixel_1_16", { fg = "#1a1a1a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_1_17", { fg = "#484d4c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_1_18", { fg = "#585c66" })
+        --     vim.api.nvim_set_hl(0, "Pixel_1_19", { fg = "#4c737b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_1_20", { fg = "#98d1cf" })
+        --     vim.api.nvim_set_hl(0, "Pixel_1_21", { fg = "#a9dad7" })
+        --     vim.api.nvim_set_hl(0, "Pixel_1_22", { fg = "#add9d5" })
+        --     vim.api.nvim_set_hl(0, "Pixel_1_23", { fg = "#9ad5d4" })
+        --     vim.api.nvim_set_hl(0, "Pixel_1_24", { fg = "#9ddbd8" })
+        --     vim.api.nvim_set_hl(0, "Pixel_1_25", { fg = "#87cdcc" })
+        --     vim.api.nvim_set_hl(0, "Pixel_1_26", { fg = "#83c9c7" })
+        --     vim.api.nvim_set_hl(0, "Pixel_1_27", { fg = "#4d7c80" })
+        --     vim.api.nvim_set_hl(0, "Pixel_1_28", { fg = "#725063" })
+        --     vim.api.nvim_set_hl(0, "Pixel_1_29", { fg = "#3f4e52" })
+        --     vim.api.nvim_set_hl(0, "Pixel_1_30", { fg = "#212121" })
+        --     vim.api.nvim_set_hl(0, "Pixel_1_31", { fg = "#050505" })
+        --     vim.api.nvim_set_hl(0, "Pixel_2_15", { fg = "#646564" })
+        --     vim.api.nvim_set_hl(0, "Pixel_2_16", { fg = "#929b9c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_2_17", { fg = "#8fc4c4" })
+        --     vim.api.nvim_set_hl(0, "Pixel_2_18", { fg = "#2e8590" })
+        --     vim.api.nvim_set_hl(0, "Pixel_2_19", { fg = "#4c8b92" })
+        --     vim.api.nvim_set_hl(0, "Pixel_2_20", { fg = "#84b4b5" })
+        --     vim.api.nvim_set_hl(0, "Pixel_2_21", { fg = "#9fb2b6" })
+        --     vim.api.nvim_set_hl(0, "Pixel_2_22", { fg = "#c1d6d3" })
+        --     vim.api.nvim_set_hl(0, "Pixel_2_23", { fg = "#abcac8" })
+        --     vim.api.nvim_set_hl(0, "Pixel_2_24", { fg = "#a7bbbc" })
+        --     vim.api.nvim_set_hl(0, "Pixel_2_25", { fg = "#66a1a7" })
+        --     vim.api.nvim_set_hl(0, "Pixel_2_26", { fg = "#8fcdcc" })
+        --     vim.api.nvim_set_hl(0, "Pixel_2_27", { fg = "#609295" })
+        --     vim.api.nvim_set_hl(0, "Pixel_2_28", { fg = "#39707c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_2_29", { fg = "#60a4a8" })
+        --     vim.api.nvim_set_hl(0, "Pixel_2_30", { fg = "#859b9b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_2_31", { fg = "#282727" })
+        --     vim.api.nvim_set_hl(0, "Pixel_2_32", { fg = "#060606" })
+        --     vim.api.nvim_set_hl(0, "Pixel_3_13", { fg = "#0c0c0c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_3_14", { fg = "#525757" })
+        --     vim.api.nvim_set_hl(0, "Pixel_3_15", { fg = "#89acac" })
+        --     vim.api.nvim_set_hl(0, "Pixel_3_16", { fg = "#8bcac7" })
+        --     vim.api.nvim_set_hl(0, "Pixel_3_17", { fg = "#4696a2" })
+        --     vim.api.nvim_set_hl(0, "Pixel_3_18", { fg = "#2a5963" })
+        --     vim.api.nvim_set_hl(0, "Pixel_3_19", { fg = "#39494d" })
+        --     vim.api.nvim_set_hl(0, "Pixel_3_20", { fg = "#83908f" })
+        --     vim.api.nvim_set_hl(0, "Pixel_3_21", { fg = "#e5e6df" })
+        --     vim.api.nvim_set_hl(0, "Pixel_3_22", { fg = "#f6f1e7" })
+        --     vim.api.nvim_set_hl(0, "Pixel_3_23", { fg = "#eaeae1" })
+        --     vim.api.nvim_set_hl(0, "Pixel_3_24", { fg = "#c6d3d2" })
+        --     vim.api.nvim_set_hl(0, "Pixel_3_25", { fg = "#90b1b4" })
+        --     vim.api.nvim_set_hl(0, "Pixel_3_26", { fg = "#64868a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_3_27", { fg = "#538083" })
+        --     vim.api.nvim_set_hl(0, "Pixel_3_28", { fg = "#2d6772" })
+        --     vim.api.nvim_set_hl(0, "Pixel_3_29", { fg = "#499aa4" })
+        --     vim.api.nvim_set_hl(0, "Pixel_3_30", { fg = "#9ecdcd" })
+        --     vim.api.nvim_set_hl(0, "Pixel_3_31", { fg = "#a2b1b0" })
+        --     vim.api.nvim_set_hl(0, "Pixel_3_32", { fg = "#2f3030" })
+        --     vim.api.nvim_set_hl(0, "Pixel_4_12", { fg = "#0c0b0b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_4_13", { fg = "#22282b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_4_14", { fg = "#669a9a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_4_15", { fg = "#80c4c3" })
+        --     vim.api.nvim_set_hl(0, "Pixel_4_16", { fg = "#3c8891" })
+        --     vim.api.nvim_set_hl(0, "Pixel_4_17", { fg = "#193e46" })
+        --     vim.api.nvim_set_hl(0, "Pixel_4_18", { fg = "#0e1113" })
+        --     vim.api.nvim_set_hl(0, "Pixel_4_19", { fg = "#111112" })
+        --     vim.api.nvim_set_hl(0, "Pixel_4_20", { fg = "#302f32" })
+        --     vim.api.nvim_set_hl(0, "Pixel_4_21", { fg = "#817e7f" })
+        --     vim.api.nvim_set_hl(0, "Pixel_4_22", { fg = "#dcc3bf" })
+        --     vim.api.nvim_set_hl(0, "Pixel_4_23", { fg = "#e3cbc7" })
+        --     vim.api.nvim_set_hl(0, "Pixel_4_24", { fg = "#959a99" })
+        --     vim.api.nvim_set_hl(0, "Pixel_4_25", { fg = "#4e6065" })
+        --     vim.api.nvim_set_hl(0, "Pixel_4_26", { fg = "#4b464a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_4_27", { fg = "#3b3e41" })
+        --     vim.api.nvim_set_hl(0, "Pixel_4_28", { fg = "#263233" })
+        --     vim.api.nvim_set_hl(0, "Pixel_4_29", { fg = "#205f6c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_4_30", { fg = "#3a8c97" })
+        --     vim.api.nvim_set_hl(0, "Pixel_4_31", { fg = "#83c5c3" })
+        --     vim.api.nvim_set_hl(0, "Pixel_4_32", { fg = "#6e8987" })
+        --     vim.api.nvim_set_hl(0, "Pixel_4_33", { fg = "#313232" })
+        --     vim.api.nvim_set_hl(0, "Pixel_5_11", { fg = "#070707" })
+        --     vim.api.nvim_set_hl(0, "Pixel_5_12", { fg = "#223031" })
+        --     vim.api.nvim_set_hl(0, "Pixel_5_13", { fg = "#3c7a82" })
+        --     vim.api.nvim_set_hl(0, "Pixel_5_14", { fg = "#63afaf" })
+        --     vim.api.nvim_set_hl(0, "Pixel_5_15", { fg = "#27717b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_5_16", { fg = "#2e383c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_5_17", { fg = "#111112" })
+        --     vim.api.nvim_set_hl(0, "Pixel_5_18", { fg = "#575253" })
+        --     vim.api.nvim_set_hl(0, "Pixel_5_19", { fg = "#aea6a1" })
+        --     vim.api.nvim_set_hl(0, "Pixel_5_20", { fg = "#c1b8b7" })
+        --     vim.api.nvim_set_hl(0, "Pixel_5_21", { fg = "#83b3c1" })
+        --     vim.api.nvim_set_hl(0, "Pixel_5_22", { fg = "#50a9b9" })
+        --     vim.api.nvim_set_hl(0, "Pixel_5_23", { fg = "#a2bfd4" })
+        --     vim.api.nvim_set_hl(0, "Pixel_5_24", { fg = "#9eaabd" })
+        --     vim.api.nvim_set_hl(0, "Pixel_5_25", { fg = "#bdb3b4" })
+        --     vim.api.nvim_set_hl(0, "Pixel_5_26", { fg = "#b3ada9" })
+        --     vim.api.nvim_set_hl(0, "Pixel_5_27", { fg = "#73706f" })
+        --     vim.api.nvim_set_hl(0, "Pixel_5_28", { fg = "#262526" })
+        --     vim.api.nvim_set_hl(0, "Pixel_5_29", { fg = "#354a4e" })
+        --     vim.api.nvim_set_hl(0, "Pixel_5_30", { fg = "#356167" })
+        --     vim.api.nvim_set_hl(0, "Pixel_5_31", { fg = "#57a0a4" })
+        --     vim.api.nvim_set_hl(0, "Pixel_5_32", { fg = "#72b3b1" })
+        --     vim.api.nvim_set_hl(0, "Pixel_5_33", { fg = "#3f4f4e" })
+        --     vim.api.nvim_set_hl(0, "Pixel_5_34", { fg = "#131313" })
+        --     vim.api.nvim_set_hl(0, "Pixel_6_10", { fg = "#050606" })
+        --     vim.api.nvim_set_hl(0, "Pixel_6_11", { fg = "#212728" })
+        --     vim.api.nvim_set_hl(0, "Pixel_6_12", { fg = "#286b75" })
+        --     vim.api.nvim_set_hl(0, "Pixel_6_13", { fg = "#46969c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_6_14", { fg = "#215660" })
+        --     vim.api.nvim_set_hl(0, "Pixel_6_15", { fg = "#2f3e41" })
+        --     vim.api.nvim_set_hl(0, "Pixel_6_16", { fg = "#0c0b0b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_6_17", { fg = "#444344" })
+        --     vim.api.nvim_set_hl(0, "Pixel_6_18", { fg = "#9c9290" })
+        --     vim.api.nvim_set_hl(0, "Pixel_6_19", { fg = "#f3eeea" })
+        --     vim.api.nvim_set_hl(0, "Pixel_6_20", { fg = "#f7fafb" })
+        --     vim.api.nvim_set_hl(0, "Pixel_6_21", { fg = "#6dd3d8" })
+        --     vim.api.nvim_set_hl(0, "Pixel_6_22", { fg = "#b2d9e0" })
+        --     vim.api.nvim_set_hl(0, "Pixel_6_23", { fg = "#f3f5f7" })
+        --     vim.api.nvim_set_hl(0, "Pixel_6_24", { fg = "#f4f2f0" })
+        --     vim.api.nvim_set_hl(0, "Pixel_6_25", { fg = "#faf1e7" })
+        --     vim.api.nvim_set_hl(0, "Pixel_6_26", { fg = "#fdf3eb" })
+        --     vim.api.nvim_set_hl(0, "Pixel_6_27", { fg = "#cc949e" })
+        --     vim.api.nvim_set_hl(0, "Pixel_6_28", { fg = "#766465" })
+        --     vim.api.nvim_set_hl(0, "Pixel_6_29", { fg = "#1e181a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_6_30", { fg = "#436d6f" })
+        --     vim.api.nvim_set_hl(0, "Pixel_6_31", { fg = "#306871" })
+        --     vim.api.nvim_set_hl(0, "Pixel_6_32", { fg = "#5eacab" })
+        --     vim.api.nvim_set_hl(0, "Pixel_6_33", { fg = "#538386" })
+        --     vim.api.nvim_set_hl(0, "Pixel_6_34", { fg = "#38393a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_6_35", { fg = "#0a0a0a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_7_10", { fg = "#2f2f31" })
+        --     vim.api.nvim_set_hl(0, "Pixel_7_11", { fg = "#3f7377" })
+        --     vim.api.nvim_set_hl(0, "Pixel_7_12", { fg = "#3b858d" })
+        --     vim.api.nvim_set_hl(0, "Pixel_7_13", { fg = "#215560" })
+        --     vim.api.nvim_set_hl(0, "Pixel_7_14", { fg = "#2a3f45" })
+        --     vim.api.nvim_set_hl(0, "Pixel_7_15", { fg = "#221f20" })
+        --     vim.api.nvim_set_hl(0, "Pixel_7_16", { fg = "#050505" })
+        --     vim.api.nvim_set_hl(0, "Pixel_7_17", { fg = "#2e2b2d" })
+        --     vim.api.nvim_set_hl(0, "Pixel_7_18", { fg = "#53565e" })
+        --     vim.api.nvim_set_hl(0, "Pixel_7_19", { fg = "#e6e7e9" })
+        --     vim.api.nvim_set_hl(0, "Pixel_7_20", { fg = "#b1e9eb" })
+        --     vim.api.nvim_set_hl(0, "Pixel_7_21", { fg = "#4ac5cd" })
+        --     vim.api.nvim_set_hl(0, "Pixel_7_22", { fg = "#f9fdfd" })
+        --     vim.api.nvim_set_hl(0, "Pixel_7_23", { fg = "#f9fbfd" })
+        --     vim.api.nvim_set_hl(0, "Pixel_7_24", { fg = "#ebeaef" })
+        --     vim.api.nvim_set_hl(0, "Pixel_7_25", { fg = "#bcaab9" })
+        --     vim.api.nvim_set_hl(0, "Pixel_7_26", { fg = "#b3bbbb" })
+        --     vim.api.nvim_set_hl(0, "Pixel_7_27", { fg = "#9fa7a8" })
+        --     vim.api.nvim_set_hl(0, "Pixel_7_28", { fg = "#6f7374" })
+        --     vim.api.nvim_set_hl(0, "Pixel_7_29", { fg = "#221c1d" })
+        --     vim.api.nvim_set_hl(0, "Pixel_7_30", { fg = "#38393a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_7_31", { fg = "#3c7078" })
+        --     vim.api.nvim_set_hl(0, "Pixel_7_32", { fg = "#31818b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_7_33", { fg = "#64aeb2" })
+        --     vim.api.nvim_set_hl(0, "Pixel_7_34", { fg = "#337982" })
+        --     vim.api.nvim_set_hl(0, "Pixel_7_35", { fg = "#445c61" })
+        --     vim.api.nvim_set_hl(0, "Pixel_7_36", { fg = "#393a3c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_8_9", { fg = "#627271" })
+        --     vim.api.nvim_set_hl(0, "Pixel_8_10", { fg = "#70a5a2" })
+        --     vim.api.nvim_set_hl(0, "Pixel_8_11", { fg = "#438c94" })
+        --     vim.api.nvim_set_hl(0, "Pixel_8_12", { fg = "#244b55" })
+        --     vim.api.nvim_set_hl(0, "Pixel_8_13", { fg = "#233c42" })
+        --     vim.api.nvim_set_hl(0, "Pixel_8_14", { fg = "#262120" })
+        --     vim.api.nvim_set_hl(0, "Pixel_8_15", { fg = "#060303" })
+        --     vim.api.nvim_set_hl(0, "Pixel_8_16", { fg = "#0d0c0c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_8_17", { fg = "#312629" })
+        --     vim.api.nvim_set_hl(0, "Pixel_8_18", { fg = "#4b4043" })
+        --     vim.api.nvim_set_hl(0, "Pixel_8_19", { fg = "#dadade" })
+        --     vim.api.nvim_set_hl(0, "Pixel_8_20", { fg = "#52d3d6" })
+        --     vim.api.nvim_set_hl(0, "Pixel_8_21", { fg = "#6dd2d8" })
+        --     vim.api.nvim_set_hl(0, "Pixel_8_22", { fg = "#fafcfd" })
+        --     vim.api.nvim_set_hl(0, "Pixel_8_23", { fg = "#fafcfd" })
+        --     vim.api.nvim_set_hl(0, "Pixel_8_24", { fg = "#cccce0" })
+        --     vim.api.nvim_set_hl(0, "Pixel_8_25", { fg = "#797382" })
+        --     vim.api.nvim_set_hl(0, "Pixel_8_26", { fg = "#514849" })
+        --     vim.api.nvim_set_hl(0, "Pixel_8_27", { fg = "#564a4b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_8_28", { fg = "#6c6362" })
+        --     vim.api.nvim_set_hl(0, "Pixel_8_29", { fg = "#675d5d" })
+        --     vim.api.nvim_set_hl(0, "Pixel_8_30", { fg = "#4d4748" })
+        --     vim.api.nvim_set_hl(0, "Pixel_8_31", { fg = "#363738" })
+        --     vim.api.nvim_set_hl(0, "Pixel_8_32", { fg = "#315f68" })
+        --     vim.api.nvim_set_hl(0, "Pixel_8_33", { fg = "#418e99" })
+        --     vim.api.nvim_set_hl(0, "Pixel_8_34", { fg = "#4c9aa3" })
+        --     vim.api.nvim_set_hl(0, "Pixel_8_35", { fg = "#44929b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_8_36", { fg = "#41757d" })
+        --     vim.api.nvim_set_hl(0, "Pixel_8_37", { fg = "#3c5256" })
+        --     vim.api.nvim_set_hl(0, "Pixel_8_38", { fg = "#1e1f1f" })
+        --     vim.api.nvim_set_hl(0, "Pixel_8_39", { fg = "#090909" })
+        --     vim.api.nvim_set_hl(0, "Pixel_9_6", { fg = "#040404" })
+        --     vim.api.nvim_set_hl(0, "Pixel_9_7", { fg = "#1b1c1c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_9_8", { fg = "#5f7979" })
+        --     vim.api.nvim_set_hl(0, "Pixel_9_9", { fg = "#6dadab" })
+        --     vim.api.nvim_set_hl(0, "Pixel_9_10", { fg = "#45969f" })
+        --     vim.api.nvim_set_hl(0, "Pixel_9_11", { fg = "#285b64" })
+        --     vim.api.nvim_set_hl(0, "Pixel_9_12", { fg = "#28444b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_9_13", { fg = "#262426" })
+        --     vim.api.nvim_set_hl(0, "Pixel_9_14", { fg = "#090606" })
+        --     vim.api.nvim_set_hl(0, "Pixel_9_15", { fg = "#131211" })
+        --     vim.api.nvim_set_hl(0, "Pixel_9_16", { fg = "#383839" })
+        --     vim.api.nvim_set_hl(0, "Pixel_9_17", { fg = "#504448" })
+        --     vim.api.nvim_set_hl(0, "Pixel_9_18", { fg = "#544c4f" })
+        --     vim.api.nvim_set_hl(0, "Pixel_9_19", { fg = "#c6d1d7" })
+        --     vim.api.nvim_set_hl(0, "Pixel_9_20", { fg = "#2e9ca6" })
+        --     vim.api.nvim_set_hl(0, "Pixel_9_21", { fg = "#63cdd4" })
+        --     vim.api.nvim_set_hl(0, "Pixel_9_22", { fg = "#f6f8f9" })
+        --     vim.api.nvim_set_hl(0, "Pixel_9_23", { fg = "#e8e9f1" })
+        --     vim.api.nvim_set_hl(0, "Pixel_9_24", { fg = "#a6a0b8" })
+        --     vim.api.nvim_set_hl(0, "Pixel_9_25", { fg = "#3b373b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_9_26", { fg = "#151616" })
+        --     vim.api.nvim_set_hl(0, "Pixel_9_27", { fg = "#262021" })
+        --     vim.api.nvim_set_hl(0, "Pixel_9_28", { fg = "#3f3334" })
+        --     vim.api.nvim_set_hl(0, "Pixel_9_29", { fg = "#5f5657" })
+        --     vim.api.nvim_set_hl(0, "Pixel_9_30", { fg = "#605959" })
+        --     vim.api.nvim_set_hl(0, "Pixel_9_31", { fg = "#4a4b4e" })
+        --     vim.api.nvim_set_hl(0, "Pixel_9_32", { fg = "#56585e" })
+        --     vim.api.nvim_set_hl(0, "Pixel_9_33", { fg = "#436e74" })
+        --     vim.api.nvim_set_hl(0, "Pixel_9_34", { fg = "#48939e" })
+        --     vim.api.nvim_set_hl(0, "Pixel_9_35", { fg = "#3e8d99" })
+        --     vim.api.nvim_set_hl(0, "Pixel_9_36", { fg = "#57a1aa" })
+        --     vim.api.nvim_set_hl(0, "Pixel_9_37", { fg = "#60a5a9" })
+        --     vim.api.nvim_set_hl(0, "Pixel_9_38", { fg = "#4a7d83" })
+        --     vim.api.nvim_set_hl(0, "Pixel_9_39", { fg = "#2f494b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_9_40", { fg = "#1e1f20" })
+        --     vim.api.nvim_set_hl(0, "Pixel_9_41", { fg = "#050505" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_5", { fg = "#050504" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_6", { fg = "#1b1f1f" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_7", { fg = "#5a8687" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_8", { fg = "#5fa9aa" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_9", { fg = "#6fb6b5" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_10", { fg = "#2e7d88" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_11", { fg = "#385055" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_12", { fg = "#272525" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_13", { fg = "#0a0707" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_14", { fg = "#171616" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_15", { fg = "#5e6365" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_16", { fg = "#5d5a5b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_17", { fg = "#555053" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_18", { fg = "#8a868d" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_19", { fg = "#e8f6f9" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_20", { fg = "#39cbd0" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_21", { fg = "#58c1cc" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_22", { fg = "#fafcfe" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_23", { fg = "#f8fafb" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_24", { fg = "#dbdde8" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_25", { fg = "#8a8698" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_26", { fg = "#4d4a51" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_27", { fg = "#181717" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_28", { fg = "#171515" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_29", { fg = "#362f31" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_30", { fg = "#4c4649" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_31", { fg = "#4c4a4e" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_32", { fg = "#4e5961" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_33", { fg = "#4f737d" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_34", { fg = "#467d86" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_35", { fg = "#3c7880" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_36", { fg = "#3e7b84" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_37", { fg = "#509aa3" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_38", { fg = "#74b5b6" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_39", { fg = "#75b6b9" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_40", { fg = "#497c80" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_41", { fg = "#465b5b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_42", { fg = "#2d2e2e" })
+        --     vim.api.nvim_set_hl(0, "Pixel_10_43", { fg = "#0a0a0a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_4", { fg = "#1e1f1f" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_5", { fg = "#4d5454" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_6", { fg = "#598888" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_7", { fg = "#65acaf" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_8", { fg = "#84c3c1" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_9", { fg = "#58a2a9" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_10", { fg = "#354c51" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_11", { fg = "#1a1c1b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_12", { fg = "#101010" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_13", { fg = "#313031" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_14", { fg = "#5d757c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_15", { fg = "#3b4950" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_16", { fg = "#37373d" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_17", { fg = "#5c5c61" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_18", { fg = "#f3f4f6" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_19", { fg = "#fcfdfe" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_20", { fg = "#596166" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_21", { fg = "#898b90" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_22", { fg = "#fafcfe" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_23", { fg = "#fbfdff" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_24", { fg = "#fafcfd" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_25", { fg = "#fbfdff" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_26", { fg = "#eeeff3" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_27", { fg = "#c0bdc3" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_28", { fg = "#686368" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_29", { fg = "#161516" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_30", { fg = "#262125" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_31", { fg = "#2b292e" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_32", { fg = "#323338" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_33", { fg = "#313239" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_34", { fg = "#37424c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_35", { fg = "#4b5f68" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_36", { fg = "#475c62" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_37", { fg = "#395258" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_38", { fg = "#488891" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_39", { fg = "#72b2b5" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_40", { fg = "#89c5c4" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_41", { fg = "#61a2a9" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_42", { fg = "#518385" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_43", { fg = "#596a69" })
+        --     vim.api.nvim_set_hl(0, "Pixel_11_44", { fg = "#484949" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_3", { fg = "#232323" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_4", { fg = "#535959" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_5", { fg = "#5c8a88" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_6", { fg = "#5d9fa2" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_7", { fg = "#8fcbc7" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_8", { fg = "#71b3b6" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_9", { fg = "#42828a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_10", { fg = "#232a2d" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_11", { fg = "#1e1d1f" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_12", { fg = "#3c4245" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_13", { fg = "#46555d" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_14", { fg = "#2e353c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_15", { fg = "#2c2c35" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_16", { fg = "#23262c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_17", { fg = "#d3dee0" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_18", { fg = "#fafdfe" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_19", { fg = "#f1f2f5" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_20", { fg = "#2f3038" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_21", { fg = "#303139" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_22", { fg = "#b1b2b6" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_23", { fg = "#f6f8fb" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_24", { fg = "#f2f5fa" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_25", { fg = "#eff7f9" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_26", { fg = "#bad5d7" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_27", { fg = "#657f85" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_28", { fg = "#31444b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_29", { fg = "#404447" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_30", { fg = "#263334" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_31", { fg = "#171317" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_32", { fg = "#1d2125" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_33", { fg = "#26434d" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_34", { fg = "#4a5c63" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_35", { fg = "#899798" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_36", { fg = "#94a0a0" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_37", { fg = "#93a6a9" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_38", { fg = "#929394" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_39", { fg = "#557d84" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_40", { fg = "#70acb1" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_41", { fg = "#a1d4d2" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_42", { fg = "#8ac5c5" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_43", { fg = "#4d868e" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_44", { fg = "#5c7879" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_45", { fg = "#636969" })
+        --     vim.api.nvim_set_hl(0, "Pixel_12_46", { fg = "#0e0f0f" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_3", { fg = "#474948" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_4", { fg = "#669190" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_5", { fg = "#548c94" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_6", { fg = "#87c5c3" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_7", { fg = "#99d0cd" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_8", { fg = "#56a0a8" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_9", { fg = "#406b73" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_10", { fg = "#828281" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_11", { fg = "#889291" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_12", { fg = "#879b9d" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_13", { fg = "#828c92" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_14", { fg = "#70767c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_15", { fg = "#2e414a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_16", { fg = "#252f35" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_17", { fg = "#44545a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_18", { fg = "#90a3a7" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_19", { fg = "#91a2a7" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_20", { fg = "#3b3c43" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_21", { fg = "#3b3d43" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_22", { fg = "#3a3c42" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_23", { fg = "#8e999f" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_24", { fg = "#68818b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_25", { fg = "#41545c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_26", { fg = "#42444a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_27", { fg = "#484b50" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_28", { fg = "#4b5b61" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_29", { fg = "#407780" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_30", { fg = "#30878a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_31", { fg = "#0c1112" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_32", { fg = "#080606" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_33", { fg = "#0d0b0b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_34", { fg = "#393535" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_35", { fg = "#847778" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_36", { fg = "#9baeab" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_37", { fg = "#5c797f" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_38", { fg = "#63919b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_39", { fg = "#586e74" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_40", { fg = "#46646b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_41", { fg = "#87bebf" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_42", { fg = "#a4d6d3" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_43", { fg = "#99d0ce" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_44", { fg = "#59898f" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_45", { fg = "#687f80" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_46", { fg = "#617171" })
+        --     vim.api.nvim_set_hl(0, "Pixel_13_47", { fg = "#1e1f1e" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_2", { fg = "#3d3c3d" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_3", { fg = "#627c7b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_4", { fg = "#548c90" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_5", { fg = "#66a2a6" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_6", { fg = "#95cdcb" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_7", { fg = "#95ccca" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_8", { fg = "#4f99a3" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_9", { fg = "#466a71" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_10", { fg = "#646a6a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_11", { fg = "#877a7e" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_12", { fg = "#8a8081" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_13", { fg = "#847375" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_14", { fg = "#302d2c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_15", { fg = "#324245" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_16", { fg = "#25636d" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_17", { fg = "#436970" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_18", { fg = "#3e454c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_19", { fg = "#45454b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_20", { fg = "#44474c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_21", { fg = "#48494f" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_22", { fg = "#505057" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_23", { fg = "#484d53" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_24", { fg = "#4f6065" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_25", { fg = "#3f6468" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_26", { fg = "#58838a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_27", { fg = "#54868b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_28", { fg = "#448f93" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_29", { fg = "#597676" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_30", { fg = "#171719" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_31", { fg = "#040403" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_35", { fg = "#0d0d0c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_36", { fg = "#2b2b2b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_37", { fg = "#242323" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_38", { fg = "#435e62" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_39", { fg = "#64a0a5" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_40", { fg = "#527f85" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_41", { fg = "#4e8187" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_42", { fg = "#a7d7d6" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_43", { fg = "#a3d4d4" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_44", { fg = "#9acdcc" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_45", { fg = "#53747a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_46", { fg = "#50787a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_47", { fg = "#272828" })
+        --     vim.api.nvim_set_hl(0, "Pixel_14_48", { fg = "#050505" })
+        --     vim.api.nvim_set_hl(0, "Pixel_15_2", { fg = "#595e5e" })
+        --     vim.api.nvim_set_hl(0, "Pixel_15_3", { fg = "#679ea0" })
+        --     vim.api.nvim_set_hl(0, "Pixel_15_4", { fg = "#4c777f" })
+        --     vim.api.nvim_set_hl(0, "Pixel_15_5", { fg = "#67acb2" })
+        --     vim.api.nvim_set_hl(0, "Pixel_15_6", { fg = "#a1d5d2" })
+        --     vim.api.nvim_set_hl(0, "Pixel_15_7", { fg = "#81bdbd" })
+        --     vim.api.nvim_set_hl(0, "Pixel_15_8", { fg = "#66aab1" })
+        --     vim.api.nvim_set_hl(0, "Pixel_15_9", { fg = "#486d74" })
+        --     vim.api.nvim_set_hl(0, "Pixel_15_10", { fg = "#1b1b1a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_15_16", { fg = "#1d1e1e" })
+        --     vim.api.nvim_set_hl(0, "Pixel_15_17", { fg = "#576d6e" })
+        --     vim.api.nvim_set_hl(0, "Pixel_15_18", { fg = "#879da1" })
+        --     vim.api.nvim_set_hl(0, "Pixel_15_19", { fg = "#97b6bb" })
+        --     vim.api.nvim_set_hl(0, "Pixel_15_20", { fg = "#93b1b6" })
+        --     vim.api.nvim_set_hl(0, "Pixel_15_21", { fg = "#98b4ba" })
+        --     vim.api.nvim_set_hl(0, "Pixel_15_22", { fg = "#87a5aa" })
+        --     vim.api.nvim_set_hl(0, "Pixel_15_23", { fg = "#9eb7bc" })
+        --     vim.api.nvim_set_hl(0, "Pixel_15_24", { fg = "#c3d4d2" })
+        --     vim.api.nvim_set_hl(0, "Pixel_15_25", { fg = "#ded9d6" })
+        --     vim.api.nvim_set_hl(0, "Pixel_15_26", { fg = "#f2e6e0" })
+        --     vim.api.nvim_set_hl(0, "Pixel_15_27", { fg = "#cbbcb8" })
+        --     vim.api.nvim_set_hl(0, "Pixel_15_28", { fg = "#7c7b7b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_15_38", { fg = "#3a3938" })
+        --     vim.api.nvim_set_hl(0, "Pixel_15_39", { fg = "#41656b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_15_40", { fg = "#83b6b8" })
+        --     vim.api.nvim_set_hl(0, "Pixel_15_41", { fg = "#57848c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_15_42", { fg = "#7fb1b2" })
+        --     vim.api.nvim_set_hl(0, "Pixel_15_43", { fg = "#a9d6d5" })
+        --     vim.api.nvim_set_hl(0, "Pixel_15_44", { fg = "#99cccd" })
+        --     vim.api.nvim_set_hl(0, "Pixel_15_45", { fg = "#83abae" })
+        --     vim.api.nvim_set_hl(0, "Pixel_15_46", { fg = "#557e85" })
+        --     vim.api.nvim_set_hl(0, "Pixel_15_47", { fg = "#565353" })
+        --     vim.api.nvim_set_hl(0, "Pixel_15_48", { fg = "#232323" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_2", { fg = "#596362" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_3", { fg = "#649da1" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_4", { fg = "#4f6268" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_5", { fg = "#5ca4ae" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_6", { fg = "#a4d6d5" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_7", { fg = "#5da2ab" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_8", { fg = "#92c7ca" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_9", { fg = "#497780" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_10", { fg = "#1d1d1d" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_17", { fg = "#252525" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_18", { fg = "#6d6065" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_19", { fg = "#bbabaf" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_20", { fg = "#c8b5ba" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_21", { fg = "#bcb0b5" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_22", { fg = "#9a9398" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_23", { fg = "#a9b2b1" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_24", { fg = "#d8e7de" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_25", { fg = "#d9e7df" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_26", { fg = "#c9d7d0" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_27", { fg = "#6a6a6b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_28", { fg = "#16090a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_29", { fg = "#16090a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_30", { fg = "#16090a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_31", { fg = "#16090a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_32", { fg = "#16090a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_33", { fg = "#16090a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_34", { fg = "#16090a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_35", { fg = "#16090a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_36", { fg = "#16090a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_37", { fg = "#16090a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_38", { fg = "#16090a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_39", { fg = "#3c4142" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_40", { fg = "#59959c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_41", { fg = "#809fa0" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_42", { fg = "#64989d" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_43", { fg = "#9acccb" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_44", { fg = "#98cacd" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_45", { fg = "#99bcbd" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_46", { fg = "#729aa0" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_47", { fg = "#5b5a5a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_16_48", { fg = "#202020" })
+        --     vim.api.nvim_set_hl(0, "Pixel_17_2", { fg = "#656f6e" })
+        --     vim.api.nvim_set_hl(0, "Pixel_17_3", { fg = "#76a4a8" })
+        --     vim.api.nvim_set_hl(0, "Pixel_17_4", { fg = "#6b7579" })
+        --     vim.api.nvim_set_hl(0, "Pixel_17_5", { fg = "#4e8c98" })
+        --     vim.api.nvim_set_hl(0, "Pixel_17_6", { fg = "#8ac1c4" })
+        --     vim.api.nvim_set_hl(0, "Pixel_17_7", { fg = "#84bcbf" })
+        --     vim.api.nvim_set_hl(0, "Pixel_17_8", { fg = "#6aacb3" })
+        --     vim.api.nvim_set_hl(0, "Pixel_17_9", { fg = "#70a7ad" })
+        --     vim.api.nvim_set_hl(0, "Pixel_17_10", { fg = "#2d383b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_17_11", { fg = "#0d0c0d" })
+        --     vim.api.nvim_set_hl(0, "Pixel_17_18", { fg = "#1e1d1d" })
+        --     vim.api.nvim_set_hl(0, "Pixel_17_19", { fg = "#393032" })
+        --     vim.api.nvim_set_hl(0, "Pixel_17_20", { fg = "#4c4b4c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_17_21", { fg = "#4c4547" })
+        --     vim.api.nvim_set_hl(0, "Pixel_17_22", { fg = "#4d4246" })
+        --     vim.api.nvim_set_hl(0, "Pixel_17_23", { fg = "#605756" })
+        --     vim.api.nvim_set_hl(0, "Pixel_17_24", { fg = "#6f6564" })
+        --     vim.api.nvim_set_hl(0, "Pixel_17_25", { fg = "#695f5e" })
+        --     vim.api.nvim_set_hl(0, "Pixel_17_26", { fg = "#59504e" })
+        --     vim.api.nvim_set_hl(0, "Pixel_17_27", { fg = "#302c2c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_17_39", { fg = "#353535" })
+        --     vim.api.nvim_set_hl(0, "Pixel_17_40", { fg = "#447379" })
+        --     vim.api.nvim_set_hl(0, "Pixel_17_41", { fg = "#83a5a6" })
+        --     vim.api.nvim_set_hl(0, "Pixel_17_42", { fg = "#4d6e75" })
+        --     vim.api.nvim_set_hl(0, "Pixel_17_43", { fg = "#a1d0d1" })
+        --     vim.api.nvim_set_hl(0, "Pixel_17_44", { fg = "#89c0c5" })
+        --     vim.api.nvim_set_hl(0, "Pixel_17_45", { fg = "#a2cacb" })
+        --     vim.api.nvim_set_hl(0, "Pixel_17_46", { fg = "#8d9b9c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_17_47", { fg = "#292827" })
+        --     vim.api.nvim_set_hl(0, "Pixel_18_2", { fg = "#6e7071" })
+        --     vim.api.nvim_set_hl(0, "Pixel_18_3", { fg = "#95b6b5" })
+        --     vim.api.nvim_set_hl(0, "Pixel_18_4", { fg = "#667a7c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_18_5", { fg = "#526567" })
+        --     vim.api.nvim_set_hl(0, "Pixel_18_6", { fg = "#55939c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_18_7", { fg = "#a2ced1" })
+        --     vim.api.nvim_set_hl(0, "Pixel_18_8", { fg = "#7caab1" })
+        --     vim.api.nvim_set_hl(0, "Pixel_18_9", { fg = "#61a1a9" })
+        --     vim.api.nvim_set_hl(0, "Pixel_18_10", { fg = "#5b8c92" })
+        --     vim.api.nvim_set_hl(0, "Pixel_18_11", { fg = "#373a3c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_18_12", { fg = "#080808" })
+        --     vim.api.nvim_set_hl(0, "Pixel_18_18", { fg = "#050505" })
+        --     vim.api.nvim_set_hl(0, "Pixel_18_19", { fg = "#1f1c1b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_18_20", { fg = "#463a3b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_18_21", { fg = "#635a5a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_18_22", { fg = "#52484a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_18_23", { fg = "#625959" })
+        --     vim.api.nvim_set_hl(0, "Pixel_18_24", { fg = "#6d6463" })
+        --     vim.api.nvim_set_hl(0, "Pixel_18_25", { fg = "#665d5b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_18_26", { fg = "#504545" })
+        --     vim.api.nvim_set_hl(0, "Pixel_18_27", { fg = "#2d2b2b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_18_39", { fg = "#292929" })
+        --     vim.api.nvim_set_hl(0, "Pixel_18_40", { fg = "#4a656b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_18_41", { fg = "#81a3a5" })
+        --     vim.api.nvim_set_hl(0, "Pixel_18_42", { fg = "#60939a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_18_43", { fg = "#81bdc5" })
+        --     vim.api.nvim_set_hl(0, "Pixel_18_44", { fg = "#9bcbcf" })
+        --     vim.api.nvim_set_hl(0, "Pixel_18_45", { fg = "#8cadb0" })
+        --     vim.api.nvim_set_hl(0, "Pixel_18_46", { fg = "#363738" })
+        --     vim.api.nvim_set_hl(0, "Pixel_18_47", { fg = "#140f11" })
+        --     vim.api.nvim_set_hl(0, "Pixel_18_48", { fg = "#090507" })
+        --     vim.api.nvim_set_hl(0, "Pixel_18_49", { fg = "#090507" })
+        --     vim.api.nvim_set_hl(0, "Pixel_18_50", { fg = "#090507" })
+        --     vim.api.nvim_set_hl(0, "Pixel_18_51", { fg = "#090507" })
+        --     vim.api.nvim_set_hl(0, "Pixel_18_52", { fg = "#090507" })
+        --     vim.api.nvim_set_hl(0, "Pixel_18_53", { fg = "#090507" })
+        --     vim.api.nvim_set_hl(0, "Pixel_18_54", { fg = "#090507" })
+        --     vim.api.nvim_set_hl(0, "Pixel_18_55", { fg = "#090507" })
+        --     vim.api.nvim_set_hl(0, "Pixel_19_2", { fg = "#343434" })
+        --     vim.api.nvim_set_hl(0, "Pixel_19_3", { fg = "#727979" })
+        --     vim.api.nvim_set_hl(0, "Pixel_19_4", { fg = "#7e9fa1" })
+        --     vim.api.nvim_set_hl(0, "Pixel_19_5", { fg = "#5f7c7f" })
+        --     vim.api.nvim_set_hl(0, "Pixel_19_6", { fg = "#646e70" })
+        --     vim.api.nvim_set_hl(0, "Pixel_19_7", { fg = "#557d82" })
+        --     vim.api.nvim_set_hl(0, "Pixel_19_8", { fg = "#9ec8cd" })
+        --     vim.api.nvim_set_hl(0, "Pixel_19_9", { fg = "#9ebbbd" })
+        --     vim.api.nvim_set_hl(0, "Pixel_19_10", { fg = "#6b989e" })
+        --     vim.api.nvim_set_hl(0, "Pixel_19_11", { fg = "#57888f" })
+        --     vim.api.nvim_set_hl(0, "Pixel_19_12", { fg = "#4e6165" })
+        --     vim.api.nvim_set_hl(0, "Pixel_19_13", { fg = "#2d3738" })
+        --     vim.api.nvim_set_hl(0, "Pixel_19_14", { fg = "#222325" })
+        --     vim.api.nvim_set_hl(0, "Pixel_19_19", { fg = "#0a0b0a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_19_20", { fg = "#272323" })
+        --     vim.api.nvim_set_hl(0, "Pixel_19_21", { fg = "#544a4b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_19_22", { fg = "#625e5d" })
+        --     vim.api.nvim_set_hl(0, "Pixel_19_23", { fg = "#615b5b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_19_24", { fg = "#6c6765" })
+        --     vim.api.nvim_set_hl(0, "Pixel_19_25", { fg = "#5b5151" })
+        --     vim.api.nvim_set_hl(0, "Pixel_19_26", { fg = "#2b2425" })
+        --     vim.api.nvim_set_hl(0, "Pixel_19_39", { fg = "#272626" })
+        --     vim.api.nvim_set_hl(0, "Pixel_19_40", { fg = "#436a70" })
+        --     vim.api.nvim_set_hl(0, "Pixel_19_41", { fg = "#67878c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_19_42", { fg = "#61a9b2" })
+        --     vim.api.nvim_set_hl(0, "Pixel_19_43", { fg = "#78b9bf" })
+        --     vim.api.nvim_set_hl(0, "Pixel_19_44", { fg = "#a7c1c3" })
+        --     vim.api.nvim_set_hl(0, "Pixel_19_45", { fg = "#5e6b6d" })
+        --     vim.api.nvim_set_hl(0, "Pixel_19_46", { fg = "#0f0f0f" })
+        --     vim.api.nvim_set_hl(0, "Pixel_20_4", { fg = "#222323" })
+        --     vim.api.nvim_set_hl(0, "Pixel_20_5", { fg = "#435c60" })
+        --     vim.api.nvim_set_hl(0, "Pixel_20_6", { fg = "#4d7177" })
+        --     vim.api.nvim_set_hl(0, "Pixel_20_7", { fg = "#43595d" })
+        --     vim.api.nvim_set_hl(0, "Pixel_20_8", { fg = "#58797f" })
+        --     vim.api.nvim_set_hl(0, "Pixel_20_9", { fg = "#6aa0a7" })
+        --     vim.api.nvim_set_hl(0, "Pixel_20_10", { fg = "#8bb9be" })
+        --     vim.api.nvim_set_hl(0, "Pixel_20_11", { fg = "#88aaae" })
+        --     vim.api.nvim_set_hl(0, "Pixel_20_12", { fg = "#699ba2" })
+        --     vim.api.nvim_set_hl(0, "Pixel_20_13", { fg = "#59858b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_20_14", { fg = "#628489" })
+        --     vim.api.nvim_set_hl(0, "Pixel_20_15", { fg = "#647b82" })
+        --     vim.api.nvim_set_hl(0, "Pixel_20_16", { fg = "#5f7b7e" })
+        --     vim.api.nvim_set_hl(0, "Pixel_20_17", { fg = "#484646" })
+        --     vim.api.nvim_set_hl(0, "Pixel_20_18", { fg = "#1b1515" })
+        --     vim.api.nvim_set_hl(0, "Pixel_20_20", { fg = "#0d0c0b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_20_21", { fg = "#342a2c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_20_22", { fg = "#4c4648" })
+        --     vim.api.nvim_set_hl(0, "Pixel_20_23", { fg = "#564e4f" })
+        --     vim.api.nvim_set_hl(0, "Pixel_20_24", { fg = "#675f60" })
+        --     vim.api.nvim_set_hl(0, "Pixel_20_25", { fg = "#58504f" })
+        --     vim.api.nvim_set_hl(0, "Pixel_20_26", { fg = "#342c2d" })
+        --     vim.api.nvim_set_hl(0, "Pixel_20_27", { fg = "#151515" })
+        --     vim.api.nvim_set_hl(0, "Pixel_20_38", { fg = "#222424" })
+        --     vim.api.nvim_set_hl(0, "Pixel_20_39", { fg = "#435659" })
+        --     vim.api.nvim_set_hl(0, "Pixel_20_40", { fg = "#548087" })
+        --     vim.api.nvim_set_hl(0, "Pixel_20_41", { fg = "#4e828b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_20_42", { fg = "#5a939c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_20_43", { fg = "#97c8ce" })
+        --     vim.api.nvim_set_hl(0, "Pixel_20_44", { fg = "#9ba2a3" })
+        --     vim.api.nvim_set_hl(0, "Pixel_21_5", { fg = "#040404" })
+        --     vim.api.nvim_set_hl(0, "Pixel_21_6", { fg = "#0e0e0e" })
+        --     vim.api.nvim_set_hl(0, "Pixel_21_7", { fg = "#0b0f0f" })
+        --     vim.api.nvim_set_hl(0, "Pixel_21_8", { fg = "#091213" })
+        --     vim.api.nvim_set_hl(0, "Pixel_21_9", { fg = "#6a7274" })
+        --     vim.api.nvim_set_hl(0, "Pixel_21_10", { fg = "#6f989d" })
+        --     vim.api.nvim_set_hl(0, "Pixel_21_11", { fg = "#5e868c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_21_12", { fg = "#88b9bd" })
+        --     vim.api.nvim_set_hl(0, "Pixel_21_13", { fg = "#94b6b9" })
+        --     vim.api.nvim_set_hl(0, "Pixel_21_14", { fg = "#505759" })
+        --     vim.api.nvim_set_hl(0, "Pixel_21_15", { fg = "#111111" })
+        --     vim.api.nvim_set_hl(0, "Pixel_21_16", { fg = "#0f0f0f" })
+        --     vim.api.nvim_set_hl(0, "Pixel_21_17", { fg = "#0d0d0d" })
+        --     vim.api.nvim_set_hl(0, "Pixel_21_18", { fg = "#050506" })
+        --     vim.api.nvim_set_hl(0, "Pixel_21_20", { fg = "#0d0d0d" })
+        --     vim.api.nvim_set_hl(0, "Pixel_21_21", { fg = "#342d2f" })
+        --     vim.api.nvim_set_hl(0, "Pixel_21_22", { fg = "#40393c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_21_23", { fg = "#453d40" })
+        --     vim.api.nvim_set_hl(0, "Pixel_21_24", { fg = "#5e5759" })
+        --     vim.api.nvim_set_hl(0, "Pixel_21_25", { fg = "#5c5557" })
+        --     vim.api.nvim_set_hl(0, "Pixel_21_26", { fg = "#4d4648" })
+        --     vim.api.nvim_set_hl(0, "Pixel_21_27", { fg = "#363635" })
+        --     vim.api.nvim_set_hl(0, "Pixel_21_35", { fg = "#0c0807" })
+        --     vim.api.nvim_set_hl(0, "Pixel_21_36", { fg = "#282e30" })
+        --     vim.api.nvim_set_hl(0, "Pixel_21_37", { fg = "#3b4e51" })
+        --     vim.api.nvim_set_hl(0, "Pixel_21_38", { fg = "#485c62" })
+        --     vim.api.nvim_set_hl(0, "Pixel_21_39", { fg = "#3d5d64" })
+        --     vim.api.nvim_set_hl(0, "Pixel_21_40", { fg = "#3d4d51" })
+        --     vim.api.nvim_set_hl(0, "Pixel_21_41", { fg = "#3f6268" })
+        --     vim.api.nvim_set_hl(0, "Pixel_21_42", { fg = "#558289" })
+        --     vim.api.nvim_set_hl(0, "Pixel_21_43", { fg = "#a2cfd4" })
+        --     vim.api.nvim_set_hl(0, "Pixel_21_44", { fg = "#777f81" })
+        --     vim.api.nvim_set_hl(0, "Pixel_22_9", { fg = "#222222" })
+        --     vim.api.nvim_set_hl(0, "Pixel_22_10", { fg = "#707c7c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_22_11", { fg = "#4c5b5d" })
+        --     vim.api.nvim_set_hl(0, "Pixel_22_12", { fg = "#536164" })
+        --     vim.api.nvim_set_hl(0, "Pixel_22_13", { fg = "#79aab1" })
+        --     vim.api.nvim_set_hl(0, "Pixel_22_14", { fg = "#6d888d" })
+        --     vim.api.nvim_set_hl(0, "Pixel_22_20", { fg = "#0b0b0b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_22_21", { fg = "#2d282b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_22_22", { fg = "#373236" })
+        --     vim.api.nvim_set_hl(0, "Pixel_22_23", { fg = "#403a3e" })
+        --     vim.api.nvim_set_hl(0, "Pixel_22_24", { fg = "#514d50" })
+        --     vim.api.nvim_set_hl(0, "Pixel_22_25", { fg = "#504c4e" })
+        --     vim.api.nvim_set_hl(0, "Pixel_22_26", { fg = "#3f393b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_22_27", { fg = "#252424" })
+        --     vim.api.nvim_set_hl(0, "Pixel_22_35", { fg = "#060606" })
+        --     vim.api.nvim_set_hl(0, "Pixel_22_36", { fg = "#1a1d1e" })
+        --     vim.api.nvim_set_hl(0, "Pixel_22_37", { fg = "#415152" })
+        --     vim.api.nvim_set_hl(0, "Pixel_22_38", { fg = "#3b5359" })
+        --     vim.api.nvim_set_hl(0, "Pixel_22_39", { fg = "#475b63" })
+        --     vim.api.nvim_set_hl(0, "Pixel_22_40", { fg = "#3f4a4f" })
+        --     vim.api.nvim_set_hl(0, "Pixel_22_41", { fg = "#3c4547" })
+        --     vim.api.nvim_set_hl(0, "Pixel_22_42", { fg = "#46595c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_22_43", { fg = "#82b2ba" })
+        --     vim.api.nvim_set_hl(0, "Pixel_22_44", { fg = "#657a7f" })
+        --     vim.api.nvim_set_hl(0, "Pixel_22_45", { fg = "#282c2d" })
+        --     vim.api.nvim_set_hl(0, "Pixel_22_46", { fg = "#090607" })
+        --     vim.api.nvim_set_hl(0, "Pixel_23_9", { fg = "#373535" })
+        --     vim.api.nvim_set_hl(0, "Pixel_23_10", { fg = "#7a817f" })
+        --     vim.api.nvim_set_hl(0, "Pixel_23_11", { fg = "#474646" })
+        --     vim.api.nvim_set_hl(0, "Pixel_23_12", { fg = "#464d4d" })
+        --     vim.api.nvim_set_hl(0, "Pixel_23_13", { fg = "#7eaaae" })
+        --     vim.api.nvim_set_hl(0, "Pixel_23_14", { fg = "#628184" })
+        --     vim.api.nvim_set_hl(0, "Pixel_23_20", { fg = "#080808" })
+        --     vim.api.nvim_set_hl(0, "Pixel_23_21", { fg = "#1d1b1b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_23_22", { fg = "#2c292d" })
+        --     vim.api.nvim_set_hl(0, "Pixel_23_23", { fg = "#37353a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_23_24", { fg = "#454247" })
+        --     vim.api.nvim_set_hl(0, "Pixel_23_25", { fg = "#444145" })
+        --     vim.api.nvim_set_hl(0, "Pixel_23_26", { fg = "#2d282b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_23_27", { fg = "#0e0e0e" })
+        --     vim.api.nvim_set_hl(0, "Pixel_23_35", { fg = "#100d0d" })
+        --     vim.api.nvim_set_hl(0, "Pixel_23_36", { fg = "#2a373a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_23_37", { fg = "#202525" })
+        --     vim.api.nvim_set_hl(0, "Pixel_23_38", { fg = "#121111" })
+        --     vim.api.nvim_set_hl(0, "Pixel_23_39", { fg = "#050505" })
+        --     vim.api.nvim_set_hl(0, "Pixel_23_42", { fg = "#1e1e1e" })
+        --     vim.api.nvim_set_hl(0, "Pixel_23_43", { fg = "#59797d" })
+        --     vim.api.nvim_set_hl(0, "Pixel_23_44", { fg = "#508a94" })
+        --     vim.api.nvim_set_hl(0, "Pixel_23_45", { fg = "#506265" })
+        --     vim.api.nvim_set_hl(0, "Pixel_23_46", { fg = "#150e0f" })
+        --     vim.api.nvim_set_hl(0, "Pixel_24_9", { fg = "#0b0809" })
+        --     vim.api.nvim_set_hl(0, "Pixel_24_10", { fg = "#1a1616" })
+        --     vim.api.nvim_set_hl(0, "Pixel_24_11", { fg = "#2a2928" })
+        --     vim.api.nvim_set_hl(0, "Pixel_24_12", { fg = "#3f4547" })
+        --     vim.api.nvim_set_hl(0, "Pixel_24_13", { fg = "#6e8588" })
+        --     vim.api.nvim_set_hl(0, "Pixel_24_14", { fg = "#707375" })
+        --     vim.api.nvim_set_hl(0, "Pixel_24_21", { fg = "#050505" })
+        --     vim.api.nvim_set_hl(0, "Pixel_24_22", { fg = "#252125" })
+        --     vim.api.nvim_set_hl(0, "Pixel_24_23", { fg = "#333238" })
+        --     vim.api.nvim_set_hl(0, "Pixel_24_24", { fg = "#3d3c41" })
+        --     vim.api.nvim_set_hl(0, "Pixel_24_25", { fg = "#2f2a2e" })
+        --     vim.api.nvim_set_hl(0, "Pixel_24_26", { fg = "#171516" })
+        --     vim.api.nvim_set_hl(0, "Pixel_24_43", { fg = "#09090a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_24_44", { fg = "#2d494c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_24_45", { fg = "#2e5f67" })
+        --     vim.api.nvim_set_hl(0, "Pixel_24_46", { fg = "#334c52" })
+        --     vim.api.nvim_set_hl(0, "Pixel_24_47", { fg = "#3e545b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_24_48", { fg = "#24363d" })
+        --     vim.api.nvim_set_hl(0, "Pixel_24_49", { fg = "#110c0b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_25_11", { fg = "#221a1c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_25_12", { fg = "#364a4f" })
+        --     vim.api.nvim_set_hl(0, "Pixel_25_13", { fg = "#414445" })
+        --     vim.api.nvim_set_hl(0, "Pixel_25_14", { fg = "#111111" })
+        --     vim.api.nvim_set_hl(0, "Pixel_25_21", { fg = "#040405" })
+        --     vim.api.nvim_set_hl(0, "Pixel_25_22", { fg = "#1f1b1e" })
+        --     vim.api.nvim_set_hl(0, "Pixel_25_23", { fg = "#313139" })
+        --     vim.api.nvim_set_hl(0, "Pixel_25_24", { fg = "#2e2c31" })
+        --     vim.api.nvim_set_hl(0, "Pixel_25_25", { fg = "#161011" })
+        --     vim.api.nvim_set_hl(0, "Pixel_25_26", { fg = "#070707" })
+        --     vim.api.nvim_set_hl(0, "Pixel_25_45", { fg = "#090909" })
+        --     vim.api.nvim_set_hl(0, "Pixel_25_46", { fg = "#080808" })
+        --     vim.api.nvim_set_hl(0, "Pixel_25_47", { fg = "#070b0b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_25_48", { fg = "#070707" })
+        --     vim.api.nvim_set_hl(0, "Pixel_26_21", { fg = "#050405" })
+        --     vim.api.nvim_set_hl(0, "Pixel_26_22", { fg = "#262225" })
+        --     vim.api.nvim_set_hl(0, "Pixel_26_23", { fg = "#2d2e37" })
+        --     vim.api.nvim_set_hl(0, "Pixel_26_24", { fg = "#1f1b21" })
+        --     vim.api.nvim_set_hl(0, "Pixel_26_25", { fg = "#0d0808" })
+        --     vim.api.nvim_set_hl(0, "Pixel_27_20", { fg = "#030404" })
+        --     vim.api.nvim_set_hl(0, "Pixel_27_21", { fg = "#110d0f" })
+        --     vim.api.nvim_set_hl(0, "Pixel_27_22", { fg = "#27252c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_27_23", { fg = "#2b2f38" })
+        --     vim.api.nvim_set_hl(0, "Pixel_27_24", { fg = "#1c2027" })
+        --     vim.api.nvim_set_hl(0, "Pixel_27_25", { fg = "#1a1417" })
+        --     vim.api.nvim_set_hl(0, "Pixel_27_26", { fg = "#0c0c0c" })
+        --     vim.api.nvim_set_hl(0, "Pixel_28_20", { fg = "#080808" })
+        --     vim.api.nvim_set_hl(0, "Pixel_28_21", { fg = "#201b1e" })
+        --     vim.api.nvim_set_hl(0, "Pixel_28_22", { fg = "#2c2d35" })
+        --     vim.api.nvim_set_hl(0, "Pixel_28_23", { fg = "#2d2f38" })
+        --     vim.api.nvim_set_hl(0, "Pixel_28_24", { fg = "#1c272f" })
+        --     vim.api.nvim_set_hl(0, "Pixel_28_25", { fg = "#1b424d" })
+        --     vim.api.nvim_set_hl(0, "Pixel_28_26", { fg = "#1c2326" })
+        --     vim.api.nvim_set_hl(0, "Pixel_29_20", { fg = "#0c0c0b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_29_21", { fg = "#143b43" })
+        --     vim.api.nvim_set_hl(0, "Pixel_29_22", { fg = "#26404a" })
+        --     vim.api.nvim_set_hl(0, "Pixel_29_23", { fg = "#293b43" })
+        --     vim.api.nvim_set_hl(0, "Pixel_29_24", { fg = "#274549" })
+        --     vim.api.nvim_set_hl(0, "Pixel_29_25", { fg = "#1b1a1b" })
+        --     vim.api.nvim_set_hl(0, "Pixel_29_26", { fg = "#080707" })
+        -- end
 
         local alpha = require("alpha")
         local theta = require("alpha.themes.theta")
@@ -1688,7 +2796,7 @@ return {
 
         set_colors()
         dashboard.section.header.val = sprite
-        dashboard.section.header.opts.hl = hl
+        dashboard.section.header.opts.hl = require("alpha.utils").charhl_to_bytehl(hl, sprite)
 
         dashboard.section.buttons = {
             type = "group",

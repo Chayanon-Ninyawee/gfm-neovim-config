@@ -45,11 +45,13 @@ require("lazy").setup({
         require("plugins.git-misc"),
         require("plugins.treesitter"),
         require("plugins.lsp"),
+        require("plugins.lsp_signature"),
         require("plugins.autocomplete"),
         require("plugins.autoformatter"),
         require("plugins.lazydev"),
         require("plugins.debugger"),
         require("plugins.remote-sshfs"),
+        require("plugins.remote-lsp"),
         require("plugins.live-preview"),
         -- TODO: ADD whichkey
     },

@@ -6,42 +6,45 @@ return {
             formatters_by_ft = {
                 lua = { "stylua" },
                 python = { "isort", "black" },
+                sh = { "beautysh" },
                 c = { "clang-format" },
                 cpp = { "clang-format" },
+                cmake = { "cmake_format" },
                 rust = { "rustfmt", lsp_format = "fallback" },
                 javascript = { "prettier" },
                 yaml = { "prettier" },
                 tex = { "latexindent" },
+                markdown = { "markdown-toc", "mdformat" },
             },
             format_on_save = {
                 -- These options will be passed to conform.format()
-                timeout_ms = 500,
+                timeout_ms = 2000,
                 lsp_format = "fallback",
             },
         })
 
-        local isPrintingHelp = false
-        for ft, formatters in pairs(require("conform").formatters_by_ft) do
-            for _, formatter in ipairs(formatters) do
-                if type(formatter) == "string" then -- Only check if it's a string (command)
-                    if vim.fn.executable(formatter) == 0 then
-                        isPrintingHelp = true
+        -- local isPrintingHelp = false
+        -- for ft, formatters in pairs(require("conform").formatters_by_ft) do
+        --     for _, formatter in ipairs(formatters) do
+        --         if type(formatter) == "string" then -- Only check if it's a string (command)
+        --             if vim.fn.executable(formatter) == 0 then
+        --                 isPrintingHelp = true
 
-                        vim.schedule(function()
-                            vim.notify("Formatter executable not found: " .. formatter, vim.log.levels.WARN)
-                        end)
-                    end
-                end
-            end
-        end
+        --                 vim.schedule(function()
+        --                     vim.notify("Formatter executable not found: " .. formatter, vim.log.levels.WARN)
+        --                 end)
+        --             end
+        --         end
+        --     end
+        -- end
 
-        if isPrintingHelp then
-            vim.schedule(function()
-                vim.notify(
-                    "Some Formatter executables are not found! Try running :checkhealth conform",
-                    vim.log.levels.WARN
-                )
-            end)
-        end
+        -- if isPrintingHelp then
+        --     vim.schedule(function()
+        --         vim.notify(
+        --             "Some Formatter executables are not found! Try running :checkhealth conform",
+        --             vim.log.levels.WARN
+        --         )
+        --     end)
+        -- end
     end,
 }

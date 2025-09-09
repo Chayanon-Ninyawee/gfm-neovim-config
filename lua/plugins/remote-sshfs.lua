@@ -12,6 +12,10 @@ return {
                 -- NOTE: Can define ssh_configs similarly to include all configs in a folder
                 -- ssh_configs = vim.split(vim.fn.globpath(vim.fn.expand "$HOME" .. "/.ssh/configs", "*"), "\n")
                 sshfs_args = { -- arguments to pass to the sshfs command
+                    "-o cache=yes",
+                    "-o kernel_cache",
+                    "-o compression=no",
+                    "-o Ciphers=chacha20-poly1305@openssh.com",
                     "-o reconnect",
                     "-o ConnectTimeout=5",
                 },
