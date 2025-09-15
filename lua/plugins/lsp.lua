@@ -198,10 +198,11 @@ return {
 
             if vim.fn.executable(cmd) == 0 then
                 isPrintingHelp = true
+                break
 
-                vim.schedule(function()
-                    vim.notify("LSP executable not found: " .. cmd, vim.log.levels.WARN)
-                end)
+                -- vim.schedule(function()
+                --     vim.notify("LSP executable not found: " .. cmd, vim.log.levels.WARN)
+                -- end)
             end
         end
 
