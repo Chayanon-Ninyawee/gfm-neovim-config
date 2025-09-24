@@ -17,6 +17,7 @@ return {
                 markdown = { "markdown-toc", "mdformat" },
                 java = { "google-java-format" },
                 kotlin = { "ktlint" },
+                dockerfile = { "dockerfmt" },
             },
             format_on_save = {
                 -- These options will be passed to conform.format()
