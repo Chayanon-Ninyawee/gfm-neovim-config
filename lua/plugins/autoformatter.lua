@@ -15,6 +15,7 @@ return {
                 yaml = { "prettier" },
                 tex = { "latexindent" },
                 markdown = { "markdown-toc", "mdformat" },
+                dockerfile = { "dockerfmt" },
             },
             format_on_save = {
                 -- These options will be passed to conform.format()

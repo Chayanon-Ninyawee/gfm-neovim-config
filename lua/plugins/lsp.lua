@@ -13,6 +13,7 @@ return {
             "yamlls",
             "texlab",
             "ltex",
+            "docker_language_server",
         }
 
         vim.lsp.enable(servers)
