@@ -192,24 +192,24 @@ return {
             end,
         })
 
-        local isPrintingHelp = false
-        for _, server in ipairs(servers) do
-            local cmd = vim.lsp.config[server].cmd[1]
+        -- local isPrintingHelp = false
+        -- for _, server in ipairs(servers) do
+        --     local cmd = vim.lsp.config[server].cmd[1]
 
-            if vim.fn.executable(cmd) == 0 then
-                isPrintingHelp = true
-                break
+        --     if vim.fn.executable(cmd) == 0 then
+        --         isPrintingHelp = true
+        --         break
 
-                -- vim.schedule(function()
-                --     vim.notify("LSP executable not found: " .. cmd, vim.log.levels.WARN)
-                -- end)
-            end
-        end
+        --         -- vim.schedule(function()
+        --         --     vim.notify("LSP executable not found: " .. cmd, vim.log.levels.WARN)
+        --         -- end)
+        --     end
+        -- end
 
-        if isPrintingHelp then
-            vim.schedule(function()
-                vim.notify("Some LSP executables are not found! Try running :checkhealth vim.lsp", vim.log.levels.WARN)
-            end)
-        end
+        -- if isPrintingHelp then
+        --     vim.schedule(function()
+        --         vim.notify("Some LSP executables are not found! Try running :checkhealth vim.lsp", vim.log.levels.WARN)
+        --     end)
+        -- end
     end,
 }

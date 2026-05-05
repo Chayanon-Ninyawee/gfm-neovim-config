@@ -15,6 +15,8 @@ return {
                 yaml = { "prettier" },
                 tex = { "latexindent" },
                 markdown = { "markdown-toc", "mdformat" },
+                java = { "google-java-format" },
+                kotlin = { "ktlint" },
             },
             format_on_save = {
                 -- These options will be passed to conform.format()

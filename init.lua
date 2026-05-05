@@ -53,6 +53,7 @@ require("lazy").setup({
         require("plugins.remote-sshfs"),
         require("plugins.remote-lsp"),
         require("plugins.live-preview"),
+        -- require("plugins.norminette42"),
         -- TODO: ADD whichkey
     },
     checker = { enabled = true },

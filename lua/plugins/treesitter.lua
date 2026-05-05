@@ -102,8 +102,10 @@ return { -- Highlight, edit, and navigate code
 
                     -- web-related
                     "javascript",
+                    "typescript",
                     "html",
                     "css",
+                    "svelte",
 
                     -- config and data formats
                     "json",
