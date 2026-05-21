@@ -21,6 +21,8 @@ return {
         vim.lsp.config("clangd", {
             cmd = {
                 "clangd",
+                "--clang-tidy",
+                "--background-index",
                 "--query-driver=/usr/bin/x86_64-linux-gnu-gcc,/usr/bin/x86_64-linux-gnu-g++,/usr/bin/arm-none-eabi-g*,/usr/bin/arm-none-eabi-g++*",
             },
         })

@@ -45,6 +45,7 @@ require("lazy").setup({
         require("plugins.git-misc"),
         require("plugins.treesitter"),
         require("plugins.lsp"),
+        require("plugins.linter"),
         require("plugins.lsp_signature"),
         require("plugins.autocomplete"),
         require("plugins.autoformatter"),
