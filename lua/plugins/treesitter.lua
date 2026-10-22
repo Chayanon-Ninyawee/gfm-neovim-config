@@ -28,6 +28,14 @@ return {
             })
             vim.treesitter.language.register("miniscript", { "miniscript" })
 
+            -- Add filetype for verilog
+            vim.filetype.add({
+                extension = {
+                    v = "verilog",
+                    sv = "systemverilog",
+                },
+            })
+
             require("nvim-treesitter").install({
                 -- core languages you use
                 "lua",
@@ -37,6 +45,7 @@ return {
                 "bash",
                 "cmake",
                 "make",
+                "systemverilog",
 
                 -- web-related
                 "javascript",

@@ -14,6 +14,7 @@ return {
             "texlab",
             "ltex",
             "docker_language_server",
+            "verible",
         }
 
         vim.lsp.enable(servers)

@@ -18,6 +18,8 @@ return {
                 java = { "google-java-format" },
                 kotlin = { "ktlint" },
                 dockerfile = { "dockerfmt" },
+                verilog = { "verible" },
+                systemverilog = { "verible" },
             },
             format_on_save = {
                 -- These options will be passed to conform.format()
