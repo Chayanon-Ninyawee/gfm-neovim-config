@@ -9,6 +9,7 @@ return {
             "ruff",
             "pylsp",
             "bashls",
+            "ts_ls",
             "jsonls",
             "yamlls",
             "texlab",
@@ -42,6 +43,14 @@ return {
                         pylsp_black = { enabled = false },
                         pylsp_isort = { enabled = false },
                     },
+                },
+            },
+        })
+
+        vim.lsp.config("ts_ls", {
+            init_options = {
+                tsserver = {
+                    path = vim.fn.expand("~/.local/node_modules/typescript/lib/tsserver.js"),
                 },
             },
         })
