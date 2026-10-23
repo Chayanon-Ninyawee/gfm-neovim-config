@@ -56,6 +56,24 @@ return {
                 lualine_x = {
                     diagnostics,
                     diff,
+                    {
+                        function()
+                            local ok, statusline = pcall(require, "netscript.statusline")
+                            if ok then
+                                return statusline.buffer_ram()
+                            end
+                            return ""
+                        end,
+                    },
+                    {
+                        function()
+                            local ok, statusline = pcall(require, "netscript.statusline")
+                            if ok then
+                                return statusline.ns_status()
+                            end
+                            return ""
+                        end,
+                    },
                     { "encoding", cond = hide_in_width },
                     { "filetype", cond = hide_in_width },
                 },
